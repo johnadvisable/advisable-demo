@@ -1,0 +1,27 @@
+{
+  "loading": "Φόρτωση...",
+  "errors": {
+    "notFound": "Ο πελάτης δεν βρέθηκε"
+  },
+  "navigation": {
+    "backToClients": "Επιστροφή σε όλους τους πελάτες"
+  },
+  "client": {
+    "usingCategory": "Χρησιμοποιεί {{category}}"
+  },
+  "caseStudy": {
+    "challenge": "Η Πρόκληση",
+    "solution": "Η Λύση μας",
+    "results": "Τα Αποτελέσματα"
+  },
+  "project": {
+    "title": "Project Details",
+    "labels": {
+      "timeline": "TIMELINE",
+      "teamSize": "TEAM SIZE",
+      "product": "PRODUCT",
+      "website": "WEBSITE"
+    },
+    "visitWebsite": "Επίσκεψη Website"
+  }
+}

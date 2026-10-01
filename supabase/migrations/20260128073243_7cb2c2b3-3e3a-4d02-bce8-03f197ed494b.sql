@@ -1,0 +1,2 @@
+-- Update Ilias Galiotos job_title to Head of SEO & AEO in all languages
+UPDATE team_member_translations SET job_title = 'Head of SEO & AEO' WHERE team_member_id = '59cc06e7-914e-43de-97ea-cbab03c34ebc';

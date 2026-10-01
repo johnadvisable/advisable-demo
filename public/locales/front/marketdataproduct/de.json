@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "backToProducts": "Alle Produkte",
+    "title": "SizeTheMarket",
+    "subtitle": "Sofortige Datenanalyse zu Ihren Diensten",
+    "description": "Erhalten Sie sofortige Einblicke in Ihren Markt. Sehen Sie, wie viele Produkte Sie mit Wettbewerbern gemeinsam haben, wer die günstigsten Preise hat und wer am teuersten ist.",
+    "visitWebsite": "Website besuchen"
+  },
+  "features": {
+    "title": "Wichtige Funktionen",
+    "competitiveAnalysis": {
+      "title": "Wettbewerbsanalyse",
+      "description": "Identifizieren Sie sofort, wie sich Ihre Angebote im Vergleich zu denen Ihrer Wettbewerber über mehrere Dimensionen hinweg vergleichen."
+    },
+    "priceTracking": {
+      "title": "Preisverfolgung",
+      "description": "Verfolgen Sie Preisänderungen im Laufe der Zeit mit Warnungen bei erheblichen Änderungen der Wettbewerbspreise."
+    },
+    "marketIntelligence": {
+      "title": "Marktintelligenz",
+      "description": "Umfassende Berichte über Markttrends, Produktpopularität und neue Möglichkeiten."
+    }
+  },
+  "useCases": {
+    "title": "Anwendungsfälle",
+    "retailOptimization": {
+      "title": "Preisoptimierung im Einzelhandel",
+      "description": "Ein großer Elektronikhändler konnte seine Preisstrategie optimieren, indem er die Preisänderungen der Wettbewerber in Echtzeit verfolgte, was zu einer 12%igen Steigerung der Gewinnmargen führte.",
+      "result": "Ergebnis: 12% Steigerung der Gewinnmargen"
+    },
+    "productAnalysis": {
+      "title": "Produktsortimentsanalyse",
+      "description": "Ein Online-Marktplatz identifizierte Lücken in seinem Produktangebot, indem er seinen Katalog mit Wettbewerbern verglich, was zu 200+ neuen Produktzusätzen und 15% Umsatzwachstum führte.",
+      "result": "Ergebnis: 15% Umsatzwachstum"
+    }
+  },
+  "cta": {
+    "title": "Bereit, Ihren Wettbewerb zu überholen?",
+    "description": "Beginnen Sie heute, datenbasierte Entscheidungen zu treffen, mit den leistungsstarken Marktintelligenz-Tools von MarkeData.",
+    "button": "Heute starten"
+  }
+}

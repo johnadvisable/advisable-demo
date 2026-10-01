@@ -1,0 +1,20 @@
+{
+  "error": "Σφάλμα",
+  "errorDescription": "Αποτυχία φόρτωσης του news item. Παρακαλώ δοκιμάστε ξανά αργότερα.",
+  "notFound": "Το News Item Δεν Βρέθηκε",
+  "notFoundDescription": "Το news item που αναζητάτε δεν υπάρχει ή έχει μετακινηθεί.",
+  "backToNews": "Πίσω στα Νέα",
+  "publishedOn": "Δημοσιεύθηκε στις",
+  "badges": {
+    "article": "Άρθρο",
+    "media": "Media"
+  },
+  "content": {
+    "comingSoon": "Το πλήρες περιεχόμενο του άρθρου έρχεται σύντομα...",
+    "mediaComingSoon": "Media content έρχεται σύντομα"
+  },
+  "instagram": {
+    "viewOriginal": "Δείτε το αρχικό post στο Instagram",
+    "viewPost": "Δείτε αυτό το post στο Instagram"
+  }
+}

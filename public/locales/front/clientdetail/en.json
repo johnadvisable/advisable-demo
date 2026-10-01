@@ -1,0 +1,27 @@
+{
+  "loading": "Loading...",
+  "errors": {
+    "notFound": "Client not found"
+  },
+  "navigation": {
+    "backToClients": "Back to All Clients"
+  },
+  "client": {
+    "usingCategory": "Using {{category}}"
+  },
+  "caseStudy": {
+    "challenge": "The Challenge",
+    "solution": "Our Solution",
+    "results": "The Results"
+  },
+  "project": {
+    "title": "Project Details",
+    "labels": {
+      "timeline": "TIMELINE",
+      "teamSize": "TEAM SIZE",
+      "product": "PRODUCT",
+      "website": "WEBSITE"
+    },
+    "visitWebsite": "Visit Website"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "error": "Error",
+  "errorDescription": "Error al cargar el artículo. Por favor, inténtelo de nuevo más tarde.",
+  "articleNotFound": "Artículo No Encontrado",
+  "articleNotFoundDescription": "El artículo que buscas no existe o ha sido movido.",
+  "backToBlog": "Volver al Blog",
+  "publishedOn": "Publicado el",
+  "authorRole": "Experto en Comercio Electrónico",
+  "relatedArticles": "Artículos Relacionados",
+  "readMore": "Leer más"
+}

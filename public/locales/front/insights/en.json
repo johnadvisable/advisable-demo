@@ -1,0 +1,16 @@
+{
+  "title": "Insights",
+  "subtitle": "Expert insights, industry analysis, and thought leadership to help your business stay ahead of the curve.",
+  "searchPlaceholder": "Search insights...",
+  "error": "Error",
+  "errorDescription": "Failed to load insights. Please try again later.",
+  "noInsightsFound": "No insights found",
+  "noInsightsDescription": "Try adjusting your search term.",
+  "readMore": "Read more",
+  "tabs": {
+    "all": "All",
+    "insights": "Insights",
+    "news": "News",
+    "media": "Media"
+  }
+}

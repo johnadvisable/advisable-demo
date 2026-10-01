@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- NOTE: External scripts temporarily commented out to isolate script error -->
+    <!-- script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e7b9aeb9-7125-440a-b373-52d5d7c71531" data-blockingmode="auto" type="text/javascript"></script -->
+    
+    <!-- Google Consent Mode v2 - Default State (MUST be before GTM) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      // Set default consent to denied
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'functionality_storage': 'denied',
+        'personalization_storage': 'denied',
+        'security_storage': 'granted',
+        'wait_for_update': 500
+      });
+      
+      // Check if user already consented (from localStorage)
+      var savedConsent = localStorage.getItem('cookie_consent');
+      if (savedConsent === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted',
+          'functionality_storage': 'granted',
+          'personalization_storage': 'granted'
+        });
+      }
+    </script>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P5Q7H86');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- OpenAI Ads Measurement Pixel -->
+    <script>
+      window.oaiq = window.oaiq || function () {
+        (window.oaiq.q = window.oaiq.q || []).push(arguments);
+      };
+      oaiq("init", { pixelId: "GVNS2hHFNeeh9mbSLq64Na" });
+    </script>
+    <script async src="https://bzrcdn.openai.com/sdk/oaiq.min.js"></script>
+    <!-- End OpenAI Ads Measurement Pixel -->
+
+    <!-- Meta Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '371899483403936');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel -->
+
+
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- 
+      SEO Meta Tags: Static fallback for crawlers.
+      Domain (advisable.com) is replaced by Nginx sub_filter based on TLD.
+      React DynamicMetaTags component overrides these for subpages with specific content.
+    -->
+    <title data-rh="true">Advisable | Rule the AI-first world.</title>
+    <meta data-rh="true" name="description" content="Advisable provides innovative enterprise solutions, digital transformation services, and business consulting for modern companies.">
+    <meta data-rh="true" name="author" content="Advisable" />
+    <meta data-rh="true" name="keywords" content="enterprise solutions, digital transformation, business consulting, advisable" />
+    
+    <!-- Open Graph / Facebook - Domain replaced by Nginx sub_filter -->
+    <meta data-rh="true" property="og:type" content="website" />
+    <meta data-rh="true" property="og:url" content="https://www.advisable.com/" />
+    
+    
+    <meta data-rh="true" property="og:image" content="https://www.advisable.com/images/og-home.png">
+    <meta data-rh="true" property="og:image:width" content="1200" />
+    <meta data-rh="true" property="og:image:height" content="630" />
+    <meta data-rh="true" property="og:image:alt" content="Advisable - Rule the AI-first world" />
+    <meta data-rh="true" property="og:site_name" content="Advisable" />
+
+    <!-- Twitter Cards - Domain replaced by Nginx sub_filter -->
+    <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+    <meta data-rh="true" name="twitter:url" content="https://www.advisable.com/" />
+    
+    
+    <meta data-rh="true" name="twitter:image" content="https://www.advisable.com/images/og-home.png">
+    <meta data-rh="true" name="twitter:image:alt" content="Advisable - Rule the AI-first world" />
+    
+    <!-- Canonical URL - Domain replaced by Nginx sub_filter -->
+    <link data-rh="true" rel="canonical" href="https://www.advisable.com/" />
+    
+    <!-- Performance Optimizations: DNS prefetch and preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.google.com" crossorigin>
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+    
+    <!-- Preconnect to critical third-party origins to reduce network latency -->
+    <link rel="preconnect" href="https://difvvdmelbtjxxvpjuvw.supabase.co" crossorigin>
+    
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    
+    <!-- Bunny CDN preconnect for faster video loading -->
+    <link rel="preconnect" href="https://vz-21732ef9-3d0.b-cdn.net" crossorigin>
+    <link rel="preconnect" href="https://vz-f673a44e-c26.b-cdn.net" crossorigin>
+    <link rel="preconnect" href="https://vz-f673989f-138.b-cdn.net" crossorigin>
+
+    <!-- Updated Favicon -->
+    <link rel="icon" type="image/png" href="/files-uploads/favicon.png">
+    
+    <!-- Robots -->
+    <meta data-rh="true" name="robots" content="index, follow" />
+
+    <!-- Preload critical font for LCP element (H1 uses font-weight 700) -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Critical CSS for above-the-fold content -->
+    <style>
+      .hero-loading{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;background:#000;color:white}.metrics-container{height:140px;width:100%}.client-logo-container{aspect-ratio:1/1;height:160px;width:160px}.hero-loading-content{text-align:center;animation:fadeIn .5s ease-in}.hero-loading-title{font-size:3rem;font-weight:700;margin-bottom:1.5rem;opacity:.9}.hero-loading-subtitle{font-size:1.25rem;opacity:.8;max-width:48rem;margin:0 auto}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@media (min-width:768px){.hero-loading-title{font-size:4.5rem}.hero-loading-subtitle{font-size:1.5rem}}
+    </style>
+    <meta data-rh="true" property="og:title" content="Advisable | Rule the AI-first world.">
+  <meta data-rh="true" name="twitter:title" content="Advisable | Rule the AI-first world.">
+  <meta data-rh="true" property="og:description" content="Advisable provides innovative enterprise solutions, digital transformation services, and business consulting for modern companies.">
+  <meta data-rh="true" name="twitter:description" content="Advisable provides innovative enterprise solutions, digital transformation services, and business consulting for modern companies.">
+
+  <!-- AI agent discovery -->
+  <link rel="mcp" type="application/json" href="/.well-known/mcp.json">
+  <link rel="llms-txt" type="text/plain" href="/llms.txt">
+  <meta name="mcp-server" content="/.well-known/mcp.json">
+</head>
+
+
+  <body>
+    <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=371899483403936&ev=PageView&noscript=1" /></noscript>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <!-- Temporarily comment out external script to isolate issue -->
+    <!-- <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script> -->
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Schema.org structured data - Domain replaced by Nginx sub_filter -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://www.advisable.com#organization",
+      "name": "Advisable",
+      "url": "https://www.advisable.com",
+      "logo": "https://www.advisable.com/images/advisable-vertical.png",
+      "description": "Advisable provides innovative enterprise solutions, digital transformation services, and business consulting for modern companies.",
+      "foundingDate": "2020",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Irous 4 Kolonos",
+        "postalCode": "10442",
+        "addressLocality": "Athens",
+        "addressCountry": "GR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+30 2103000217",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Greek", "French", "Italian", "Spanish", "German"]
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Europe"
+      },
+      "knowsAbout": [
+        "Digital Transformation",
+        "AI Solutions",
+        "E-Commerce",
+        "Software Development",
+        "Business Consulting",
+        "SEO",
+        "Market Data Analytics"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/advisable",
+        "https://www.facebook.com/advisable.gr",
+        "https://www.instagram.com/advisable.gr",
+        "https://twitter.com/advisable"
+      ]
+    }
+    </script>
+  </body>
+</html>

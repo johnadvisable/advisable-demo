@@ -1,0 +1,1 @@
+UPDATE products SET slug = 'sizethemarket', updated_at = now() WHERE slug = 'marketdata';

@@ -1,0 +1,1 @@
+UPDATE public.clients SET logo = '/__l5e/assets-v1/966aa052-fea1-4a45-894e-e005d2036853/seajets-logo.webp' WHERE slug = 'seajets';

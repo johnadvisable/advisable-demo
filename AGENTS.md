@@ -1,0 +1,1 @@
+- Video Lessons users: profiles in learner_profiles, user types as roles in user_roles (video_learner), admin via has_role — so new user types are just new roles.

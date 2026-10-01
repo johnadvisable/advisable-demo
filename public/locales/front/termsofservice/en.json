@@ -1,0 +1,74 @@
+{
+  "title": "Terms of Service",
+  "lastUpdated": "Last updated: {{date}}",
+  "sections": {
+    "introduction": {
+      "title": "Introduction",
+      "content": "Welcome to Advisable. These terms and conditions govern your use of our website and services. By accessing or using our website, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the website."
+    },
+    "definitions": {
+      "title": "Definitions",
+      "service": "<strong>\"Service\"</strong> refers to the website operated by Advisable.",
+      "terms": "<strong>\"Terms\"</strong> refers to these Terms of Service.",
+      "you": "<strong>\"You\"</strong> refers to the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service."
+    },
+    "useOfService": {
+      "title": "Use of Our Service",
+      "agreement": "You agree to use our Service only for purposes that are permitted by these Terms and any applicable law, regulation, or generally accepted practices or guidelines in the relevant jurisdictions.",
+      "prohibitionsIntro": "You may not:",
+      "prohibitions": {
+        "violateLaw": "Use our Service in any way that violates any applicable national or international law or regulation.",
+        "restrictOthers": "Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the Service.",
+        "harmMinors": "Use the Service for the purpose of exploiting, harming, or attempting to exploit or harm minors in any way.",
+        "unauthorizedAccess": "Attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of the Service or any server, computer, or database connected to the Service.",
+        "denialOfService": "Attack the Service via a denial-of-service attack or a distributed denial-of-service attack."
+      }
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "content": "The Service and its original content, features, and functionality are and will remain the exclusive property of Advisable and its licensors. The Service is protected by copyright, trademark, and other laws. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Advisable."
+    },
+    "userContent": {
+      "title": "User Content",
+      "responsibility": "Our Service may allow you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the content that you post to the Service, including its legality, reliability, and appropriateness.",
+      "rights": "By posting content to the Service, you grant us the right to use, modify, publicly perform, publicly display, reproduce, and distribute such content on and through the Service. You retain any and all of your rights to any content you submit, post or display on or through the Service and you are responsible for protecting those rights."
+    },
+    "links": {
+      "title": "Links To Other Web Sites",
+      "content": "Our Service may contain links to third-party web sites or services that are not owned or controlled by Advisable.",
+      "disclaimer": "Advisable has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Advisable shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services."
+    },
+    "termination": {
+      "title": "Termination",
+      "content": "We may terminate or suspend your access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.",
+      "survival": "All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability."
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "In no event shall Advisable, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "content": "Your use of the Service is at your sole risk. The Service is provided on an \"AS IS\" and \"AS AVAILABLE\" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance."
+    },
+    "governingLaw": {
+      "title": "Governing Law",
+      "content": "These Terms shall be governed and construed in accordance with the laws of Greece, without regard to its conflict of law provisions.",
+      "additional": "Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect."
+    },
+    "changes": {
+      "title": "Changes to Terms",
+      "content": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion."
+    },
+    "ventureSubmissions": {
+      "title": "Venture Studio Submissions",
+      "p1": "Materials submitted to Advisable Studio for evaluation, via form or email, including pitch decks, business plans, financial models, and related documents (\"Submissions\"), will be reviewed solely for the purpose of assessing fit with our portfolio thesis. Advisable Studio will not intentionally share Submissions with third parties outside of its internal review team without the submitter's prior consent.",
+      "p2": "Advisable Studio does not claim ownership of any Submission. We will not directly replicate or reproduce a submitted business concept without entering into a separate written agreement with the submitting party.",
+      "p3": "Advisable Studio works with and evaluates multiple ventures simultaneously. We cannot guarantee that ideas similar to a Submission are not already known to us, under development, or received from other sources. Submission of materials does not create an obligation on Advisable Studio to keep information confidential beyond what is stated here, nor does it create any partnership, employment, or investment relationship."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about these Terms, please contact us at:\nEmail: welcome@advisable.com\nPhone: +30 210 3000 217"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Politique de confidentialité",
+  "lastUpdated": "Dernière mise à jour: {{date}}",
+  "sections": {
+    "introduction": {
+      "title": "Introduction",
+      "content": "Chez Advisable, nous respectons votre vie privée et nous engageons à protéger vos données personnelles. Cette politique de confidentialité vous informera sur la façon dont nous prenons soin de vos données personnelles lorsque vous visitez notre site web et vous informera sur vos droits en matière de confidentialité et sur la façon dont la loi vous protège."
+    },
+    "dataWeCollect": {
+      "title": "Données que nous collectons",
+      "content": "Nous pouvons collecter, utiliser, stocker et transférer différents types de données personnelles vous concernant que nous avons regroupés comme suit:",
+      "identityData": "Données d'identité: nom, nom d'utilisateur ou identifiant similaire",
+      "contactData": "Données de contact: adresse e-mail, numéros de téléphone",
+      "technicalData": "Données techniques: adresse de protocole internet (IP), type et version du navigateur, paramètre de fuseau horaire et de localisation, types et versions de plug-ins de navigateur, système d'exploitation et plateforme, et autres technologies sur les appareils que vous utilisez pour accéder à ce site web",
+      "usageData": "Données d'utilisation: informations sur la façon dont vous utilisez notre site web, nos produits et services"
+    },
+    "howWeCollect": {
+      "title": "Comment nous collectons vos données",
+      "content": "Nous utilisons différentes méthodes pour collecter des données de vous et sur vous, y compris par:",
+      "directInteractions": "Interactions directes: Vous pouvez nous donner vos données d'identité et de contact en remplissant des formulaires ou en correspondant avec nous par courrier, téléphone, e-mail ou autrement.",
+      "automatedTechnologies": "Technologies automatisées ou interactions: Alors que vous interagissez avec notre site web, nous pouvons automatiquement collecter des données techniques sur votre équipement, vos actions de navigation et vos modèles."
+    },
+    "analytics": {
+      "title": "Analytics et technologies de suivi",
+      "content": "Nous utilisons diverses technologies d'analyse et de suivi pour nous aider à analyser comment les utilisateurs utilisent notre site web. Ces technologies peuvent collecter des informations envoyées par votre appareil ou notre site web, y compris les pages web que vous visitez, les modules complémentaires, et d'autres informations qui nous aident à améliorer notre site web.",
+      "googleAnalytics": {
+        "title": "Google Analytics",
+        "content": "Nous utilisons Google Analytics pour nous aider à comprendre comment les visiteurs interagissent avec notre site web. Google Analytics utilise des cookies et des technologies similaires pour collecter et analyser des informations sur l'utilisation du site web et rendre compte des activités et tendances. Ce service peut également collecter des informations concernant l'utilisation d'autres sites web, applications et ressources en ligne."
+      },
+      "googleTagManager": {
+        "title": "Google Tag Manager",
+        "content": "Nous utilisons Google Tag Manager pour gérer diverses balises JavaScript et HTML utilisées pour le suivi et les analyses sur notre site web. Google Tag Manager lui-même ne collecte pas de données personnelles, mais il nous aide à déployer des balises qui peuvent collecter des données."
+      },
+      "microsoftClarity": {
+        "title": "Microsoft Clarity",
+        "content": "Nous utilisons Microsoft Clarity pour obtenir des informations sur la façon dont les utilisateurs interagissent avec notre site web. Ce service nous aide à comprendre le comportement des utilisateurs, comme où les utilisateurs cliquent, combien ils défilent, et le temps passé sur des pages spécifiques. Microsoft Clarity peut collecter des données personnelles telles que l'adresse IP, les informations sur l'appareil et l'activité de navigation."
+      },
+      "advertising": {
+        "title": "Publicité",
+        "content": "Nous utilisons Google Ads et Meta Ads (Facebook Advertising) pour vous livrer des publicités ciblées sur d'autres sites web et plateformes. Ces services utilisent des cookies et des technologies similaires pour suivre votre activité sur notre site web et ailleurs sur internet pour vous montrer des publicités pertinentes."
+      }
+    },
+    "howWeUse": {
+      "title": "Comment nous utilisons vos données personnelles",
+      "content": "Nous n'utiliserons vos données personnelles que lorsque la loi nous le permet. Le plus souvent, nous utiliserons vos données personnelles dans les circonstances suivantes:",
+      "contract": "Où nous devons exécuter le contrat que nous sommes sur le point de conclure ou avons conclu avec vous.",
+      "legitimateInterests": "Où il est nécessaire pour nos intérêts légitimes (ou ceux d'un tiers) et vos intérêts et droits fondamentaux ne l'emportent pas sur ces intérêts.",
+      "legalObligation": "Où nous devons nous conformer à une obligation légale."
+    },
+    "dataSecurity": {
+      "title": "Sécurité des données",
+      "content": "Nous avons mis en place des mesures de sécurité appropriées pour empêcher que vos données personnelles ne soient accidentellement perdues, utilisées ou accédées de manière non autorisée, altérées ou divulguées. En outre, nous limitons l'accès à vos données personnelles aux employés, agents, entrepreneurs et autres tiers qui en ont besoin pour des raisons professionnelles."
+    },
+    "dataRetention": {
+      "title": "Conservation des données",
+      "content": "Nous ne conserverons vos données personnelles que pendant la durée raisonnablement nécessaire pour atteindre les objectifs pour lesquels nous les avons collectées, y compris pour atteindre les objectifs de satisfaction de toute exigence légale, réglementaire, fiscale, comptable ou de reporting."
+    },
+    "legalRights": {
+      "title": "Vos droits légaux",
+      "content": "Dans certaines circonstances, vous avez des droits en vertu des lois sur la protection des données concernant vos données personnelles, y compris le droit de:",
+      "access": "Demander l'accès à vos données personnelles",
+      "correction": "Demander la correction de vos données personnelles",
+      "erasure": "Demander l'effacement de vos données personnelles",
+      "object": "Vous opposer au traitement de vos données personnelles",
+      "restriction": "Demander la restriction du traitement de vos données personnelles",
+      "transfer": "Demander le transfert de vos données personnelles",
+      "withdrawConsent": "Droit de retirer le consentement"
+    },
+    "changes": {
+      "title": "Modifications de cette politique de confidentialité",
+      "content": "Nous pouvons mettre à jour notre politique de confidentialité de temps en temps. Nous vous informerons de tout changement en publiant la nouvelle politique de confidentialité sur cette page."
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "content": "Si vous avez des questions sur cette politique de confidentialité ou nos pratiques de confidentialité, veuillez nous contacter à:",
+      "details": "Email: welcome@advisable.com\nTéléphone: +30 210 3000 217"
+    }
+  }
+}

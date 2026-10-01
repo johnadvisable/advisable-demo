@@ -1,0 +1,1 @@
+UPDATE service_translations SET language_id = 5 WHERE service_id = 'cd7802b7-aa4e-4d41-98c0-061f4e988bd1' AND language_id = 2 AND title = 'Performance Marketing' AND short_description = 'Απόδοση που μεταφράζεται σε πραγματικά αποτελέσματα';

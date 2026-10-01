@@ -1,0 +1,19 @@
+project_id = "difvvdmelbtjxxvpjuvw"
+
+[functions.generate-sitemap]
+verify_jwt = false
+
+[functions.batch-translate-insights]
+verify_jwt = false
+
+[functions.send-career-application]
+verify_jwt = false
+
+[functions.translate-insight-all-languages]
+verify_jwt = false
+
+[functions.upload-insight-image]
+verify_jwt = false
+
+[functions.mcp]
+verify_jwt = false

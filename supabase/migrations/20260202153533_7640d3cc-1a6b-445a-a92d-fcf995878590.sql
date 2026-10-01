@@ -1,0 +1,1 @@
+UPDATE team_members SET image_url = '/images/team/vasilis-kallaras.png' WHERE id = 'f301934e-5501-4c2e-819d-9c310e66953d';

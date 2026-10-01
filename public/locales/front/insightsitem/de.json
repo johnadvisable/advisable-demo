@@ -1,0 +1,9 @@
+{
+  "error": "Fehler",
+  "errorDescription": "Fehler beim Laden der Einsicht. Bitte versuchen Sie es später erneut.",
+  "insightNotFound": "Einsicht Nicht Gefunden",
+  "insightNotFoundDescription": "Die Einsicht, die Sie suchen, existiert nicht oder wurde verschoben.",
+  "backToInsights": "Zurück zu Einsichten",
+  "publishedOn": "Veröffentlicht am",
+  "by": "Von"
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Approfondimenti",
+  "subtitle": "Ultimi approfondimenti, analisi di esperti e tendenze del settore per aiutare la vostra azienda a rimanere avanti.",
+  "searchPlaceholder": "Cerca approfondimenti...",
+  "featuredImageAlt": "Immagine in evidenza",
+  "readMore": "Leggi di più",
+  "error": "Errore",
+  "errorDescription": "Impossibile caricare gli approfondimenti. Riprova più tardi.",
+  "noInsightsFound": "Nessun approfondimento trovato",
+  "noInsightsDescription": "Prova ad aggiustare il termine di ricerca."
+}

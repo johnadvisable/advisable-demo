@@ -1,0 +1,41 @@
+{
+  "loading": "Loading clients data...",
+  "viewCaseStudy": "View Case Study →",
+  "categories": {
+    "all": {
+      "title": "All Clients",
+      "description": "View all clients across all product categories and services."
+    },
+    "ventureStudio": {
+      "title": "Venture Studio Services",
+      "description": "Comprehensive startup acceleration, investment, and business development services."
+    },
+    "digitalAgency": {
+      "title": "Digital Agency Services",
+      "description": "Creative and technical services including marketing, consulting, development, data analysis, and design."
+    },
+    "ecommerce": {
+      "title": "Ecommercen",
+      "description": "Advanced e-commerce platform for sellers, twice awarded and tested in extreme business scenarios since 2015."
+    },
+    "marketData": {
+      "title": "MarketData",
+      "description": "Instant market analysis tool that provides competitor insights, price comparisons, and strategic data."
+    },
+    "sizeTheMarket": {
+      "title": "SizeTheMarket",
+      "description": "Instant market analysis tool that provides competitor insights, price comparisons, and strategic data."
+    },
+    "ePrescription": {
+      "title": "ePrescription Cloud ERP",
+      "description": "Complete solution for prescription processing, product management, and insurance fund invoicing."
+    },
+    "aiRecommendations": {
+      "title": "Recommendable",
+      "description": "Real personalized suggestion engine based on 1:1 customer data for engaging shopping experiences."
+    },
+    "default": {
+      "description": "Solutions tailored for business success"
+    }
+  }
+}

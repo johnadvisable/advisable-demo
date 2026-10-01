@@ -1,0 +1,27 @@
+{
+  "loading": "Caricamento...",
+  "errors": {
+    "notFound": "Cliente non trovato"
+  },
+  "navigation": {
+    "backToClients": "Torna a tutti i clienti"
+  },
+  "client": {
+    "usingCategory": "Utilizza {{category}}"
+  },
+  "caseStudy": {
+    "challenge": "La Sfida",
+    "solution": "La Nostra Soluzione",
+    "results": "I Risultati"
+  },
+  "project": {
+    "title": "Dettagli del Progetto",
+    "labels": {
+      "timeline": "TEMPORALI",
+      "teamSize": "DIMENSIONE SQUADRA",
+      "product": "PRODOTTO",
+      "website": "SITO WEB"
+    },
+    "visitWebsite": "Visita il sito web"
+  }
+}

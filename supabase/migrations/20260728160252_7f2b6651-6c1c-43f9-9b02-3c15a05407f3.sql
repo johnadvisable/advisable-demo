@@ -1,0 +1,2 @@
+UPDATE insights_translations SET title = 'Cómo nuestro Venture Studio evalúa el deck que nos envía' WHERE insights_id='fd043770-b334-4e34-b6c8-de34fc2da8d5' AND language_id=2;
+UPDATE insights_translations SET title = 'Comment notre Venture Studio évalue le deck que vous nous envoyez' WHERE insights_id='fd043770-b334-4e34-b6c8-de34fc2da8d5' AND language_id=3;

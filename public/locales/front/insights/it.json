@@ -1,0 +1,16 @@
+{
+  "title": "Approfondimenti",
+  "subtitle": "Approfondimenti di esperti, analisi di settore e leadership intellettuale per aiutare la vostra azienda a rimanere davanti alla curva.",
+  "searchPlaceholder": "Cerca approfondimenti...",
+  "error": "Errore",
+  "errorDescription": "Impossibile caricare gli approfondimenti. Riprova più tardi.",
+  "noInsightsFound": "Nessun approfondimento trovato",
+  "noInsightsDescription": "Prova ad aggiustare il termine di ricerca.",
+  "readMore": "Leggi di più",
+  "tabs": {
+    "all": "Tutti",
+    "insights": "Approfondimenti",
+    "news": "Notizie",
+    "media": "Media"
+  }
+}

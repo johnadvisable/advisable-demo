@@ -1,0 +1,74 @@
+{
+  "title": "Conditions d'utilisation",
+  "lastUpdated": "Dernière mise à jour: {{date}}",
+  "sections": {
+    "introduction": {
+      "title": "Introduction",
+      "content": "Bienvenue chez Advisable. Ces termes et conditions régissent votre utilisation de notre site web et de nos services. En accédant ou en utilisant notre site web, vous acceptez d'être lié par ces termes. Si vous n'êtes pas d'accord avec une partie des termes, vous ne pouvez pas accéder au site web."
+    },
+    "definitions": {
+      "title": "Définitions",
+      "service": "<strong>\"Service\"</strong> fait référence au site web exploité par Advisable.",
+      "terms": "<strong>\"Termes\"</strong> fait référence à ces Conditions d'utilisation.",
+      "you": "<strong>\"Vous\"</strong> fait référence à l'individu accédant ou utilisant le Service, ou à la société, ou à toute autre entité juridique au nom de laquelle cet individu accède ou utilise le Service."
+    },
+    "useOfService": {
+      "title": "Utilisation de notre service",
+      "agreement": "Vous acceptez d'utiliser notre Service uniquement pour des fins autorisées par ces Termes et toute loi, règlement ou pratiques généralement acceptées ou directives applicables dans les juridictions pertinentes.",
+      "prohibitionsIntro": "Vous ne pouvez pas:",
+      "prohibitions": {
+        "violateLaw": "Utiliser notre Service de quelque manière que ce soit qui viole toute loi ou règlement national ou international applicable.",
+        "restrictOthers": "S'engager dans toute conduite qui restreint ou inhibe l'utilisation ou le plaisir du Service par quiconque.",
+        "harmMinors": "Utiliser le Service dans le but d'exploiter, de nuire ou de tenter d'exploiter ou de nuire aux mineurs de quelque manière que ce soit.",
+        "unauthorizedAccess": "Tenter d'obtenir un accès non autorisé, d'interférer, d'endommager ou de perturber toute partie du Service ou tout serveur, ordinateur ou base de données connecté au Service.",
+        "denialOfService": "Attaquer le Service via une attaque par déni de service ou une attaque par déni de service distribué."
+      }
+    },
+    "intellectualProperty": {
+      "title": "Propriété intellectuelle",
+      "content": "Le Service et son contenu original, ses caractéristiques et sa fonctionnalité sont et resteront la propriété exclusive d'Advisable et de ses concédants de licence. Le Service est protégé par le droit d'auteur, les marques et d'autres lois. Nos marques et notre image de marque ne peuvent pas être utilisés en relation avec un produit ou un service sans le consentement écrit préalable d'Advisable."
+    },
+    "userContent": {
+      "title": "Contenu utilisateur",
+      "responsibility": "Notre Service peut vous permettre de publier, lier, stocker, partager et rendre disponible de toute autre manière certaines informations, textes, graphiques, vidéos ou autres matériaux. Vous êtes responsable du contenu que vous publiez sur le Service, y compris sa légalité, sa fiabilité et son appropriété.",
+      "rights": "En publiant du contenu sur le Service, vous nous accordez le droit d'utiliser, modifier, exécuter publiquement, afficher publiquement, reproduire et distribuer ce contenu sur et via le Service. Vous conservez tous vos droits sur tout contenu que vous soumettez, publiez ou affichez sur ou via le Service et vous êtes responsable de la protection de ces droits."
+    },
+    "links": {
+      "title": "Liens vers d'autres sites web",
+      "content": "Notre Service peut contenir des liens vers des sites web ou services tiers qui ne sont pas détenus ou contrôlés par Advisable.",
+      "disclaimer": "Advisable n'a aucun contrôle sur et n'assume aucune responsabilité pour le contenu, les politiques de confidentialité ou les pratiques de tout site web ou service tiers. Vous reconnaissez en outre et acceptez qu'Advisable ne sera pas responsable ou liable, directement ou indirectement, pour tout dommage ou perte causé ou prétendument causé par ou en relation avec l'utilisation ou la confiance dans tout tel contenu, biens ou services disponibles sur ou via tout tel site web ou service."
+    },
+    "termination": {
+      "title": "Résiliation",
+      "content": "Nous pouvons résilier ou suspendre votre accès à notre Service immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, y compris sans limitation si vous enfreignez les Termes.",
+      "survival": "Toutes les dispositions des Termes qui, par leur nature, devraient survivre à la résiliation survivront à la résiliation, y compris, sans limitation, les dispositions de propriété, les exclusions de garantie, l'indemnisation et les limitations de responsabilité."
+    },
+    "liability": {
+      "title": "Limitation de responsabilité",
+      "content": "En aucun cas Advisable, ni ses administrateurs, employés, partenaires, agents, fournisseurs ou sociétés affiliées, ne seront responsables de tout dommage indirect, incident, spécial, consécutif ou punitif, y compris sans limitation la perte de profits, de données, d'utilisation, de goodwill ou d'autres pertes intangibles, résultant de votre accès à ou utilisation ou incapacité d'accéder ou d'utiliser le Service."
+    },
+    "disclaimer": {
+      "title": "Avis de non-responsabilité",
+      "content": "Votre utilisation du Service est à vos risques et périls. Le Service est fourni sur une base \"TEL QUEL\" et \"TEL QUE DISPONIBLE\". Le Service est fourni sans garanties d'aucune sorte, qu'elles soient expresses ou implicites, y compris, mais sans s'y limiter, les garanties implicites de qualité marchande, d'adéquation à un usage particulier, de non-violation ou de cours de performance."
+    },
+    "governingLaw": {
+      "title": "Loi applicable",
+      "content": "Ces Termes seront régis et interprétés conformément aux lois de la Grèce, sans égard à ses dispositions relatives aux conflits de lois.",
+      "additional": "Notre incapacité à appliquer tout droit ou toute disposition de ces Termes ne sera pas considérée comme une renonciation à ces droits. Si une disposition de ces Termes est jugée invalide ou inapplicable par un tribunal, les autres dispositions de ces Termes resteront en vigueur."
+    },
+    "changes": {
+      "title": "Modifications des termes",
+      "content": "Nous nous réservons le droit, à notre seule discrétion, de modifier ou de remplacer ces Termes à tout moment. Si une révision est importante, nous essaierons de fournir au moins 30 jours d'avis avant que de nouveaux termes prennent effet. Ce qui constitue un changement important sera déterminé à notre seule discrétion."
+    },
+    "ventureSubmissions": {
+      "title": "Soumissions au Venture Studio",
+      "p1": "Les documents soumis à Advisable Studio pour évaluation, par formulaire ou par e-mail, y compris les pitch decks, plans d'affaires, modèles financiers et documents associés (\"Soumissions\"), sont examinés uniquement afin d'évaluer leur adéquation avec notre thèse de portfolio. Advisable Studio ne partagera pas intentionnellement les Soumissions avec des tiers en dehors de son équipe interne d'évaluation sans le consentement préalable de l'auteur de la soumission.",
+      "p2": "Advisable Studio ne revendique la propriété d'aucune Soumission. Nous ne reproduirons pas directement un concept d'entreprise soumis sans conclure un accord écrit distinct avec la partie soumissionnaire.",
+      "p3": "Advisable Studio travaille avec et évalue plusieurs projets simultanément. Nous ne pouvons garantir que des idées similaires à une Soumission ne nous sont pas déjà connues, ne sont pas en cours de développement ou n'ont pas été reçues d'autres sources. La soumission de documents ne crée aucune obligation pour Advisable Studio de garder les informations confidentielles au-delà de ce qui est indiqué ici, ni aucune relation de partenariat, d'emploi ou d'investissement."
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "content": "Si vous avez des questions concernant ces Termes, veuillez nous contacter:\nEmail: welcome@advisable.com\nTéléphone: +30 210 3000 217"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "error": "Σφάλμα",
+  "errorDescription": "Αποτυχία φόρτωσης του insight. Παρακαλώ δοκιμάστε ξανά αργότερα.",
+  "insightNotFound": "Το Insight Δεν Βρέθηκε",
+  "insightNotFoundDescription": "Το insight που αναζητάτε δεν υπάρχει ή έχει μετακινηθεί.",
+  "backToInsights": "Πίσω στα Insights",
+  "publishedOn": "Δημοσιεύθηκε στις",
+  "by": "Από"
+}

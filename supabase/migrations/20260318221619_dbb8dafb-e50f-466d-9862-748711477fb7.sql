@@ -1,0 +1,1 @@
+ALTER TABLE public.services ADD COLUMN IF NOT EXISTS is_seo_only boolean NOT NULL DEFAULT false;

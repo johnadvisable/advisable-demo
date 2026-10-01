@@ -1,0 +1,11 @@
+{
+  "title": "Insights",
+  "subtitle": "Latest insights, expert analysis, and industry trends to help your business stay ahead.",
+  "searchPlaceholder": "Search insights...",
+  "featuredImageAlt": "Featured Image",
+  "readMore": "Read more",
+  "error": "Error",
+  "errorDescription": "Failed to load insights. Please try again later.",
+  "noInsightsFound": "No insights found",
+  "noInsightsDescription": "Try adjusting your search term."
+}

@@ -1,0 +1,1 @@
+UPDATE public.service_categories SET description = 'Find weaknesses before attackers do, respond fast when incidents happen, and stay aligned with regulation.' WHERE slug = 'cyber-security';

@@ -1,0 +1,74 @@
+{
+  "title": "Nutzungsbedingungen",
+  "lastUpdated": "Zuletzt aktualisiert: {{date}}",
+  "sections": {
+    "introduction": {
+      "title": "Einführung",
+      "content": "Willkommen bei Advisable. Diese Allgemeinen Geschäftsbedingungen regeln Ihre Nutzung unserer Website und Dienstleistungen. Durch den Zugriff auf oder die Nutzung unserer Website erklären Sie sich damit einverstanden, an diese Bedingungen gebunden zu sein. Wenn Sie mit einem Teil der Bedingungen nicht einverstanden sind, dürfen Sie möglicherweise nicht auf die Website zugreifen."
+    },
+    "definitions": {
+      "title": "Definitionen",
+      "service": "<strong>\"Dienstleistung\"</strong> bezieht sich auf die von Advisable betriebene Website.",
+      "terms": "<strong>\"Bedingungen\"</strong> bezieht sich auf diese Nutzungsbedingungen.",
+      "you": "<strong>\"Sie\"</strong> bezieht sich auf die Person, die auf den Dienst zugreift oder ihn nutzt, oder das Unternehmen oder eine andere juristische Person, in deren Namen diese Person auf den Dienst zugreift oder ihn nutzt."
+    },
+    "useOfService": {
+      "title": "Nutzung unseres Dienstes",
+      "agreement": "Sie stimmen zu, unseren Dienst nur für Zwecke zu nutzen, die durch diese Bedingungen und geltendes Recht, Vorschriften oder allgemein akzeptierte Praktiken oder Richtlinien in den relevanten Gerichtsbarkeiten gestattet sind.",
+      "prohibitionsIntro": "Sie dürfen nicht:",
+      "prohibitions": {
+        "violateLaw": "Unseren Dienst in irgendeiner Weise nutzen, die geltendes nationales oder internationales Recht oder Vorschriften verletzt.",
+        "restrictOthers": "Sich an Verhaltensweisen beteiligen, die die Nutzung oder den Genuss des Dienstes durch andere einschränken oder behindern.",
+        "harmMinors": "Den Dienst für den Zweck der Ausbeutung, Schädigung oder des Versuchs der Ausbeutung oder Schädigung von Minderjährigen in irgendeiner Weise nutzen.",
+        "unauthorizedAccess": "Versuchen, unbefugten Zugriff zu erhalten, sich einzumischen, zu beschädigen oder zu stören, Teile des Dienstes oder einen Server, Computer oder eine Datenbank, die mit dem Dienst verbunden ist.",
+        "denialOfService": "Den Dienst über einen Denial-of-Service-Angriff oder einen verteilten Denial-of-Service-Angriff angreifen."
+      }
+    },
+    "intellectualProperty": {
+      "title": "Geistiges Eigentum",
+      "content": "Der Dienst und sein ursprünglicher Inhalt, Merkmale und Funktionalität sind und bleiben das ausschließliche Eigentum von Advisable und seinen Lizenzgebern. Der Dienst ist durch Urheberrechte, Marken und andere Gesetze geschützt. Unsere Marken und unser Erscheinungsbild dürfen nicht in Verbindung mit einem Produkt oder einer Dienstleistung ohne die vorherige schriftliche Zustimmung von Advisable verwendet werden."
+    },
+    "userContent": {
+      "title": "Benutzerinhalt",
+      "responsibility": "Unser Dienst kann es Ihnen ermöglichen, bestimmte Informationen, Texte, Grafiken, Videos oder andere Materialien zu posten, zu verlinken, zu speichern, zu teilen und anderweitig verfügbar zu machen. Sie sind für den Inhalt verantwortlich, den Sie auf den Dienst posten, einschließlich seiner Rechtmäßigkeit, Zuverlässigkeit und Angemessenheit.",
+      "rights": "Durch das Posten von Inhalten auf den Dienst räumen Sie uns das Recht ein, diesen Inhalt auf und durch den Dienst zu verwenden, zu modifizieren, öffentlich aufzuführen, öffentlich anzuzeigen, zu reproduzieren und zu verteilen. Sie behalten alle Ihre Rechte an jedem Inhalt, den Sie auf oder durch den Dienst einreichen, posten oder anzeigen, und Sie sind für den Schutz dieser Rechte verantwortlich."
+    },
+    "links": {
+      "title": "Links zu anderen Websites",
+      "content": "Unser Dienst kann Links zu Websites oder Dienstleistungen Dritter enthalten, die nicht im Besitz oder unter der Kontrolle von Advisable stehen.",
+      "disclaimer": "Advisable hat keine Kontrolle über und übernimmt keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder Praktiken von Websites oder Dienstleistungen Dritter. Sie erkennen ferner an und stimmen zu, dass Advisable nicht verantwortlich oder haftbar ist, weder direkt noch indirekt, für Schäden oder Verluste, die durch oder in Verbindung mit der Nutzung oder dem Vertrauen auf solche Inhalte, Waren oder Dienstleistungen verursacht werden oder angeblich verursacht werden, die auf oder durch solche Websites oder Dienstleistungen verfügbar sind."
+    },
+    "termination": {
+      "title": "Kündigung",
+      "content": "Wir können Ihren Zugriff auf unseren Dienst sofort beenden oder aussetzen, ohne vorherige Benachrichtigung oder Haftung, aus welchem Grund auch immer, einschließlich ohne Einschränkung, wenn Sie die Bedingungen verletzen.",
+      "survival": "Alle Bestimmungen der Bedingungen, die ihrer Natur nach die Kündigung überdauern sollten, überdauern die Kündigung, einschließlich, ohne Einschränkung, Eigentumsbestimmungen, Garantieausschlüsse, Entschädigung und Haftungsbeschränkungen."
+    },
+    "liability": {
+      "title": "Haftungsbeschränkung",
+      "content": "In keinem Fall sollen Advisable, noch seine Direktoren, Mitarbeiter, Partner, Vertreter, Lieferanten oder verbundenen Unternehmen haftbar sein für indirekte, zufällige, besondere, Folge- oder Strafschäden, einschließlich ohne Einschränkung Verlust von Gewinnen, Daten, Nutzung, Goodwill oder anderen immateriellen Verlusten, die aus Ihrem Zugriff auf oder der Nutzung oder der Unfähigkeit, auf den Dienst zuzugreifen oder ihn zu nutzen, resultieren."
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "content": "Ihre Nutzung des Dienstes erfolgt auf Ihr alleiniges Risiko. Der Dienst wird auf einer \"WIE VORHANDEN\" und \"WIE VERFÜGBAR\" Basis bereitgestellt. Der Dienst wird ohne Gewährleistungen jeglicher Art bereitgestellt, weder ausdrücklich noch stillschweigend, einschließlich, aber nicht beschränkt auf, stillschweigende Gewährleistungen der Marktgängigkeit, Eignung für einen bestimmten Zweck, Nichtverletzung oder Leistungsverlauf."
+    },
+    "governingLaw": {
+      "title": "Anwendbares Recht",
+      "content": "Diese Bedingungen unterliegen den Gesetzen Griechenlands und werden in Übereinstimmung mit diesen ausgelegt, ohne Berücksichtigung seiner Kollisionsnormen.",
+      "additional": "Unser Versäumnis, irgendein Recht oder irgendeine Bestimmung dieser Bedingungen durchzusetzen, wird nicht als Verzicht auf diese Rechte angesehen. Wenn irgendeine Bestimmung dieser Bedingungen von einem Gericht für ungültig oder nicht durchsetzbar gehalten wird, bleiben die übrigen Bestimmungen dieser Bedingungen in Kraft."
+    },
+    "changes": {
+      "title": "Änderungen der Bedingungen",
+      "content": "Wir behalten uns das Recht vor, nach unserem alleinigen Ermessen diese Bedingungen jederzeit zu modifizieren oder zu ersetzen. Wenn eine Überarbeitung wesentlich ist, werden wir versuchen, mindestens 30 Tage vor dem Inkrafttreten neuer Bedingungen zu benachrichtigen. Was eine wesentliche Änderung darstellt, wird nach unserem alleinigen Ermessen bestimmt."
+    },
+    "ventureSubmissions": {
+      "title": "Venture-Studio-Einreichungen",
+      "p1": "Materialien, die Advisable Studio zur Bewertung übermittelt werden, per Formular oder E-Mail, einschließlich Pitch Decks, Businessplänen, Finanzmodellen und zugehörigen Dokumenten (\"Einreichungen\"), werden ausschließlich zum Zweck der Prüfung der Passung mit unserer Portfolio-These geprüft. Advisable Studio wird Einreichungen ohne vorherige Zustimmung des Einreichenden nicht absichtlich an Dritte außerhalb des internen Prüfungsteams weitergeben.",
+      "p2": "Advisable Studio beansprucht kein Eigentum an einer Einreichung. Wir werden ein eingereichtes Geschäftskonzept nicht direkt nachbilden oder reproduzieren, ohne eine gesonderte schriftliche Vereinbarung mit der einreichenden Partei zu schließen.",
+      "p3": "Advisable Studio arbeitet mit mehreren Ventures gleichzeitig und bewertet diese. Wir können nicht garantieren, dass uns Ideen, die einer Einreichung ähneln, nicht bereits bekannt sind, sich in Entwicklung befinden oder aus anderen Quellen stammen. Die Einreichung von Materialien begründet für Advisable Studio keine Verpflichtung, Informationen über das hier Genannte hinaus vertraulich zu behandeln, und begründet auch keine Partnerschafts-, Beschäftigungs- oder Investitionsbeziehung."
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "content": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte:\nE-Mail: welcome@advisable.com\nTelefon: +30 210 3000 217"
+    }
+  }
+}

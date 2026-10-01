@@ -1,0 +1,16 @@
+{
+  "notFound": {
+    "title": "Partenaire non trouvé",
+    "message": "Le partenaire que vous recherchez n'existe pas ou a été supprimé.",
+    "backButton": "Retour aux partenaires"
+  },
+  "navigation": {
+    "backToPartners": "Retour aux partenaires et intégrations"
+  },
+  "sections": {
+    "aboutPartnership": "À propos de ce partenariat",
+    "useCase": "Cas d'utilisation",
+    "benefits": "Avantages"
+  },
+  "viewAllPartners": "Voir tous les partenaires"
+}

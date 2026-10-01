@@ -1,0 +1,27 @@
+{
+  "notFound": {
+    "title": "Prodotto Non Trovato",
+    "message": "Non siamo riusciti a trovare il prodotto che stai cercando.",
+    "slugLabel": "Slug del prodotto:"
+  },
+  "navigation": {
+    "viewAllProducts": "Visualizza Tutti i Prodotti",
+    "backToHome": "Torna alla Home",
+    "backToProducts": "Torna ai Prodotti"
+  },
+  "hero": {
+    "fallbackSubtitle": "Soluzione digitale all'avanguardia",
+    "fallbackCtaButton": "Inizia"
+  },
+  "features": {
+    "title": "Caratteristiche Principali"
+  },
+  "testimonials": {
+    "title": "Cosa Dicono i Nostri Clienti"
+  },
+  "cta": {
+    "fallbackTitle": "Pronto a Trasformare la Tua Azienda?",
+    "fallbackDescription": "Unisciti a migliaia di aziende soddisfatte che utilizzano le nostre soluzioni per scalare la loro presenza digitale.",
+    "fallbackButton": "Inizia Oggi"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Partenaires & Intégrations",
+  "description": "Explorez notre écosystème de partenaires et d'intégrations qui vous aident à tirer le meilleur parti de notre plateforme. Connectez-vous avec des solutions leaders du secteur pour étendre les fonctionnalités et rationaliser vos flux de travail.",
+  "becomePartner": "Devenir Partenaire",
+  "search": {
+    "placeholder": "Rechercher"
+  },
+  "filter": {
+    "allCategories": "Toutes les Catégories"
+  },
+  "noPartnersFound": {
+    "title": "Aucun partenaire trouvé",
+    "message": "Essayez d'ajuster vos critères de recherche ou de filtrage"
+  },
+  "showMore": "Voir plus"
+}

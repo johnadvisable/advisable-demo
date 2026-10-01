@@ -1,0 +1,50 @@
+# Advisable
+
+> Advisable is a digital agency, technology company and venture studio based in Athens and Patras, Greece. We deliver digital marketing, eCommerce, AI automations and AI integration, custom AI solutions, Kubernetes and DevOps consulting, product engineering, venture building, and corporate AI training through Advisable Academy.
+
+Key facts:
+- 250+ companies served, 200M+ EUR of digital revenue tracked, 45 Advisablers.
+- Google Premier Partner. Member of Elevate Greece.
+- Offices: Irous 4, Kolonos, 104 42 Athens, and Patras. Phone: +302103000217.
+- Products: Ecommercen, SizeTheMarket, Recommendable, e-Prescription Cloud ERP, Findloom.
+
+Languages and domains: advisable.com (English), advisable.gr (Greek), advisable.es (Spanish), advisable.fr (French), advisable.it (Italian), advisable.de (German). Each domain serves the same structure in its own language; use relative paths below on whichever domain you are reading.
+
+## Agent tools (WebMCP)
+
+Every page of this website registers WebMCP tools on `document.modelContext`. Agentic browsers can call them directly instead of scraping:
+- `get_page_context` - current page, path and language
+- `list_services` - services with slug, title and URL
+- `list_products` - Advisable products
+- `list_clients` - clients and case studies
+- `search_insights` - search articles and news by keyword
+- `get_article` - full text of an article
+- `list_seminars` - upcoming Academy seminars with dates, seats and prices
+- `navigate_to` - move to a page of this site
+- `prepare_contact_request` / `prepare_seminar_interest` - prefill a form; the visitor confirms and submits
+
+Machine-readable discovery: /.well-known/mcp.json
+
+## Services
+
+- /services: full service catalogue
+- Digital agency: digital marketing, SEO, performance advertising, eCommerce SEO, Amazon marketing, ChatGPT ads
+- Technology: AI automations and AI integration, custom AI solutions for enterprises, Fractional Chief AI Officer, Kubernetes consulting and DevOps, product engineering
+- Venture studio: startup evaluation, venture product development, investments
+
+## Academy
+
+- /academy: Advisable Academy hub with next sessions and corporate training
+- /academy/ai-training-for-business: AI training for companies (gap analysis, custom plan, workshops, follow-up)
+- /academy/claude: Claude Essentials for Business seminar (cowork, skills, MCP connectors)
+
+## Content
+
+- /insights: insights, articles and news, filterable in one hub
+- /our-clients: clients and case studies
+- /products: Advisable products
+
+## Contact
+
+- /contact: contact form. Forms are protected against automated submissions, so an agent can prefill but a human must submit.
+- Phone: +302103000217

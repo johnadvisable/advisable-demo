@@ -1,0 +1,11 @@
+{
+  "error": "Fehler",
+  "errorDescription": "Fehler beim Laden des Artikels. Bitte versuchen Sie es später erneut.",
+  "articleNotFound": "Artikel Nicht Gefunden",
+  "articleNotFoundDescription": "Der Artikel, den Sie suchen, existiert nicht oder wurde verschoben.",
+  "backToBlog": "Zurück zum Blog",
+  "publishedOn": "Veröffentlicht am",
+  "authorRole": "E-Commerce-Experte",
+  "relatedArticles": "Ähnliche Artikel",
+  "readMore": "Mehr lesen"
+}

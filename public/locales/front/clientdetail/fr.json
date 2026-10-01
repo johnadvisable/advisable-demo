@@ -1,0 +1,27 @@
+{
+  "loading": "Chargement...",
+  "errors": {
+    "notFound": "Client non trouvé"
+  },
+  "navigation": {
+    "backToClients": "Retour à tous les clients"
+  },
+  "client": {
+    "usingCategory": "Utilise {{category}}"
+  },
+  "caseStudy": {
+    "challenge": "Le Défi",
+    "solution": "Notre Solution",
+    "results": "Les Résultats"
+  },
+  "project": {
+    "title": "Détails du Projet",
+    "labels": {
+      "timeline": "CALENDRIER",
+      "teamSize": "TAILLE DE L'ÉQUIPE",
+      "product": "PRODUIT",
+      "website": "SITE WEB"
+    },
+    "visitWebsite": "Visiter le site web"
+  }
+}

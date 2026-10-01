@@ -1,0 +1,9 @@
+{
+  "error": "Error",
+  "errorDescription": "Failed to load the insight. Please try again later.",
+  "insightNotFound": "Insight Not Found",
+  "insightNotFoundDescription": "The insight you're looking for doesn't exist or has been moved.",
+  "backToInsights": "Back to Insights",
+  "publishedOn": "Published on",
+  "by": "By"
+}

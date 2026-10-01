@@ -1,0 +1,83 @@
+{
+  "title": "Politique de cookies",
+  "lastUpdated": "Dernière mise à jour: {{date}}",
+  "sections": {
+    "introduction": {
+      "title": "Introduction",
+      "content": "Cette Politique de cookies explique comment Advisable (\"nous\", \"notre\" et \"nos\") utilise les cookies et technologies similaires pour reconnaître et suivre votre visite lorsque vous utilisez notre site web. Elle explique ce que sont ces technologies et pourquoi nous les utilisons, ainsi que vos droits pour contrôler notre utilisation de celles-ci."
+    },
+    "whatAreCookies": {
+      "title": "Qu'est-ce que les cookies?",
+      "definition": "Les cookies sont de petits fichiers de données qui sont placés sur votre ordinateur ou votre appareil mobile lorsque vous visitez un site web. Les cookies sont largement utilisés par les propriétaires de sites web afin de faire fonctionner leurs sites web, ou de les faire fonctionner plus efficacement, ainsi que pour fournir des informations de rapport.",
+      "firstParty": "Les cookies définis par le propriétaire du site web (dans ce cas, Advisable) sont appelés \"cookies propriétaires\". Les cookies définis par des parties autres que le propriétaire du site web sont appelés \"cookies tiers\". Les cookies tiers permettent à des fonctionnalités ou fonctionnalités tierces d'être fournies sur ou via le site web (par exemple, publicité, contenu interactif et analyse). Les parties qui définissent ces cookies tiers peuvent reconnaître votre ordinateur à la fois lorsqu'il visite le site web en question et également lorsqu'il visite certains autres sites web."
+    },
+    "whyUseCookies": {
+      "title": "Pourquoi utilisons-nous les cookies?",
+      "content": "Nous utilisons des cookies propriétaires et tiers pour plusieurs raisons. Certains cookies sont requis pour des raisons techniques afin que notre site web fonctionne, et nous les désignons comme \"essentiels\" ou \"strictement nécessaires\" cookies. D'autres cookies nous permettent également de suivre et de cibler les intérêts de nos utilisateurs pour améliorer l'expérience sur notre site web. Des tiers servent des cookies via notre site web pour la publicité, l'analyse et d'autres fins."
+    },
+    "cookieTypes": {
+      "title": "Types de cookies que nous utilisons",
+      "introduction": "Les types spécifiques de cookies propriétaires et tiers servis via notre site web et les fins qu'ils remplissent sont décrits ci-dessous:",
+      "essential": {
+        "title": "Cookies essentiels",
+        "content": "Ces cookies sont strictement nécessaires pour vous fournir des services disponibles via notre site web et pour utiliser certaines de ses fonctionnalités, telles que l'accès à des zones sécurisées. Parce que ces cookies sont strictement nécessaires pour livrer le site web, vous ne pouvez pas les refuser sans impacter le fonctionnement de notre site web."
+      },
+      "performance": {
+        "title": "Cookies de performance et de fonctionnalité",
+        "content": "Ces cookies sont utilisés pour améliorer les performances et la fonctionnalité de notre site web mais ne sont pas essentiels à leur utilisation. Cependant, sans ces cookies, certaines fonctionnalités peuvent devenir indisponibles."
+      },
+      "analytics": {
+        "title": "Cookies d'analyse et de personnalisation",
+        "content": "Ces cookies collectent des informations qui sont utilisées soit sous forme agrégée pour nous aider à comprendre comment notre site web est utilisé ou à quel point nos campagnes marketing sont efficaces, soit pour nous aider à personnaliser notre site web pour vous.",
+        "servicesIntro": "Nous utilisons les services d'analyse et de personnalisation suivants:",
+        "services": {
+          "googleAnalytics": {
+            "title": "Google Analytics",
+            "content": "Google Analytics est un service d'analyse web offert par Google qui suit et rapporte le trafic du site web. Google utilise les données collectées pour suivre et surveiller l'utilisation de notre site web. Ces données sont partagées avec d'autres services Google. Google peut utiliser les données collectées pour contextualiser et personnaliser les annonces de son propre réseau publicitaire."
+          },
+          "googleTagManager": {
+            "title": "Google Tag Manager",
+            "content": "Google Tag Manager est un système de gestion de balises qui nous permet de mettre à jour rapidement et facilement les codes de suivi et les fragments de code connexes collectivement connus sous le nom de \"balises\" sur notre site web. Les balises disent à Google Analytics et à d'autres outils de mesure quoi suivre."
+          },
+          "microsoftClarity": {
+            "title": "Microsoft Clarity",
+            "content": "Microsoft Clarity est un outil d'analyse du comportement des utilisateurs qui nous aide à comprendre comment les utilisateurs interagissent avec notre site web. Il utilise des cookies pour collecter des données sur les sessions des utilisateurs, y compris les mouvements de souris, les clics et les défilements."
+          }
+        }
+      },
+      "advertising": {
+        "title": "Cookies publicitaires",
+        "content": "Ces cookies sont utilisés pour rendre les messages publicitaires plus pertinents pour vous. Ils remplissent des fonctions comme empêcher la réapparition continue de la même annonce, assurer que les annonces sont correctement affichées, et dans certains cas sélectionner des annonces basées sur vos intérêts.",
+        "servicesIntro": "Nous utilisons les services publicitaires suivants:",
+        "services": {
+          "googleAds": {
+            "title": "Google Ads",
+            "content": "Google Ads est une plateforme publicitaire en ligne développée par Google, où les annonceurs paient pour afficher de brèves publicités, des offres de services, des listes de produits et du contenu vidéo dans le réseau publicitaire Google pour les utilisateurs web."
+          },
+          "metaAds": {
+            "title": "Meta Ads",
+            "content": "Meta Ads (Facebook Advertising) est une plateforme publicitaire en ligne qui permet aux annonceurs d'afficher des annonces sur Facebook, Instagram et d'autres plateformes Meta."
+          }
+        }
+      }
+    },
+    "controlCookies": {
+      "title": "Comment pouvez-vous contrôler les cookies?",
+      "rights": "Vous avez le droit de décider si vous acceptez ou refusez les cookies. Vous pouvez exercer vos préférences en matière de cookies en cliquant sur les liens d'exclusion appropriés fournis dans le tableau des cookies.",
+      "browser": "Vous pouvez définir ou modifier les contrôles de votre navigateur web pour accepter ou refuser les cookies. Si vous choisissez de refuser les cookies, vous pouvez toujours utiliser notre site web bien que votre accès à certaines fonctionnalités et zones de notre site web puisse être restreint. Comme les moyens par lesquels vous pouvez refuser les cookies via les contrôles de votre navigateur web varient d'un navigateur à l'autre, vous devriez visiter le menu d'aide de votre navigateur pour plus d'informations.",
+      "advertising": "En outre, la plupart des réseaux publicitaires vous offrent un moyen de vous désabonner de la publicité ciblée. Si vous souhaitez obtenir plus d'informations, veuillez visiter {{link1}} ou {{link2}}."
+    },
+    "changes": {
+      "title": "Modifications de cette politique de cookies",
+      "content": "Nous pouvons mettre à jour cette Politique de cookies de temps en temps afin de refléter, par exemple, les changements apportés aux cookies que nous utilisons ou pour d'autres raisons opérationnelles, juridiques ou réglementaires. Veuillez donc revisiter cette Politique de cookies régulièrement pour rester informé sur notre utilisation des cookies et des technologies connexes.",
+      "date": "La date en haut de cette Politique de cookies indique quand elle a été mise à jour pour la dernière fois."
+    },
+    "declaration": {
+      "title": "Déclaration de cookies"
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "content": "Si vous avez des questions sur notre utilisation des cookies ou d'autres technologies, veuillez nous envoyer un e-mail à:\nEmail: welcome@advisable.gr\nTéléphone: +30 210 3000 217"
+    }
+  }
+}

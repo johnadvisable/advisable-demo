@@ -1,0 +1,20 @@
+{
+  "error": "Error",
+  "errorDescription": "Failed to load the news item. Please try again later.",
+  "notFound": "News Item Not Found",
+  "notFoundDescription": "The news item you're looking for doesn't exist or has been moved.",
+  "backToNews": "Back to News",
+  "publishedOn": "Published on",
+  "badges": {
+    "article": "Article",
+    "media": "Media"
+  },
+  "content": {
+    "comingSoon": "Full article content coming soon...",
+    "mediaComingSoon": "Media coming soon"
+  },
+  "instagram": {
+    "viewOriginal": "View original post on Instagram",
+    "viewPost": "View this post on Instagram"
+  }
+}

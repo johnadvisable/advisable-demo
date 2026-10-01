@@ -1,0 +1,16 @@
+{
+  "title": "Partners & Integrations",
+  "description": "Explore our ecosystem of partners and integrations that help you get the most out of our platform. Connect with industry-leading solutions to extend functionality and streamline your workflows.",
+  "becomePartner": "Become a Partner",
+  "search": {
+    "placeholder": "Search"
+  },
+  "filter": {
+    "allCategories": "All Categories"
+  },
+  "noPartnersFound": {
+    "title": "No partners found",
+    "message": "Try adjusting your search or filter criteria"
+  },
+  "showMore": "Show more"
+}

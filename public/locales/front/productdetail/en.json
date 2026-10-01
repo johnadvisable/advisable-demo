@@ -1,0 +1,27 @@
+{
+  "notFound": {
+    "title": "Product Not Found",
+    "message": "We couldn't find the product you're looking for.",
+    "slugLabel": "Product slug:"
+  },
+  "navigation": {
+    "viewAllProducts": "View All Products",
+    "backToHome": "Back to Home",
+    "backToProducts": "Back to Products"
+  },
+  "hero": {
+    "fallbackSubtitle": "State-of-the-art digital solution",
+    "fallbackCtaButton": "Get Started"
+  },
+  "features": {
+    "title": "Key Features"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say"
+  },
+  "cta": {
+    "fallbackTitle": "Ready to Transform Your Business?",
+    "fallbackDescription": "Join thousands of satisfied businesses using our solutions to scale their digital presence.",
+    "fallbackButton": "Get Started Today"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Insights",
+  "subtitle": "Expert αναλύσεις, industry trends και thought leadership για να βοηθήσουν την επιχείρησή σας να παραμείνει μπροστά.",
+  "searchPlaceholder": "Αναζήτηση insights...",
+  "error": "Σφάλμα",
+  "errorDescription": "Αποτυχία φόρτωσης insights. Παρακαλώ δοκιμάστε ξανά αργότερα.",
+  "noInsightsFound": "Δεν βρέθηκαν insights",
+  "noInsightsDescription": "Δοκιμάστε να προσαρμόσετε τον όρο αναζήτησης.",
+  "readMore": "Διαβάστε περισσότερα",
+  "tabs": {
+    "all": "Ολα",
+    "insights": "Insights",
+    "news": "Νέα",
+    "media": "Media"
+  }
+}

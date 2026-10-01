@@ -1,0 +1,41 @@
+{
+  "loading": "Lade Kundendaten...",
+  "viewCaseStudy": "Fallstudie ansehen →",
+  "categories": {
+    "all": {
+      "title": "Alle Kunden",
+      "description": "Alle Kunden in allen Produktkategorien und Dienstleistungen anzeigen."
+    },
+    "ventureStudio": {
+      "title": "Venture Studio Dienstleistungen",
+      "description": "Umfassende Startup-Beschleunigung, Investitionen und Geschäftsentwicklungsdienstleistungen."
+    },
+    "digitalAgency": {
+      "title": "Digitale Agentur Dienstleistungen",
+      "description": "Kreative und technische Dienstleistungen einschließlich Marketing, Beratung, Entwicklung, Datenanalyse und Design."
+    },
+    "ecommerce": {
+      "title": "Ecommercen",
+      "description": "Fortgeschrittene E-Commerce-Plattform für Verkäufer, zweimal ausgezeichnet und in extremen Geschäftsszenarien seit 2015 getestet."
+    },
+    "marketData": {
+      "title": "MarketData",
+      "description": "Sofortiges Marktanalysetool, das Einblicke in Wettbewerber, Preisvergleiche und strategische Daten bietet."
+    },
+    "sizeTheMarket": {
+      "title": "SizeTheMarket",
+      "description": "Sofortiges Marktanalysetool, das Einblicke in Wettbewerber, Preisvergleiche und strategische Daten bietet."
+    },
+    "ePrescription": {
+      "title": "ePrescription Cloud ERP",
+      "description": "Vollständige Lösung für Rezeptverarbeitung, Produktverwaltung und Rechnungstellung von Krankenkassen."
+    },
+    "aiRecommendations": {
+      "title": "KI-Empfehlungen",
+      "description": "Echte personalisierte Empfehlungsmaschine basierend auf 1:1 Kundendaten für ansprechende Einkaufserlebnisse."
+    },
+    "default": {
+      "description": "Lösungen für Geschäftserfolg maßgeschneidert"
+    }
+  }
+}

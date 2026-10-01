@@ -1,0 +1,27 @@
+{
+  "notFound": {
+    "title": "Το Προϊόν Δεν Βρέθηκε",
+    "message": "Δεν μπορέσαμε να βρούμε το προϊόν που αναζητάτε.",
+    "slugLabel": "Product slug:"
+  },
+  "navigation": {
+    "viewAllProducts": "Δείτε Όλα τα Προϊόντα",
+    "backToHome": "Επιστροφή στην Αρχική",
+    "backToProducts": "Επιστροφή στα Προϊόντα"
+  },
+  "hero": {
+    "fallbackSubtitle": "Κορυφαία ψηφιακή λύση",
+    "fallbackCtaButton": "Ξεκινήστε"
+  },
+  "features": {
+    "title": "Key Features"
+  },
+  "testimonials": {
+    "title": "Τι Λένε οι Πελάτες μας"
+  },
+  "cta": {
+    "fallbackTitle": "Έτοιμοι να Μεταμορφώσετε την Επιχείρησή σας;",
+    "fallbackDescription": "Γίνετε μέρος χιλιάδων ικανοποιημένων επιχειρήσεων που χρησιμοποιούν τις λύσεις μας για να επεκτείνουν την ψηφιακή τους παρουσία.",
+    "fallbackButton": "Ξεκινήστε Σήμερα"
+  }
+}

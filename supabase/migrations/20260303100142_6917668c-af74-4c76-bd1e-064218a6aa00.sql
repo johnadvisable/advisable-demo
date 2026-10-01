@@ -1,0 +1,1 @@
+UPDATE products SET image_url = '/images/products/findloom.png' WHERE id = '7cf28a46-72e0-4130-8864-b9b659b0d35c';

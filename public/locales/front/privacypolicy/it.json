@@ -1,0 +1,79 @@
+{
+  "title": "Informativa sulla privacy",
+  "lastUpdated": "Ultimo aggiornamento: {{date}}",
+  "sections": {
+    "introduction": {
+      "title": "Introduzione",
+      "content": "In Advisable, rispettiamo la tua privacy e ci impegniamo a proteggere i tuoi dati personali. Questa informativa sulla privacy ti informerà su come ci prendiamo cura dei tuoi dati personali quando visiti il nostro sito web e ti dirà sui tuoi diritti alla privacy e su come la legge ti protegge."
+    },
+    "dataWeCollect": {
+      "title": "Dati che raccogliamo",
+      "content": "Possiamo raccogliere, utilizzare, archiviare e trasferire diversi tipi di dati personali su di te che abbiamo raggruppato come segue:",
+      "identityData": "Dati di identità: nome, nome utente o identificatore simile",
+      "contactData": "Dati di contatto: indirizzo e-mail, numeri di telefono",
+      "technicalData": "Dati tecnici: indirizzo di protocollo internet (IP), tipo e versione del browser, impostazione del fuso orario e posizione, tipi e versioni dei plug-in del browser, sistema operativo e piattaforma, e altre tecnologie sui dispositivi che utilizzi per accedere a questo sito web",
+      "usageData": "Dati di utilizzo: informazioni su come utilizzi il nostro sito web, prodotti e servizi"
+    },
+    "howWeCollect": {
+      "title": "Come raccogliamo i tuoi dati",
+      "content": "Utilizziamo diversi metodi per raccogliere dati da te e su di te, compreso attraverso:",
+      "directInteractions": "Interazioni dirette: Puoi darci i tuoi dati di identità e contatto compilando moduli o corrispondendo con noi per posta, telefono, e-mail o altrimenti.",
+      "automatedTechnologies": "Tecnologie automatizzate o interazioni: Mentre interagisci con il nostro sito web, possiamo automaticamente raccogliere dati tecnici sulla tua attrezzatura, azioni di navigazione e modelli."
+    },
+    "analytics": {
+      "title": "Analytics e tecnologie di tracciamento",
+      "content": "Utilizziamo varie tecnologie di analytics e tracciamento per aiutare ad analizzare come gli utenti utilizzano il nostro sito web. Queste tecnologie possono raccogliere informazioni inviate dal tuo dispositivo o dal nostro sito web, inclusi le pagine web che visiti, componenti aggiuntivi, e altre informazioni che ci aiutano a migliorare il nostro sito web.",
+      "googleAnalytics": {
+        "title": "Google Analytics",
+        "content": "Utilizziamo Google Analytics per aiutarci a capire come i visitatori interagiscono con il nostro sito web. Google Analytics utilizza cookie e tecnologie simili per raccogliere e analizzare informazioni sull'utilizzo del sito web e riportare su attività e tendenze. Questo servizio può anche raccogliere informazioni riguardanti l'utilizzo di altri siti web, app e risorse online."
+      },
+      "googleTagManager": {
+        "title": "Google Tag Manager",
+        "content": "Utilizziamo Google Tag Manager per gestire vari tag JavaScript e HTML utilizzati per il tracciamento e gli analytics sul nostro sito web. Google Tag Manager stesso non raccoglie dati personali, ma ci aiuta a implementare tag che possono raccogliere dati."
+      },
+      "microsoftClarity": {
+        "title": "Microsoft Clarity",
+        "content": "Utilizziamo Microsoft Clarity per ottenere informazioni su come gli utenti interagiscono con il nostro sito web. Questo servizio ci aiuta a capire il comportamento degli utenti, come dove gli utenti cliccano, quanto scorrono, e tempo speso su pagine specifiche. Microsoft Clarity può raccogliere dati personali come indirizzo IP, informazioni sul dispositivo e attività di navigazione."
+      },
+      "advertising": {
+        "title": "Pubblicità",
+        "content": "Utilizziamo Google Ads e Meta Ads (Facebook Advertising) per fornire pubblicità mirate a te su altri siti web e piattaforme. Questi servizi utilizzano cookie e tecnologie simili per tracciare la tua attività sul nostro sito web e altrove su internet per mostrarti pubblicità rilevanti."
+      }
+    },
+    "howWeUse": {
+      "title": "Come utilizziamo i tuoi dati personali",
+      "content": "Utilizzeremo i tuoi dati personali solo quando la legge ce lo permette. Più comunemente, utilizzeremo i tuoi dati personali nelle seguenti circostanze:",
+      "contract": "Dove dobbiamo eseguire il contratto che stiamo per stipulare o abbiamo stipulato con te.",
+      "legitimateInterests": "Dove è necessario per i nostri interessi legittimi (o quelli di un terzo) e i tuoi interessi e diritti fondamentali non prevalgono su questi interessi.",
+      "legalObligation": "Dove dobbiamo conformarci a un obbligo legale."
+    },
+    "dataSecurity": {
+      "title": "Sicurezza dei dati",
+      "content": "Abbiamo implementato appropriate misure di sicurezza per prevenire che i tuoi dati personali vengano accidentalmente persi, utilizzati o accessibili in modo non autorizzato, alterati o divulgati. Inoltre, limitiamo l'accesso ai tuoi dati personali a quei dipendenti, agenti, appaltatori e altri terzi che hanno bisogno di conoscerli per motivi aziendali."
+    },
+    "dataRetention": {
+      "title": "Conservazione dei dati",
+      "content": "Conserveremo i tuoi dati personali solo per il tempo ragionevolmente necessario per adempiere agli scopi per cui li abbiamo raccolti, compreso per gli scopi di soddisfazione di qualsiasi requisito legale, regolamentare, fiscale, contabile o di reporting."
+    },
+    "legalRights": {
+      "title": "I tuoi diritti legali",
+      "content": "In determinate circostanze, hai diritti ai sensi delle leggi sulla protezione dei dati in relazione ai tuoi dati personali, compreso il diritto di:",
+      "access": "Richiedere l'accesso ai tuoi dati personali",
+      "correction": "Richiedere la correzione dei tuoi dati personali",
+      "erasure": "Richiedere la cancellazione dei tuoi dati personali",
+      "object": "Opporsi al trattamento dei tuoi dati personali",
+      "restriction": "Richiedere la restrizione del trattamento dei tuoi dati personali",
+      "transfer": "Richiedere il trasferimento dei tuoi dati personali",
+      "withdrawConsent": "Diritto di revocare il consenso"
+    },
+    "changes": {
+      "title": "Modifiche a questa informativa sulla privacy",
+      "content": "Possiamo aggiornare la nostra informativa sulla privacy di tanto in tanto. Ti informeremo di qualsiasi cambiamento pubblicando la nuova informativa sulla privacy su questa pagina."
+    },
+    "contact": {
+      "title": "Contattaci",
+      "content": "Se hai domande su questa informativa sulla privacy o sulle nostre pratiche di privacy, contattaci a:",
+      "details": "Email: welcome@advisable.com\nTelefono: +30 210 3000 217"
+    }
+  }
+}

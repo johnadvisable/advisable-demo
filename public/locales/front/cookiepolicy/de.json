@@ -1,0 +1,83 @@
+{
+  "title": "Cookie-Richtlinie",
+  "lastUpdated": "Zuletzt aktualisiert: {{date}}",
+  "sections": {
+    "introduction": {
+      "title": "Einführung",
+      "content": "Diese Cookie-Richtlinie erklärt, wie Advisable (\"wir\", \"uns\" und \"unser\") Cookies und ähnliche Technologien verwendet, um Ihren Besuch zu erkennen und zu verfolgen, wenn Sie unsere Website nutzen. Sie erklärt, was diese Technologien sind und warum wir sie verwenden, sowie Ihre Rechte, unsere Nutzung dieser Technologien zu kontrollieren."
+    },
+    "whatAreCookies": {
+      "title": "Was sind Cookies?",
+      "definition": "Cookies sind kleine Datendateien, die auf Ihrem Computer oder mobilen Gerät platziert werden, wenn Sie eine Website besuchen. Cookies werden von Website-Besitzern weit verbreitet verwendet, um ihre Websites zum Laufen zu bringen oder effizienter zu machen, sowie um Berichtsinformationen bereitzustellen.",
+      "firstParty": "Cookies, die vom Website-Besitzer gesetzt werden (in diesem Fall Advisable), werden als \"First-Party-Cookies\" bezeichnet. Cookies, die von anderen Parteien als dem Website-Besitzer gesetzt werden, werden als \"Third-Party-Cookies\" bezeichnet. Third-Party-Cookies ermöglichen es Dritten, Features oder Funktionalitäten auf oder durch die Website bereitzustellen (z. B. Werbung, interaktive Inhalte und Analytics). Die Parteien, die diese Third-Party-Cookies setzen, können Ihren Computer sowohl erkennen, wenn er die betreffende Website besucht, als auch wenn er bestimmte andere Websites besucht."
+    },
+    "whyUseCookies": {
+      "title": "Warum verwenden wir Cookies?",
+      "content": "Wir verwenden First-Party- und Third-Party-Cookies aus mehreren Gründen. Einige Cookies sind aus technischen Gründen erforderlich, damit unsere Website funktioniert, und wir bezeichnen diese als \"wesentliche\" oder \"streng notwendige\" Cookies. Andere Cookies ermöglichen es uns auch, die Interessen unserer Benutzer zu verfolgen und zu targeten, um die Erfahrung auf unserer Website zu verbessern. Dritte bedienen Cookies über unsere Website für Werbung, Analytics und andere Zwecke."
+    },
+    "cookieTypes": {
+      "title": "Arten von Cookies, die wir verwenden",
+      "introduction": "Die spezifischen Arten von First- und Third-Party-Cookies, die über unsere Website bereitgestellt werden, und die Zwecke, die sie erfüllen, werden nachfolgend beschrieben:",
+      "essential": {
+        "title": "Wesentliche Cookies",
+        "content": "Diese Cookies sind streng notwendig, um Ihnen Dienstleistungen zur Verfügung zu stellen, die über unsere Website verfügbar sind, und um einige ihrer Features zu nutzen, wie z. B. den Zugriff auf sichere Bereiche. Da diese Cookies streng notwendig sind, um die Website bereitzustellen, können Sie sie nicht ablehnen, ohne die Funktionsweise unserer Website zu beeinträchtigen."
+      },
+      "performance": {
+        "title": "Leistungs- und Funktionalitäts-Cookies",
+        "content": "Diese Cookies werden verwendet, um die Leistung und Funktionalität unserer Website zu verbessern, sind aber für ihre Nutzung nicht wesentlich. Ohne diese Cookies können jedoch bestimmte Funktionalitäten nicht verfügbar sein."
+      },
+      "analytics": {
+        "title": "Analytics- und Anpassungs-Cookies",
+        "content": "Diese Cookies sammeln Informationen, die entweder in aggregierter Form verwendet werden, um uns zu helfen, zu verstehen, wie unsere Website genutzt wird, oder wie effektiv unsere Marketingkampagnen sind, oder um uns zu helfen, unsere Website für Sie anzupassen.",
+        "servicesIntro": "Wir verwenden die folgenden Analytics- und Anpassungs-Services:",
+        "services": {
+          "googleAnalytics": {
+            "title": "Google Analytics",
+            "content": "Google Analytics ist ein Webanalytics-Dienst, der von Google angeboten wird und Website-Traffic verfolgt und berichtet. Google verwendet die gesammelten Daten, um die Nutzung unserer Website zu verfolgen und zu überwachen. Diese Daten werden mit anderen Google-Diensten geteilt. Google kann die gesammelten Daten verwenden, um die Anzeigen seines eigenen Werbenetzwerks zu kontextualisieren und zu personalisieren."
+          },
+          "googleTagManager": {
+            "title": "Google Tag Manager",
+            "content": "Google Tag Manager ist ein Tag-Management-System, das es uns ermöglicht, Tracking-Codes und zugehörige Codefragmente, die gemeinsam als \"Tags\" bekannt sind, schnell und einfach auf unserer Website zu aktualisieren. Tags sagen Google Analytics und anderen Messwerkzeugen, was zu verfolgen ist."
+          },
+          "microsoftClarity": {
+            "title": "Microsoft Clarity",
+            "content": "Microsoft Clarity ist ein Tool zur Analyse des Benutzerverhaltens, das uns hilft, zu verstehen, wie Benutzer mit unserer Website interagieren. Es verwendet Cookies, um Daten über Benutzersitzungen zu sammeln, einschließlich Mausbewegungen, Klicks und Scrolls."
+          }
+        }
+      },
+      "advertising": {
+        "title": "Werbe-Cookies",
+        "content": "Diese Cookies werden verwendet, um Werbebotschaften für Sie relevanter zu machen. Sie führen Funktionen aus, wie z. B. das Verhindern, dass dieselbe Anzeige kontinuierlich erneut erscheint, die Sicherstellung, dass Anzeigen ordnungsgemäß angezeigt werden, und in einigen Fällen die Auswahl von Anzeigen, die auf Ihren Interessen basieren.",
+        "servicesIntro": "Wir verwenden die folgenden Werbe-Services:",
+        "services": {
+          "googleAds": {
+            "title": "Google Ads",
+            "content": "Google Ads ist eine Online-Werbeplattform, die von Google entwickelt wurde, bei der Werbetreibende bezahlen, um kurze Anzeigen, Dienstleistungsangebote, Produktlisten und Videoinhalte im Google-Anzeigennetzwerk für Webnutzer anzuzeigen."
+          },
+          "metaAds": {
+            "title": "Meta Ads",
+            "content": "Meta Ads (Facebook Advertising) ist eine Online-Werbeplattform, die es Werbetreibenden ermöglicht, Anzeigen auf Facebook, Instagram und anderen Meta-Plattformen zu schalten."
+          }
+        }
+      }
+    },
+    "controlCookies": {
+      "title": "Wie können Sie Cookies kontrollieren?",
+      "rights": "Sie haben das Recht zu entscheiden, ob Sie Cookies akzeptieren oder ablehnen möchten. Sie können Ihre Cookie-Präferenzen ausüben, indem Sie auf die entsprechenden Opt-out-Links klicken, die in der Cookie-Tabelle bereitgestellt werden.",
+      "browser": "Sie können Ihre Webbrowser-Steuerungen einstellen oder ändern, um Cookies zu akzeptieren oder abzulehnen. Wenn Sie sich entscheiden, Cookies abzulehnen, können Sie unsere Website möglicherweise noch nutzen, obwohl Ihr Zugriff auf einige Funktionalitäten und Bereiche unserer Website eingeschränkt sein kann. Da die Mittel, mit denen Sie Cookies über Ihre Webbrowser-Steuerungen ablehnen können, von Browser zu Browser variieren, sollten Sie das Hilfemenü Ihres Browsers für weitere Informationen besuchen.",
+      "advertising": "Darüber hinaus bieten die meisten Werbenetzwerke Ihnen eine Möglichkeit, sich von zielgerichteter Werbung abzumelden. Wenn Sie mehr Informationen erhalten möchten, besuchen Sie bitte {{link1}} oder {{link2}}."
+    },
+    "changes": {
+      "title": "Änderungen an dieser Cookie-Richtlinie",
+      "content": "Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren, um beispielsweise Änderungen an den von uns verwendeten Cookies oder andere betriebliche, rechtliche oder regulatorische Gründe widerzuspiegeln. Bitte besuchen Sie daher diese Cookie-Richtlinie regelmäßig, um über unsere Nutzung von Cookies und verwandten Technologien informiert zu bleiben.",
+      "date": "Das Datum oben in dieser Cookie-Richtlinie zeigt an, wann sie zuletzt aktualisiert wurde."
+    },
+    "declaration": {
+      "title": "Cookie-Deklaration"
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "content": "Wenn Sie Fragen zu unserer Nutzung von Cookies oder anderen Technologien haben, senden Sie uns bitte eine E-Mail an:\nE-Mail: welcome@advisable.gr\nTelefon: +30 210 3000 217"
+    }
+  }
+}

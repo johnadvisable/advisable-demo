@@ -1,0 +1,21 @@
+{
+  "title": "Nouvelles & Mises à Jour",
+  "subtitle": "Restez à jour avec nos derniers articles, vidéos et annonces d'entreprise.",
+  "tabs": {
+    "allNews": "Toutes les Nouvelles",
+    "articles": "Articles",
+    "media": "Médias"
+  },
+  "emptyState": {
+    "title": "Aucun élément trouvé",
+    "description": "Essayez de sélectionner une catégorie différente ou revenez plus tard pour les mises à jour."
+  },
+  "badges": {
+    "article": "Article",
+    "media": "Médias"
+  },
+  "actions": {
+    "readMore": "En savoir plus",
+    "viewMedia": "Voir les médias"
+  }
+}

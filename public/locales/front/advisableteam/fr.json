@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "title": "Notre Équipe",
+    "description": "Rencontrez les innovateurs passionnés derrière Advisable"
+  },
+  "leadership": {
+    "title": "Direction",
+    "description": "Notre équipe de direction expérimentée guidant Advisable vers de nouveaux sommets"
+  },
+  "experts": {
+    "title": "Nos Experts",
+    "description": "Professionnels talentueux dédiés à la livraison de résultats exceptionnels"
+  },
+  "member": {
+    "specializations": "Spécialisations"
+  },
+  "culture": {
+    "title": "Notre Culture",
+    "description1": "Chez Advisable, nous favorisons une culture d'innovation, de collaboration et d'apprentissage continu. Nous croyons que les grandes idées peuvent venir de n'importe où, et nous encourageons nos membres d'équipe à partager leurs perspectives et leur expertise.",
+    "description2": "Nos membres d'équipe divers et talentueux apportent des expériences et des compétences uniques à la table, créant un environnement dynamique où la créativité s'épanouit et des solutions exceptionnelles naissent."
+  },
+  "achievements": {
+    "title": "Réalisations d'équipe",
+    "items": [
+      "Livraison de plus de 500 projets réussis dans diverses industries",
+      "Reconnu pour l'excellence en innovation avec plusieurs prix de l'industrie",
+      "Maintien d'un taux de satisfaction client de 95% sur tous les projets",
+      "Expansion des opérations pour servir les clients dans plus de 20 pays"
+    ]
+  },
+  "joinTeam": {
+    "title": "Rejoignez notre équipe",
+    "description": "Nous cherchons toujours des personnes talentueuses pour rejoindre notre équipe en croissance. Si vous êtes passionné par la technologie et l'innovation, nous voulons entendre parler de vous!",
+    "button": "Voir les postes ouverts"
+  }
+}

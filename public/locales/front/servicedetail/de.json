@@ -1,0 +1,12 @@
+{
+  "notFound": {
+    "title": "Service Nicht Gefunden",
+    "message": "Der gesuchte Service existiert in dieser Kategorie nicht.",
+    "goHome": "Zur Startseite"
+  },
+  "cta": {
+    "title": "Bereit loszulegen?",
+    "description": "Lassen Sie uns besprechen, wie wir Ihnen bei {{serviceTitle}} helfen können.",
+    "button": "Kontakt Aufnehmen"
+  }
+}

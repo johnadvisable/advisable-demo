@@ -1,0 +1,29 @@
+{
+  "notFound": {
+    "title": "Service Not Found",
+    "message": "The service you are looking for does not exist in this category.",
+    "goHome": "Go Home"
+  },
+  "benefits": {
+    "title": "Why Choose Us",
+    "expert": "Expert team with proven track record",
+    "custom": "Custom solutions tailored to your needs",
+    "support": "Ongoing support and optimization",
+    "results": "Measurable results and ROI"
+  },
+  "content": {
+    "title": "What We Offer"
+  },
+  "cta": {
+    "title": "Ready to get started?",
+    "description": "Let's discuss how we can help you with {{serviceTitle}}.",
+    "button": "Get in Touch",
+    "getStarted": "Get Started Today",
+    "callUs": "Schedule a Call",
+    "mainTitle": "Ready to Transform Your Business?",
+    "mainDescription": "Let's discuss how {{service}} can help you achieve your goals.",
+    "startProject": "Start Your Project",
+    "noObligation": "Free consultation • No obligation • Response within 24h",
+    "floatingButton": "Get a Quote"
+  }
+}

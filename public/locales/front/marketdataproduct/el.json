@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "backToProducts": "Όλα τα Products",
+    "title": "SizeTheMarket",
+    "subtitle": "Real-time Market Analysis στη Διάθεσή σας",
+    "description": "Αποκτήστε instant insights για την αγορά σας. Δείτε πόσα προϊόντα έχετε κοινά με τους competitors, ποιος έχει τις πιο χαμηλές τιμές και ποιος είναι ο πιο ακριβός.",
+    "visitWebsite": "Επισκεφθείτε το Website"
+  },
+  "features": {
+    "title": "Key Features",
+    "competitiveAnalysis": {
+      "title": "Competitive Analysis",
+      "description": "Αναγνωρίστε αμέσως πώς συγκρίνονται οι προσφορές σας με αυτές των competitors σας σε πολλαπλές διαστάσεις."
+    },
+    "priceTracking": {
+      "title": "Price Tracking",
+      "description": "Παρακολουθήστε τις διακυμάνσεις τιμών με την πάροδο του χρόνου με alerts για σημαντικές αλλαγές στις τιμές των competitors."
+    },
+    "marketIntelligence": {
+      "title": "Market Intelligence",
+      "description": "Comprehensive reports για market trends, product popularity και emerging opportunities."
+    }
+  },
+  "useCases": {
+    "title": "Use Cases",
+    "retailOptimization": {
+      "title": "Retail Pricing Optimization",
+      "description": "Ένα μεγάλο κατάστημα ηλεκτρονικών κατάφερε να βελτιστοποιήσει τη pricing strategy του παρακολουθώντας τις αλλαγές τιμών competitors σε real-time, οδηγώντας σε 12% αύξηση στα profit margins.",
+      "result": "Αποτέλεσμα: 12% αύξηση στα profit margins"
+    },
+    "productAnalysis": {
+      "title": "Product Range Analysis",
+      "description": "Ένα online marketplace εντόπισε gaps στις product offerings του συγκρίνοντας τον catalog του με competitors, με αποτέλεσμα 200+ νέες product προσθήκες και 15% αύξηση εσόδων.",
+      "result": "Αποτέλεσμα: 15% αύξηση εσόδων"
+    }
+  },
+  "cta": {
+    "title": "Έτοιμοι να Ξεπεράσετε τον Ανταγωνισμό;",
+    "description": "Ξεκινήστε να παίρνετε data-driven αποφάσεις σήμερα με τα powerful market intelligence tools του MarkeData.",
+    "button": "Ξεκινήστε Σήμερα"
+  }
+}

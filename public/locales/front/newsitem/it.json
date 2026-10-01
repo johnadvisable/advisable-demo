@@ -1,0 +1,20 @@
+{
+  "error": "Errore",
+  "errorDescription": "Impossibile caricare l'articolo di notizie. Riprova più tardi.",
+  "notFound": "Articolo di Notizie Non Trovato",
+  "notFoundDescription": "L'articolo di notizie che stai cercando non esiste o è stato spostato.",
+  "backToNews": "Torna alle Notizie",
+  "publishedOn": "Pubblicato il",
+  "badges": {
+    "article": "Articolo",
+    "media": "Media"
+  },
+  "content": {
+    "comingSoon": "Contenuto completo dell'articolo presto disponibile...",
+    "mediaComingSoon": "Media presto disponibili"
+  },
+  "instagram": {
+    "viewOriginal": "Visualizza il post originale su Instagram",
+    "viewPost": "Visualizza questo post su Instagram"
+  }
+}

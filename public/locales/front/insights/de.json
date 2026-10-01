@@ -1,0 +1,16 @@
+{
+  "title": "Einblicke",
+  "subtitle": "Experteneinblicke, Branchenanalyse und Thought Leadership, um Ihr Unternehmen vor der Kurve zu halten.",
+  "searchPlaceholder": "Einblicke suchen...",
+  "error": "Fehler",
+  "errorDescription": "Fehler beim Laden der Einblicke. Bitte versuchen Sie es später erneut.",
+  "noInsightsFound": "Keine Einblicke gefunden",
+  "noInsightsDescription": "Versuchen Sie, Ihren Suchbegriff anzupassen.",
+  "readMore": "Mehr lesen",
+  "tabs": {
+    "all": "Alle",
+    "insights": "Einblicke",
+    "news": "News",
+    "media": "Media"
+  }
+}

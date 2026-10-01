@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "backToProducts": "Tutti i Prodotti",
+    "title": "SizeTheMarket",
+    "subtitle": "Analisi Dati Istantanea al Tuo Comando",
+    "description": "Ottieni insights immediati sul tuo mercato. Vedi quanti prodotti hai in comune con i concorrenti, chi ha i prezzi più bassi e chi è il più costoso.",
+    "visitWebsite": "Visita il Sito Web"
+  },
+  "features": {
+    "title": "Caratteristiche Principali",
+    "competitiveAnalysis": {
+      "title": "Analisi Competitiva",
+      "description": "Identifica immediatamente come le tue offerte si confrontano con quelle dei tuoi concorrenti su più dimensioni."
+    },
+    "priceTracking": {
+      "title": "Monitoraggio Prezzi",
+      "description": "Traccia le fluttuazioni dei prezzi nel tempo con avvisi per cambiamenti significativi nei prezzi dei concorrenti."
+    },
+    "marketIntelligence": {
+      "title": "Intelligence di Mercato",
+      "description": "Rapporti completi sulle tendenze di mercato, popolarità dei prodotti e opportunità emergenti."
+    }
+  },
+  "useCases": {
+    "title": "Casi d'Uso",
+    "retailOptimization": {
+      "title": "Ottimizzazione Prezzi al Dettaglio",
+      "description": "Un importante rivenditore di elettronica è stato in grado di ottimizzare la propria strategia di prezzo monitorando i cambiamenti di prezzo dei concorrenti in tempo reale, portando a un aumento del 12% dei margini di profitto.",
+      "result": "Risultato: Aumento del 12% dei margini di profitto"
+    },
+    "productAnalysis": {
+      "title": "Analisi Gamma Prodotti",
+      "description": "Un mercato online ha identificato lacune nelle proprie offerte di prodotti confrontando il proprio catalogo con i concorrenti, risultando in 200+ nuove aggiunte di prodotti e crescita dei ricavi del 15%.",
+      "result": "Risultato: Crescita dei ricavi del 15%"
+    }
+  },
+  "cta": {
+    "title": "Pronto a Superare la Tua Concorrenza?",
+    "description": "Inizia a prendere decisioni basate sui dati oggi con i potenti strumenti di intelligence di mercato di MarkeData.",
+    "button": "Inizia Oggi"
+  }
+}

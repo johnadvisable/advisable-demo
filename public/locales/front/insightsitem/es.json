@@ -1,0 +1,9 @@
+{
+  "error": "Error",
+  "errorDescription": "Error al cargar la perspectiva. Por favor, inténtelo de nuevo más tarde.",
+  "insightNotFound": "Perspectiva No Encontrada",
+  "insightNotFoundDescription": "La perspectiva que buscas no existe o ha sido movida.",
+  "backToInsights": "Volver a Perspectivas",
+  "publishedOn": "Publicado el",
+  "by": "Por"
+}

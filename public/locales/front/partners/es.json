@@ -1,0 +1,16 @@
+{
+  "title": "Socios & Integraciones",
+  "description": "Explore nuestro ecosistema de socios e integraciones que le ayudan a aprovechar al máximo nuestra plataforma. Conéctese con soluciones líderes del sector para extender la funcionalidad y optimizar sus flujos de trabajo.",
+  "becomePartner": "Convertirse en Socio",
+  "search": {
+    "placeholder": "Buscar"
+  },
+  "filter": {
+    "allCategories": "Todas las Categorías"
+  },
+  "noPartnersFound": {
+    "title": "No se encontraron socios",
+    "message": "Intente ajustar sus criterios de búsqueda o filtro"
+  },
+  "showMore": "Mostrar más"
+}

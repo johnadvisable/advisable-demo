@@ -1,0 +1,41 @@
+{
+  "loading": "Cargando datos de clientes...",
+  "viewCaseStudy": "Ver Estudio de Caso →",
+  "categories": {
+    "all": {
+      "title": "Todos los Clientes",
+      "description": "Ver todos los clientes en todas las categorías de productos y servicios."
+    },
+    "ventureStudio": {
+      "title": "Servicios de Venture Studio",
+      "description": "Servicios integrales de aceleración de startups, inversión y desarrollo empresarial."
+    },
+    "digitalAgency": {
+      "title": "Servicios de Agencia Digital",
+      "description": "Servicios creativos y técnicos incluyendo marketing, consultoría, desarrollo, análisis de datos y diseño."
+    },
+    "ecommerce": {
+      "title": "Ecommercen",
+      "description": "Plataforma de comercio electrónico avanzada para vendedores, premiada dos veces y probada en escenarios empresariales extremos desde 2015."
+    },
+    "marketData": {
+      "title": "MarketData",
+      "description": "Herramienta de análisis de mercado instantáneo que proporciona información sobre competidores, comparaciones de precios y datos estratégicos."
+    },
+    "sizeTheMarket": {
+      "title": "SizeTheMarket",
+      "description": "Herramienta de análisis de mercado instantáneo que proporciona información sobre competidores, comparaciones de precios y datos estratégicos."
+    },
+    "ePrescription": {
+      "title": "ePrescription Cloud ERP",
+      "description": "Solución completa para procesamiento de prescripciones, gestión de productos y facturación de fondos de seguro."
+    },
+    "aiRecommendations": {
+      "title": "Recomendaciones IA",
+      "description": "Verdadero motor de sugerencias personalizadas basado en datos de cliente 1:1 para experiencias de compra atractivas."
+    },
+    "default": {
+      "description": "Soluciones adaptadas para el éxito empresarial"
+    }
+  }
+}

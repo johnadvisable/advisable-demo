@@ -1,0 +1,1 @@
+UPDATE services SET display_order = -1 WHERE slug = 'digital-marketing-agency';

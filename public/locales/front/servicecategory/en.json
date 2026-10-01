@@ -1,0 +1,10 @@
+{
+  "notFound": "Service Category Not Found",
+  "notFoundDescription": "The service category you are looking for does not exist.",
+  "goHome": "Go Home",
+  "noServicesFound": "No services found",
+  "noServicesDescription": "There are no services available in this category at the moment.",
+  "details": "Details",
+  "lookingForTitle": "What Are You Looking For?",
+  "lookingForSubtitle": "Explore our specialized services tailored to your needs."
+}

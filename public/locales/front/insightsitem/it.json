@@ -1,0 +1,9 @@
+{
+  "error": "Errore",
+  "errorDescription": "Impossibile caricare l'approfondimento. Riprova più tardi.",
+  "insightNotFound": "Approfondimento Non Trovato",
+  "insightNotFoundDescription": "L'approfondimento che stai cercando non esiste o è stato spostato.",
+  "backToInsights": "Torna agli Approfondimenti",
+  "publishedOn": "Pubblicato il",
+  "by": "Di"
+}

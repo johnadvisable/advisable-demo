@@ -1,0 +1,1 @@
+UPDATE product_translations SET title = 'SizeTheMarket', updated_at = now() WHERE product_id = 'beeb9541-79e0-44e6-b30b-72149d3059ba';

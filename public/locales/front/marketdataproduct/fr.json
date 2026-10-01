@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "backToProducts": "Tous les Produits",
+    "title": "SizeTheMarket",
+    "subtitle": "Analyse de Données Instantanée à Votre Commande",
+    "description": "Obtenez des insights immédiats sur votre marché. Voyez combien de produits vous avez en commun avec vos concurrents, qui a les prix les plus bas et qui est le plus cher.",
+    "visitWebsite": "Visiter le Site Web"
+  },
+  "features": {
+    "title": "Caractéristiques Principales",
+    "competitiveAnalysis": {
+      "title": "Analyse Concurrentielle",
+      "description": "Identifiez immédiatement comment vos offres se comparent à celles de vos concurrents sur plusieurs dimensions."
+    },
+    "priceTracking": {
+      "title": "Suivi des Prix",
+      "description": "Suivez les fluctuations de prix au fil du temps avec des alertes pour les changements significatifs dans la tarification des concurrents."
+    },
+    "marketIntelligence": {
+      "title": "Intelligence Marché",
+      "description": "Rapports complets sur les tendances du marché, la popularité des produits et les opportunités émergentes."
+    }
+  },
+  "useCases": {
+    "title": "Cas d'Usage",
+    "retailOptimization": {
+      "title": "Optimisation des Prix de Détail",
+      "description": "Un grand détaillant d'électronique a pu optimiser sa stratégie de tarification en suivant les changements de prix des concurrents en temps réel, conduisant à une augmentation de 12% des marges bénéficiaires.",
+      "result": "Résultat: Augmentation de 12% des marges bénéficiaires"
+    },
+    "productAnalysis": {
+      "title": "Analyse de Gamme de Produits",
+      "description": "Un marché en ligne a identifié des lacunes dans ses offres de produits en comparant son catalogue avec les concurrents, entraînant 200+ nouveaux ajouts de produits et une croissance des revenus de 15%.",
+      "result": "Résultat: Croissance des revenus de 15%"
+    }
+  },
+  "cta": {
+    "title": "Prêt à Devancer Votre Concurrence?",
+    "description": "Commencez à prendre des décisions basées sur les données aujourd'hui avec les puissants outils d'intelligence marché de MarkeData.",
+    "button": "Commencer Aujourd'hui"
+  }
+}

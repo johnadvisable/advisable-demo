@@ -1,0 +1,16 @@
+{
+  "title": "Perspectivas",
+  "subtitle": "Perspectivas de expertos, análisis de la industria y liderazgo intelectual para ayudar a su negocio a mantenerse por delante de la curva.",
+  "searchPlaceholder": "Buscar perspectivas...",
+  "error": "Error",
+  "errorDescription": "Error al cargar las perspectivas. Por favor, inténtelo de nuevo más tarde.",
+  "noInsightsFound": "No se encontraron perspectivas",
+  "noInsightsDescription": "Intente ajustar su término de búsqueda.",
+  "readMore": "Leer más",
+  "tabs": {
+    "all": "Todo",
+    "insights": "Perspectivas",
+    "news": "Noticias",
+    "media": "Media"
+  }
+}

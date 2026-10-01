@@ -1,0 +1,1 @@
+UPDATE team_members SET image_url = '/images/team/panagiotis-kollaras.png' WHERE id = '41ec84d2-4fec-4d74-bd66-5f6260b23f51';

@@ -1,0 +1,1 @@
+DROP FUNCTION IF EXISTS public.get_all_products_with_translation(character varying);

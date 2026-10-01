@@ -1,0 +1,20 @@
+{
+  "error": "Erreur",
+  "errorDescription": "Échec du chargement de l'article d'actualité. Veuillez réessayer plus tard.",
+  "notFound": "Article d'Actualité Non Trouvé",
+  "notFoundDescription": "L'article d'actualité que vous cherchez n'existe pas ou a été déplacé.",
+  "backToNews": "Retour aux Actualités",
+  "publishedOn": "Publié le",
+  "badges": {
+    "article": "Article",
+    "media": "Médias"
+  },
+  "content": {
+    "comingSoon": "Contenu complet de l'article bientôt disponible...",
+    "mediaComingSoon": "Médias bientôt disponibles"
+  },
+  "instagram": {
+    "viewOriginal": "Voir le post original sur Instagram",
+    "viewPost": "Voir ce post sur Instagram"
+  }
+}

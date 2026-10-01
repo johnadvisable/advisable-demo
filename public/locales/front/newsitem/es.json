@@ -1,0 +1,20 @@
+{
+  "error": "Error",
+  "errorDescription": "Error al cargar el elemento de noticias. Por favor, inténtelo de nuevo más tarde.",
+  "notFound": "Elemento de Noticias No Encontrado",
+  "notFoundDescription": "El elemento de noticias que buscas no existe o ha sido movido.",
+  "backToNews": "Volver a Noticias",
+  "publishedOn": "Publicado el",
+  "badges": {
+    "article": "Artículo",
+    "media": "Medios"
+  },
+  "content": {
+    "comingSoon": "Contenido completo del artículo próximamente...",
+    "mediaComingSoon": "Medios próximamente"
+  },
+  "instagram": {
+    "viewOriginal": "Ver publicación original en Instagram",
+    "viewPost": "Ver esta publicación en Instagram"
+  }
+}

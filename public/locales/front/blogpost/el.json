@@ -1,0 +1,11 @@
+{
+  "error": "Σφάλμα",
+  "errorDescription": "Αποτυχία φόρτωσης του άρθρου. Παρακαλώ δοκιμάστε ξανά αργότερα.",
+  "articleNotFound": "Το Άρθρο Δεν Βρέθηκε",
+  "articleNotFoundDescription": "Το άρθρο που αναζητάτε δεν υπάρχει ή έχει μετακινηθεί.",
+  "backToBlog": "Πίσω στο Blog",
+  "publishedOn": "Δημοσιεύθηκε στις",
+  "authorRole": "E-commerce Expert",
+  "relatedArticles": "Σχετικά Άρθρα",
+  "readMore": "Διαβάστε περισσότερα"
+}

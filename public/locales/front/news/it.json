@@ -1,0 +1,21 @@
+{
+  "title": "Notizie & Aggiornamenti",
+  "subtitle": "Rimani aggiornato con i nostri ultimi articoli, video e annunci aziendali.",
+  "tabs": {
+    "allNews": "Tutte le Notizie",
+    "articles": "Articoli",
+    "media": "Media"
+  },
+  "emptyState": {
+    "title": "Nessun elemento trovato",
+    "description": "Prova a selezionare una categoria diversa o torna più tardi per gli aggiornamenti."
+  },
+  "badges": {
+    "article": "Articolo",
+    "media": "Media"
+  },
+  "actions": {
+    "readMore": "Leggi di più",
+    "viewMedia": "Visualizza media"
+  }
+}

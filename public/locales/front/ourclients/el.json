@@ -1,0 +1,41 @@
+{
+  "loading": "Φόρτωση δεδομένων πελατών...",
+  "viewCaseStudy": "Δείτε το Case Study →",
+  "categories": {
+    "all": {
+      "title": "Όλοι οι Πελάτες",
+      "description": "Δείτε όλους τους πελάτες σε όλες τις κατηγορίες προϊόντων και υπηρεσιών."
+    },
+    "ventureStudio": {
+      "title": "Venture Studio Services",
+      "description": "Ολοκληρωμένες υπηρεσίες startup acceleration, επενδύσεων και business development."
+    },
+    "digitalAgency": {
+      "title": "Digital Agency Services",
+      "description": "Δημιουργικές και τεχνικές υπηρεσίες marketing, consulting, development, data analytics και design."
+    },
+    "ecommerce": {
+      "title": "Ecommercen",
+      "description": "Προηγμένη e-commerce πλατφόρμα για sellers, βραβευμένη δύο φορές και δοκιμασμένη σε ακραία business σενάρια από το 2015."
+    },
+    "marketData": {
+      "title": "MarketData",
+      "description": "Real-time market analysis tool που παρέχει competitor insights, price comparisons και στρατηγικά data."
+    },
+    "sizeTheMarket": {
+      "title": "SizeTheMarket",
+      "description": "Real-time market analysis tool που παρέχει competitor insights, price comparisons και στρατηγικά data."
+    },
+    "ePrescription": {
+      "title": "ePrescription Cloud ERP",
+      "description": "Ολοκληρωμένη λύση για prescription processing, product management και insurance fund billing."
+    },
+    "aiRecommendations": {
+      "title": "Recommendable",
+      "description": "Real-time personalized recommendation engine βασισμένη σε 1:1 customer data για engaging shopping experiences."
+    },
+    "default": {
+      "description": "Λύσεις προσαρμοσμένες για επιχειρηματική επιτυχία"
+    }
+  }
+}

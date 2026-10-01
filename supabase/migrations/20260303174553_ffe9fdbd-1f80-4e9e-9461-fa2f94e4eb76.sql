@@ -1,0 +1,2 @@
+DELETE FROM job_listing_translations WHERE job_listing_id = 'a1000001-0000-0000-0000-000000000005';
+DELETE FROM job_listings WHERE id = 'a1000001-0000-0000-0000-000000000005';

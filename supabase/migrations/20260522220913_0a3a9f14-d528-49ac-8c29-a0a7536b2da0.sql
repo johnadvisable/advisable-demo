@@ -1,0 +1,129 @@
+INSERT INTO public.insights_translations (insights_id, language_id, title, excerpt, content)
+SELECT id, 3, $i18n$La nouvelle barre de recherche de Google et la refonte du SEO et du GEO$i18n$, $i18n$Lors de Google I/O 2026, Google a dévoilé une barre de recherche conversationnelle, axée d’abord sur l’IA et alimentée par Gemini 3.5 Flash. Les CTR en première position sont passés de 27% à 11%, les AI Overviews apparaissent désormais sur 48% des requêtes, et Google a officiellement intégré le GEO et l’AEO au SEO. Voici ce qui a réellement changé, et ce que cela signifie pour les spécialistes SEO, les stratèges de contenu, les éditeurs et l’e-commerce.$i18n$, $i18n$<p><strong>TL;DR</strong> Lors de Google I/O 2026, Google a annoncé le changement le plus important apporté à son interface de recherche en 25 ans : une barre conversationnelle, axée d’abord sur l’IA et alimentée par Gemini 3.5 Flash, qui oriente les utilisateurs vers des réponses synthétisées plutôt que vers des liens bleus classés. Pour les praticiens du SEO et du GEO, cela accélère une transition déjà bien engagée.</strong></p>
+
+<p>Les taux de clics en position un sur les requêtes enrichies par l’IA sont déjà passés de 27% à seulement 11% dans certains cas (SISTRIX, mars 2026). Les données d’Ahrefs montrent que les AI Overviews apparaissent sur 48% de toutes les requêtes Google, contre 34.5% en décembre 2025. Et le propre guide officiel d’optimisation de Google, publié seulement quatre jours avant I/O, a formellement déclaré que le GEO et l’AEO ne sont pas des disciplines distinctes, mais du SEO appliqué à un environnement d’IA.</p>
+
+<p>Les professionnels les plus exposés sont ceux qui ont construit leur workflow autour du volume de mots-clés et du trafic de clics sur les liens bleus. Les mieux positionnés sont ceux qui considéraient déjà l’autorité originale et l’expertise réelle comme le produit.</p>
+
+<h2>Ce que Google a réellement changé</h2>
+<p>Le 19 mai 2026, lors de la keynote d’ouverture de Google I/O, la responsable Search de l’entreprise, Elizabeth Reid, a décrit une refonte complète de l’interface de recherche, qualifiant le résultat de « recherche IA de bout en bout ».</p>
+<p>La barre de recherche elle-même, largement inchangée depuis la création de Google, a été étendue et rendue multimodale. Les utilisateurs peuvent désormais soumettre du texte, des photos et des vidéos dans une seule requête, tandis qu’une saisie semi-automatique alimentée par l’IA aide à formuler des questions plus longues et plus précises plutôt que de rares fragments de mots-clés.</p>
+<p>Le moteur sous-jacent de ces réponses conversationnelles est Gemini 3.5 Flash, un modèle que Google a décrit comme plus rapide et moins coûteux en calcul que son prédécesseur, ce qui lui permet de servir des milliards de requêtes à grande échelle. Les réponses n’apparaissent plus au-dessus des résultats traditionnels comme une couche optionnelle : pour de nombreux types de requêtes, AI Mode devient effectivement la surface par défaut, avec un fil de continuation permettant aux utilisateurs d’affiner leur recherche par la conversation sans jamais atteindre un site web tiers.</p>
+
+<h3>À quoi cela ressemble en pratique</h3>
+<blockquote>Un plombier recherche « instructions réparation robinet ». L’ancien Google renvoyait dix liens bleus : une vidéo YouTube, un forum de bricolage, un distributeur de fournitures de plomberie, un blog de rénovation. Le plombier en cliquait deux ou trois. Le trafic était distribué sur le web. Le nouveau Google répond immédiatement : « Votre robinet a très probablement des rondelles usées ou un joint torique défectueux. Voici les quatre étapes pour le diagnostiquer. » Le plombier obtient la réponse. Le forum de bricolage n’obtient rien.</blockquote>
+<p>Le changement pratique n’est pas que Google est devenu plus intelligent. C’est que l’interface traite désormais la liste de liens bleus comme un dernier recours plutôt que comme la sortie par défaut. Pour l’utilisateur, l’expérience est plus rapide et plus propre. Pour chaque éditeur qui dépendait de ce clic, l’économie a changé.</p>
+
+<h2>Les agents d’information : la couche suivante</h2>
+<p>Au-delà de l’interface repensée, Google a également présenté en avant-première des <em>agents d’information</em>, des assistants autonomes qui continuent de travailler après la fin de la recherche initiale. L’exemple donné à I/O était un moniteur de prix de vols : un utilisateur recherche un tarif actuellement au-dessus de son budget, active un agent, puis reçoit une notification lorsque le prix baisse. Aucune recherche répétée. Aucune nouvelle visite sur un site de voyage.</p>
+
+<h3>Ce que le modèle d’agent signifie réellement pour le trafic</h3>
+<blockquote>Imaginez que vous gérez un site de comparaison de prix pour des abonnements logiciels. Un utilisateur demande à Google : « Alerte-moi quand Notion passe sous €8 par mois. » Un agent d’information surveille les prix en continu à travers différentes sources, dont la vôtre. Il trouve la réponse sur votre page. Il envoie la notification. L’utilisateur ne visite jamais votre site. Votre contenu a fait le travail. Vos analytics n’ont rien enregistré.</blockquote>
+<p>C’est le risque structurel introduit par les agents. Votre contenu peut devenir une partie du substrat du moteur de réponse tout en générant zéro trafic de référence mesurable. Les agents d’information sont prévus pour une sortie aux États-Unis à l’été 2026, avec des tâches d’achat et de surveillance plus larges incluses dès le lancement.</p>
+
+<h2>Le tableau du trafic : ce que disent réellement les données</h2>
+<p>L’instinct consistant à décrire cela comme une falaise soudaine est compréhensible, mais les données sont plus nuancées, et à certains égards plus inquiétantes pour cette raison, car l’effondrement est graduel et mesurable depuis des années.</p>
+<p>Le rapport Q1 2026 State of Search de Datos et SparkToro a constaté que les recherches sans clic aux États-Unis avaient légèrement diminué à 22.4% en mars 2026, contre 24.5% en décembre 2025. Cette amélioration marginale semble rassurante jusqu’à ce que l’on considère que cette métrique ne suit que les recherches ne se terminant par aucun clic. Le changement bien plus conséquent se produit à l’intérieur des clics qui restent.</p>
+
+<h3>Ce que signifie réellement une baisse de CTR de 27% à 11% un lundi matin</h3>
+<blockquote>Une responsable SEO ouvre Search Console. Impressions : 180,000, en hausse de 12% d’un mois sur l’autre. Clics : 19,800, en baisse de 38%. Sa première pensée est une pénalité ou un problème technique. Elle vérifie les classements : position un sur ses principales requêtes informationnelles. Tout semble correct. Ce qu’elle voit réellement, c’est l’absorption par AI Overview. Ses pages sont toujours classées. Google les montre toujours aux utilisateurs. Mais un résumé IA se trouve désormais au-dessus de son résultat et résout la requête avant que quiconque ne clique. Elle gagne le jeu du classement sur un plateau où gagner le jeu du classement ne détermine plus le chiffre d’affaires.</blockquote>
+<p>Les données SISTRIX de mars 2026 documentent cela précisément : les taux de clics sur les résultats en position un sont passés d’environ 27% à seulement 11% sur les requêtes où un AI Overview était présent. L’analyse d’Ahrefs montre que les AI Overviews apparaissent sur 48% de toutes les requêtes Google en mars 2026, contre 34.5% à peine trois mois plus tôt. La vitesse de cette expansion est ce qui rend I/O 2026 significatif : non pas un nouveau problème, mais l’accélération d’un problème existant.</p>
+<p>Il existe aussi une couche structurelle supplémentaire que les praticiens doivent diagnostiquer avec prudence. Seules environ 14% des URL apparaissant dans les citations d’AI Mode se chevauchent avec celles des citations d’AI Overview. Bien se classer dans une surface IA ne confère pas automatiquement une visibilité dans l’autre. Opérationnellement, ce sont des cibles d’optimisation distinctes.</p>
+
+<figure class="video-embed" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:2rem 0;border-radius:8px;">
+  <iframe src="https://www.youtube.com/embed/p6EBMG8OEBI?si=V16l3herYDqVjLvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+</figure>
+
+<h2>Google garde-t-il les utilisateurs dans son propre écosystème ?</h2>
+<p>La position officielle de Google est que les fonctionnalités d’IA génèrent davantage de clics, et non moins, car les utilisateurs qui reçoivent une synthèse initiale explorent souvent plus loin. Les chercheurs indépendants et les éditeurs ont constamment contesté ce cadrage, et l’économie publicitaire rend cette contestation difficile à écarter.</p>
+<p>Lorsque Google synthétise une réponse sans envoyer l’utilisateur vers un site tiers, l’éditeur ne gagne rien. Google continue de diffuser des publicités autour de la réponse générée par l’IA. Lily Ray, VP of SEO strategy chez Amsive, a averti que les changements prévus auraient un impact dévastateur sur Internet, estimant qu’ils réduiraient fortement la principale source de revenus des éditeurs et décourageraient les créateurs de contenu qui s’appuient sur le trafic de recherche organique, soit des millions de sites web. Google a plus que doublé ses bénéfices depuis 2022, atteignant $132 billion au cours de l’année passée.</p>
+<p>Il convient toutefois de noter que la qualité de récupération à long terme de Google dépend d’un web ouvert en bonne santé. Si les éditeurs s’effondrent économiquement, le substrat qui alimente l’IA se dégrade avec le temps. Google ne se contente pas d’extraire de la valeur des éditeurs, il avance dans une tension structurelle entre maximiser la rétention par l’IA et ne pas détruire l’écosystème de contenu qui rend l’IA crédible.</p>
+
+<h2>GEO, AEO, SEO : ce que dit réellement le guide officiel de Google</h2>
+<p>La prolifération d’acronymes des deux dernières années, GEO (Generative Engine Optimization), AEO (Answer Engine Optimization), LLMO, a généré une activité de conseil substantielle et, dans certains cas, des honoraires substantiels. Les recommandations officielles de Google, publiées le 15 mai 2026 via le Google Search Central Blog, abordent directement ce point en supprimant la distinction.</p>
+<p>Le document, intitulé <em>Optimizing your website for generative AI features on Google Search</em>, établit que les AI Overviews et AI Mode récupèrent le contenu à partir du <strong>même index</strong> que la recherche traditionnelle, en utilisant un processus de retrieval-augmented generation (RAG). Une page bien crawlée, bien indexée et faisant autorité au sens traditionnel du SEO est, par ce même fait, candidate à la citation par l’IA. Une page qui n’est pas crawlée est invisible pour les deux.</p>
+
+<h3>Les tactiques que l’industrie vend et que Google dit d’ignorer</h3>
+<ul>
+  <li><strong>Fichiers llms.txt</strong> : traités comme n’importe quel autre fichier texte, pas comme un signal de classement</li>
+  <li><strong>Découpage du contenu</strong> : Google comprend les pages multi-thématiques et extrait lui-même le passage pertinent</li>
+  <li><strong>Réécritures spécifiques à l’IA</strong> : les systèmes d’IA comprennent déjà les synonymes et le sens général</li>
+  <li><strong>Campagnes de mentions inauthentiques</strong> : soumises à la même détection du spam que les schémas de liens traditionnels</li>
+  <li><strong>Schémas spéciaux ou miroirs Markdown</strong> : non requis pour l’inclusion dans l’IA générative</li>
+</ul>
+<p>L’article GEO de Princeton et Georgia Tech, formalisé en 2023 et présenté à ACM KDD 2024, avait déjà démontré que les attributs de contenu les plus régulièrement associés à la citation dans les réponses IA, citations faisant autorité, preuves quantitatives, argumentation clairement structurée, sont indiscernables de ce qui distingue un travail éditorial de haute qualité en SEO traditionnel. Les pages classées autour de la position cinq dans la recherche traditionnelle ont vu leur visibilité augmenter de 115% dans les réponses IA lorsqu’elles ont ajouté des citations appropriées.</p>
+<p>L’idée clé n’est pas qu’un nouveau jeu a commencé. C’est que les meilleurs coups de l’ancien jeu valent désormais davantage.</p>
+
+<h2>Classement vs citation : là où l’ancien modèle mental se brise</h2>
+<p>Il existe une manière importante dont la logique de classement traditionnelle ne se transpose réellement pas à la visibilité IA, et les praticiens qui la manquent liront mal leurs données de performance.</p>
+
+<h3>L’ancien objectif SEO et le nouveau</h3>
+<p><em>Ancien objectif :</em> se classer #1 pour « meilleure poudre protéinée pour coureurs ». Le succès signifiait une position de tête, de fortes impressions, un CTR de 25%, des milliers de visites mensuelles.</p>
+<p><em>Nouvel objectif :</em> être la source que Gemini cite lorsque quelqu’un demande : « Quelle poudre protéinée devrais-je prendre en tant que marathonien ? » Le succès signifie désormais que l’IA dit « selon [votre marque] » dans la réponse synthétisée, que l’utilisateur clique ou non.</p>
+<p>Les recherches de Brandlight, cabinet d’analyse GEO, suggèrent que le chevauchement entre les pages apparaissant dans les premiers résultats organiques de Google et les pages citées par les systèmes d’IA est passé d’environ 70% à moins de 20%. Une page en position un peut être invisible dans AI Mode. Une page en deuxième page peut être citée régulièrement dans AI Mode, Gemini, ChatGPT et Perplexity au cours de la même semaine.</p>
+<p>La raison tient à la logique de sélection. Les moteurs de réponse ne classent pas les pages par pertinence. Ils choisissent quelle source semble <em>suffisamment sûre et autoritaire pour être citée</em> dans une réponse synthétisée que les utilisateurs liront elle-même comme faisant autorité.</p>
+
+<h3>Ce que les deux systèmes d’optimisation récompensent réellement</h3>
+<ul>
+  <li><strong>SEO traditionnel</strong> optimise pour : la découvrabilité, la pertinence et la position de classement</li>
+  <li><strong>Citation par l’IA</strong> optimise pour : la confiance, la sécurité d’attribution, la clarté sémantique, la confiance envers l’entité et l’extractibilité</li>
+</ul>
+<p>Ce ne sont pas des systèmes identiques. Une page peut être très découvrable et bien classée sans être citable, attribuable ou adaptée à la synthèse. C’est dans cet écart que se trouve désormais le véritable travail d’optimisation.</p>
+
+<h2>Ce qui change pour chaque professionnel</h2>
+<p>La refonte d’I/O 2026 accélère le tri qui a commencé lorsque les AI Overviews ont été introduits pour la première fois. Les catégories professionnelles concernées font chacune face à un changement concret.</p>
+
+<h3>Spécialistes SEO</h3>
+<blockquote><em>Avant :</em> le rapport du lundi matin affichait les classements, les impressions et les clics. Un résultat en position un avec 3,000 clics mensuels était une victoire claire. <em>Après :</em> les impressions se maintiennent. Les clics chutent de 40%. Les classements sont inchangés. Le rapport affiche du vert partout pour une activité qui perd du revenu organique. La métrique qui comptait, la position, ne détermine plus le résultat.</blockquote>
+<p>La nouvelle couche de mesure est la présence dans les citations : la fréquence à laquelle votre contenu est sélectionné comme source dans les réponses générées par l’IA, et pas seulement classé sur la page de résultats. Cela nécessite des outils différents, des benchmarks différents, et la volonté de déclarer qu’une métrique de classement est insuffisante à elle seule.</p>
+
+<h3>Stratèges de contenu et rédacteurs</h3>
+<blockquote>Imaginez que vous gérez un site publiant : « Top 10 des applications de productivité ». « Qu’est-ce que Bitcoin ? » « Meilleurs outils CRM en 2026 ». Il y a cinq ans, Google avait besoin de votre page pour répondre à ces requêtes. Maintenant, l’IA peut générer cette synthèse instantanément à partir des connaissances sur lesquelles elle a été entraînée. Votre article devient du matériel d’entraînement, pas un contenu de destination.</blockquote>
+<blockquote>Imaginez maintenant plutôt ceci : vous avez personnellement testé 42 systèmes CRM, collecté des données de prix originales sur plusieurs cycles de facturation, interrogé des équipes commerciales sur les coûts cachés d’onboarding et publié une méthodologie. L’IA ne peut pas inventer cela en toute sécurité. Elle vous cite donc.</blockquote>
+<p>Les stratégies de contenu fondées sur le volume doivent se restructurer autour de la profondeur et de l’originalité. Le plancher du contenu acceptable s’est élevé : la question n’est plus de savoir si une page se classe, mais si elle contient quelque chose qu’une IA aurait besoin de citer plutôt que de paraphraser jusqu’à le réduire à rien.</p>
+
+<h3>Digital PR et responsables de marque</h3>
+<p>La perception de marque est désormais partiellement façonnée par ce que les systèmes d’IA disent d’une marque avant même que l’utilisateur ait cliqué. Une marque qui est régulièrement citée, décrite avec précision et caractérisée positivement dans les réponses IA construit une présence en amont du clic, invisible dans les rapports de trafic référent mais influente au moment de la considération.</p>
+<p>La manipulation inauthentique de cela, campagnes de mentions artificielles, schémas d’avis, est explicitement identifiée par Google comme soumise à la même détection du spam que celle qui régit les schémas de liens traditionnels. La voie légitime est l’investissement au niveau de l’entité : Wikipedia, références tierces faisant autorité, données structurées permettant aux systèmes d’IA de caractériser la marque de manière cohérente et correcte.</p>
+
+<h3>Éditeurs indépendants et médias financés par la publicité</h3>
+<p>C’est la position structurellement la plus difficile. Les revenus dépendent des pages vues. Le trafic dépend des clics. AI Mode est, par conception, un environnement où moins de clics se produisent. Le constat compensatoire, à savoir que les clics référés par l’IA, lorsqu’ils se produisent, convertissent à des taux nettement plus élevés que les visites organiques traditionnelles, est réel mais ne résout pas le problème de volume pour les médias dont l’économie exige l’échelle.</p>
+<p>L’adaptation pratique implique de développer des relations directes avec l’audience, des modèles d’abonnement et un trafic de marque qui n’est pas du tout intermédié par Google. La citation dans les réponses IA peut fonctionner comme du bouche-à-oreille à l’échelle de Google : de la crédibilité sans le clic, parfois suivie d’une visite directe d’une personne qui a vu l’attribution et voulait en savoir plus.</p>
+
+<h3>E-commerce et sites transactionnels</h3>
+<p>L’intention transactionnelle, un utilisateur qui veut acheter un produit précis, continue de générer un comportement de clic que l’IA ne peut pas remplacer à court terme. Le risque à plus long terme est le commerce agentique : un agent capable de comparer les prix, vérifier la disponibilité et initier un paiement sans que l’utilisateur visite le site du marchand. Ce scénario est présenté en avant-première à I/O 2026 et prévu pour un déploiement estival. Il n’est pas hypothétique.</p>
+
+<h2>S’adapter : ce qui change réellement</h2>
+<p>Les recommandations officielles de Google confirment que l’AEO et le GEO ne nécessitent aucune stack technique séparée d’un SEO bien exécuté. C’est clarifiant, mais ce n’est pas rassurant. Cela signifie que le plancher du SEO acceptable s’est élevé, et non que le travail est le même.</p>
+<p>La question pratique à appliquer à chaque contenu est : <em>cette page contient-elle quelque chose qu’une IA construisant une réponse synthétisée aurait besoin de citer plutôt que de remplacer ?</em> Explications génériques, résumés réécrits, guide saturé de mots-clés, ce ne sont pas des candidats à la citation. Recherche originale, données propriétaires, voix d’experts nommés, reporting primaire, résultats de tests en conditions réelles, ceux-là le sont.</p>
+<p>Au-delà du contenu, la couche d’entité compte de plus en plus. Les systèmes d’IA caractérisent les marques à l’aide de signaux provenant de l’ensemble du web : Wikipedia, mentions tierces faisant autorité, données structurées, dénomination cohérente sur les plateformes. Une marque dont les informations sont fragmentées, incohérentes ou absentes de ces sources est une marque que l’IA décrira soit incorrectement, soit pas du tout.</p>
+<p>Les professionnels qui s’adapteront le plus vite ne seront pas ceux qui ajoutent un nouvel acronyme à leur offre de services. Ce seront ceux qui comprennent, concrètement, que le jeu est passé de <em>être en haut d’une liste</em> à <em>être la source qui mérite d’être citée dans une réponse</em>. C’est un objectif différent, un système de mesure différent et un type de contenu entièrement différent.</p>
+
+<h2>Le vrai basculement</h2>
+<p>Sous tout ce qui a été discuté dans cet article, la barre repensée, l’écart de citation, l’effondrement du CTR, l’aperçu du commerce agentique, il existe un changement structurel unique qui rend toutes les observations individuelles cohérentes.</p>
+<p>Internet passe de la <strong>navigation</strong> à la <strong>délégation</strong>.</p>
+<p>Pendant trente ans, le contrat implicite entre les utilisateurs et les moteurs de recherche était exploratoire. Vous tapiez quelques mots. Google vous donnait une carte. Vous naviguiez. Vous cliquiez, compariez, évaluiez, reveniez, cliquiez à nouveau. Les éditeurs existaient parce que ce parcours nécessitait des arrêts.</p>
+<p>Ce que Google construit maintenant, et ce que ChatGPT, Perplexity et Gemini standalone ont déjà démontré comme viable à grande échelle, est un contrat entièrement différent. Les utilisateurs ne recherchent plus pour explorer. De plus en plus, ils recherchent pour <em>externaliser le jugement</em>. Donne-moi la réponse. Dis-moi lequel. Réserve-le. Surveille-le. Alerte-moi quand cela change.</p>
+<p>Ce basculement change ce que signifie la visibilité au niveau le plus fondamental. La visibilité signifiait auparavant apparaître sur une liste. La visibilité signifie désormais être la source à laquelle un système d’IA fait suffisamment confiance pour <em>parler à travers elle</em>.</p>
+<p>Les gagnants dans cet environnement ne seront pas simplement les pages les mieux classées. Ce seront les sources que les systèmes d’IA citent sans hésitation, parce que ces sources contiennent quelque chose d’original, sont structurées pour l’extraction, portent une autorité réelle et existent de manière cohérente dans la couche d’entités du web.</p>
+<p>Pour les professionnels, la question opérationnelle en découle directement. Ce n’est plus :</p>
+<p><em>Comment me classer plus haut ?</em></p>
+<p>C’est :</p>
+<p><em>Que sais-je, ou qu’ai-je testé, ou que puis-je prouver, qu’une IA aurait besoin de m’emprunter ?</em></p>
+<p>La réponse à cette question est le seul actif durable que le nouvel environnement de recherche récompense.</p>
+
+<h2>Ressources</h2>
+<ol>
+  <li>Elizabeth Reid, "A new era for AI Search," blog Google, mai 2026 : <a href="https://blog.google" target="_blank" rel="noopener noreferrer">blog.google</a></li>
+  <li>John Mueller, "A new resource for optimizing for generative AI in Google Search," blog Google Search Central, mai 2026 : <a href="https://developers.google.com" target="_blank" rel="noopener noreferrer">developers.google.com</a></li>
+  <li>Google, "Optimizing your website for generative AI features on Google Search," documentation Google Search Central, mai 2026 : <a href="https://developers.google.com" target="_blank" rel="noopener noreferrer">developers.google.com</a></li>
+  <li>Pranjal Aggarwal et al. (Princeton, Georgia Tech, Allen Institute for AI, IIT Delhi), "GEO: Generative Engine Optimization," arXiv / ACM KDD 2024, 2023 : <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arxiv.org</a></li>
+  <li>Zhihua Tian et al., "Diagnosing and Repairing Citation Failures in Generative Engine Optimization," arXiv, mars 2026 : <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arxiv.org</a></li>
+  <li>Matt G. Southern, "Google Launches Core Update Amid I/O AI Search Overhaul," Search Engine Journal, mai 2026 : <a href="https://searchenginejournal.com" target="_blank" rel="noopener noreferrer">searchenginejournal.com</a></li>
+  <li>Matt G. Southern, "Google's New AI Search Guide Calls AEO And GEO 'Still SEO'," Search Engine Journal, mai 2026 : <a href="https://searchenginejournal.com" target="_blank" rel="noopener noreferrer">searchenginejournal.com</a></li>
+  <li>Eli Goodman & Rand Fishkin, "Q1 2026 State of Search Report," Datos / SparkToro, avril 2026 : <a href="https://datos.live" target="_blank" rel="noopener noreferrer">datos.live</a></li>
+  <li>Mariana Labbate, "Google Shifts to AI Search, Heralding Major Change in How People Use the Internet," Time, mai 2026 : <a href="https://time.com" target="_blank" rel="noopener noreferrer">time.com</a></li>
+  <li>Staff, "Google publishes guide on optimizing for generative AI features," Search Engine Land, mai 2026 : <a href="https://searchengineland.com" target="_blank" rel="noopener noreferrer">searchengineland.com</a></li>
+</ol>$i18n$
+FROM public.insights WHERE slug = 'google-new-search-bar-reshaping-seo-geo-2026'
+ON CONFLICT (insights_id, language_id) DO UPDATE SET title=EXCLUDED.title, excerpt=EXCLUDED.excerpt, content=EXCLUDED.content;

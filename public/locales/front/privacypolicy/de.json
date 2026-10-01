@@ -1,0 +1,79 @@
+{
+  "title": "Datenschutzrichtlinie",
+  "lastUpdated": "Zuletzt aktualisiert: {{date}}",
+  "sections": {
+    "introduction": {
+      "title": "Einführung",
+      "content": "Bei Advisable respektieren wir Ihre Privatsphäre und verpflichten uns, Ihre personenbezogenen Daten zu schützen. Diese Datenschutzrichtlinie informiert Sie darüber, wie wir Ihre personenbezogenen Daten schützen, wenn Sie unsere Website besuchen, und informiert Sie über Ihre Datenschutzrechte und wie das Gesetz Sie schützt."
+    },
+    "dataWeCollect": {
+      "title": "Daten, die wir sammeln",
+      "content": "Wir können verschiedene Arten personenbezogener Daten über Sie sammeln, verwenden, speichern und übertragen, die wir wie folgt gruppiert haben:",
+      "identityData": "Identitätsdaten: Name, Benutzername oder ähnlicher Bezeichner",
+      "contactData": "Kontaktdaten: E-Mail-Adresse, Telefonnummern",
+      "technicalData": "Technische Daten: Internetprotokoll (IP)-Adresse, Browsertyp und -version, Zeitzoneneinstellung und Standort, Browser-Plug-in-Typen und -Versionen, Betriebssystem und Plattform sowie andere Technologie auf den Geräten, die Sie verwenden, um auf diese Website zuzugreifen",
+      "usageData": "Nutzungsdaten: Informationen darüber, wie Sie unsere Website, Produkte und Dienstleistungen nutzen"
+    },
+    "howWeCollect": {
+      "title": "Wie wir Ihre Daten sammeln",
+      "content": "Wir verwenden verschiedene Methoden, um Daten von Ihnen und über Sie zu sammeln, einschließlich durch:",
+      "directInteractions": "Direkte Interaktionen: Sie können uns Ihre Identitäts- und Kontaktdaten geben, indem Sie Formulare ausfüllen oder mit uns per Post, Telefon, E-Mail oder anderweitig korrespondieren.",
+      "automatedTechnologies": "Automatisierte Technologien oder Interaktionen: Während Sie mit unserer Website interagieren, können wir automatisch technische Daten über Ihre Ausrüstung, Browsing-Aktionen und -Muster sammeln."
+    },
+    "analytics": {
+      "title": "Analytics und Tracking-Technologien",
+      "content": "Wir verwenden verschiedene Analytics- und Tracking-Technologien, um zu analysieren, wie Benutzer unsere Website nutzen. Diese Technologien können Informationen sammeln, die von Ihrem Gerät oder unserer Website gesendet werden, einschließlich der Webseiten, die Sie besuchen, Add-ons und andere Informationen, die uns helfen, unsere Website zu verbessern.",
+      "googleAnalytics": {
+        "title": "Google Analytics",
+        "content": "Wir verwenden Google Analytics, um zu verstehen, wie Besucher mit unserer Website interagieren. Google Analytics verwendet Cookies und ähnliche Technologien, um Informationen über die Website-Nutzung zu sammeln und zu analysieren und über Aktivitäten und Trends zu berichten. Dieser Dienst kann auch Informationen über die Nutzung anderer Websites, Apps und Online-Ressourcen sammeln."
+      },
+      "googleTagManager": {
+        "title": "Google Tag Manager",
+        "content": "Wir verwenden Google Tag Manager, um verschiedene JavaScript- und HTML-Tags zu verwalten, die für Tracking und Analytics auf unserer Website verwendet werden. Google Tag Manager selbst sammelt keine personenbezogenen Daten, hilft aber bei der Bereitstellung von Tags, die Daten sammeln können."
+      },
+      "microsoftClarity": {
+        "title": "Microsoft Clarity",
+        "content": "Wir verwenden Microsoft Clarity, um Einblicke in die Interaktion von Benutzern mit unserer Website zu erhalten. Dieser Dienst hilft uns, das Benutzerverhalten zu verstehen, z. B. wo Benutzer klicken, wie weit sie scrollen und wie viel Zeit sie auf bestimmten Seiten verbringen. Microsoft Clarity kann personenbezogene Daten wie IP-Adresse, Geräteinformationen und Browsing-Aktivitäten sammeln."
+      },
+      "advertising": {
+        "title": "Werbung",
+        "content": "Wir verwenden Google Ads und Meta Ads (Facebook Advertising), um Ihnen gezielte Werbung auf anderen Websites und Plattformen zu liefern. Diese Dienste verwenden Cookies und ähnliche Technologien, um Ihre Aktivitäten auf unserer Website und anderswo im Internet zu verfolgen, um Ihnen relevante Werbung anzuzeigen."
+      }
+    },
+    "howWeUse": {
+      "title": "Wie wir Ihre personenbezogenen Daten verwenden",
+      "content": "Wir werden Ihre personenbezogenen Daten nur verwenden, wenn das Gesetz uns dies erlaubt. Am häufigsten werden wir Ihre personenbezogenen Daten in folgenden Fällen verwenden:",
+      "contract": "Wo wir den Vertrag erfüllen müssen, den wir mit Ihnen abschließen oder abgeschlossen haben.",
+      "legitimateInterests": "Wo es für unsere berechtigten Interessen (oder die eines Dritten) notwendig ist und Ihre Interessen und Grundrechte diese Interessen nicht überwiegen.",
+      "legalObligation": "Wo wir einer rechtlichen Verpflichtung nachkommen müssen."
+    },
+    "dataSecurity": {
+      "title": "Datensicherheit",
+      "content": "Wir haben geeignete Sicherheitsmaßnahmen implementiert, um zu verhindern, dass Ihre personenbezogenen Daten versehentlich verloren gehen, verwendet oder unbefugt abgerufen, verändert oder offengelegt werden. Darüber hinaus beschränken wir den Zugriff auf Ihre personenbezogenen Daten auf die Mitarbeiter, Vertreter, Auftragnehmer und andere Dritte, die diese aus geschäftlichen Gründen kennen müssen."
+    },
+    "dataRetention": {
+      "title": "Datenspeicherung",
+      "content": "Wir werden Ihre personenbezogenen Daten nur so lange aufbewahren, wie dies vernünftigerweise notwendig ist, um die Zwecke zu erfüllen, für die wir sie gesammelt haben, einschließlich der Zwecke der Erfüllung jeglicher rechtlicher, regulatorischer, steuerlicher, buchhalterischer oder Berichterstattungsanforderungen."
+    },
+    "legalRights": {
+      "title": "Ihre gesetzlichen Rechte",
+      "content": "Unter bestimmten Umständen haben Sie Rechte nach Datenschutzgesetzen in Bezug auf Ihre personenbezogenen Daten, einschließlich des Rechts:",
+      "access": "Zugriff auf Ihre personenbezogenen Daten anzufordern",
+      "correction": "Berichtigung Ihrer personenbezogenen Daten anzufordern",
+      "erasure": "Löschung Ihrer personenbezogenen Daten anzufordern",
+      "object": "Der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen",
+      "restriction": "Einschränkung der Verarbeitung Ihrer personenbezogenen Daten anzufordern",
+      "transfer": "Übertragung Ihrer personenbezogenen Daten anzufordern",
+      "withdrawConsent": "Recht auf Widerruf der Einwilligung"
+    },
+    "changes": {
+      "title": "Änderungen an dieser Datenschutzrichtlinie",
+      "content": "Wir können unsere Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzrichtlinie auf dieser Seite veröffentlichen."
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "content": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder unseren Datenschutzpraktiken haben, kontaktieren Sie uns bitte:",
+      "details": "E-Mail: welcome@advisable.com\nTelefon: +30 210 3000 217"
+    }
+  }
+}

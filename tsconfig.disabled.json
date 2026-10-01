@@ -1,0 +1,32 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "checkJs": false,
+    "allowJs": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": false,
+    "noImplicitOverride": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": false,
+    "suppressExcessPropertyErrors": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noStrictGenericChecks": true,
+    "useUnknownInCatchVariables": false,
+    "allowUnusedLabels": true,
+    "allowUnreachableCode": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": []
+}

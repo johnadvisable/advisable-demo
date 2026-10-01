@@ -1,0 +1,20 @@
+{
+  "error": "Fehler",
+  "errorDescription": "Fehler beim Laden des Nachrichtenartikels. Bitte versuchen Sie es später erneut.",
+  "notFound": "Nachrichtenartikel Nicht Gefunden",
+  "notFoundDescription": "Der Nachrichtenartikel, den Sie suchen, existiert nicht oder wurde verschoben.",
+  "backToNews": "Zurück zu Nachrichten",
+  "publishedOn": "Veröffentlicht am",
+  "badges": {
+    "article": "Artikel",
+    "media": "Medien"
+  },
+  "content": {
+    "comingSoon": "Vollständiger Artikelinhalt kommt bald...",
+    "mediaComingSoon": "Medien kommen bald"
+  },
+  "instagram": {
+    "viewOriginal": "Ursprünglichen Beitrag auf Instagram ansehen",
+    "viewPost": "Diesen Beitrag auf Instagram ansehen"
+  }
+}

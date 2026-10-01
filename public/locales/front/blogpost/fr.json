@@ -1,0 +1,11 @@
+{
+  "error": "Erreur",
+  "errorDescription": "Échec du chargement de l'article. Veuillez réessayer plus tard.",
+  "articleNotFound": "Article Non Trouvé",
+  "articleNotFoundDescription": "L'article que vous cherchez n'existe pas ou a été déplacé.",
+  "backToBlog": "Retour au Blog",
+  "publishedOn": "Publié le",
+  "authorRole": "Expert E-commerce",
+  "relatedArticles": "Articles Connexes",
+  "readMore": "En savoir plus"
+}

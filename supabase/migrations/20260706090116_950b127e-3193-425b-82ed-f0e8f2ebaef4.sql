@@ -1,0 +1,1 @@
+UPDATE public.clients SET logo = '/__l5e/assets-v1/1ac6c341-95be-4887-8abf-f6b8e3f6818c/pharm16-logo.png' WHERE slug = 'pharm16';

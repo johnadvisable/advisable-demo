@@ -1,0 +1,11 @@
+{
+  "error": "Error",
+  "errorDescription": "Failed to load the article. Please try again later.",
+  "articleNotFound": "Article Not Found",
+  "articleNotFoundDescription": "The article you're looking for doesn't exist or has been moved.",
+  "backToBlog": "Back to Blog",
+  "publishedOn": "Published on",
+  "authorRole": "E-commerce Expert",
+  "relatedArticles": "Related Articles",
+  "readMore": "Read more"
+}

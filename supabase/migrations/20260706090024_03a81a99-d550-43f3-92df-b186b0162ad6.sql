@@ -1,0 +1,1 @@
+UPDATE public.clients SET logo = '/__l5e/assets-v1/be202574-a93b-43a0-bcf0-8cff7e1f35d8/seajets-logo.jpeg' WHERE slug = 'seajets';

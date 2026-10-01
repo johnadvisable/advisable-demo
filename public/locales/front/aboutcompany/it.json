@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Rule the AI-first world.",
+    "description": "Guidare l'innovazione e la trasformazione digitale dal {{year}}"
+  },
+  "mission": {
+    "title": "La Nostra Missione",
+    "fallback": "Potenziare le aziende attraverso soluzioni digitali innovative che favoriscono la crescita, l'efficienza e il vantaggio competitivo in un panorama tecnologico in rapida evoluzione."
+  },
+  "vision": {
+    "title": "La Nostra Visione",
+    "fallback": "Essere il principale catalizzatore della trasformazione digitale, creando soluzioni all'avanguardia che plasmano il futuro delle industrie in tutto il mondo e offrono valore eccezionale ai nostri clienti."
+  },
+  "story": {
+    "title": "La Nostra Storia",
+    "fallback": "Informazioni sull'azienda non disponibili",
+    "history": {
+      "title": "La Nostra Storia"
+    },
+    "approach": {
+      "title": "Il Nostro Approccio"
+    }
+  },
+  "values": {
+    "title": "I Nostri Valori",
+    "subtitle": "I principi che guidano il nostro lavoro e definiscono la nostra cultura"
+  },
+  "team": {
+    "title": "Il Nostro Team",
+    "button": "Incontra il nostro team"
+  }
+}

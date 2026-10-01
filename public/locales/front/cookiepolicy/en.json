@@ -1,0 +1,83 @@
+{
+  "title": "Cookie Policy",
+  "lastUpdated": "Last updated: {{date}}",
+  "sections": {
+    "introduction": {
+      "title": "Introduction",
+      "content": "This Cookie Policy explains how Advisable (\"we\", \"us\", and \"our\") uses cookies and similar technologies to recognize and track your visit when you use our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them."
+    },
+    "whatAreCookies": {
+      "title": "What Are Cookies?",
+      "definition": "Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.",
+      "firstParty": "Cookies set by the website owner (in this case, Advisable) are called \"first-party cookies\". Cookies set by parties other than the website owner are called \"third-party cookies\". Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content and analytics). The parties that set these third-party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites."
+    },
+    "whyUseCookies": {
+      "title": "Why Do We Use Cookies?",
+      "content": "We use first-party and third-party cookies for several reasons. Some cookies are required for technical reasons in order for our website to operate, and we refer to these as \"essential\" or \"strictly necessary\" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our website. Third parties serve cookies through our website for advertising, analytics and other purposes."
+    },
+    "cookieTypes": {
+      "title": "Types of Cookies We Use",
+      "introduction": "The specific types of first and third-party cookies served through our website and the purposes they perform are described below:",
+      "essential": {
+        "title": "Essential Cookies",
+        "content": "These cookies are strictly necessary to provide you with services available through our website and to use some of its features, such as access to secure areas. Because these cookies are strictly necessary to deliver the website, you cannot refuse them without impacting how our website functions."
+      },
+      "performance": {
+        "title": "Performance and Functionality Cookies",
+        "content": "These cookies are used to enhance the performance and functionality of our website but are non-essential to their use. However, without these cookies, certain functionality may become unavailable."
+      },
+      "analytics": {
+        "title": "Analytics and Customization Cookies",
+        "content": "These cookies collect information that is used either in aggregate form to help us understand how our website is being used or how effective our marketing campaigns are, or to help us customize our website for you.",
+        "servicesIntro": "We use the following analytics and customization services:",
+        "services": {
+          "googleAnalytics": {
+            "title": "Google Analytics",
+            "content": "Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our website. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network."
+          },
+          "googleTagManager": {
+            "title": "Google Tag Manager",
+            "content": "Google Tag Manager is a tag management system that allows us to quickly and easily update tracking codes and related code fragments collectively known as \"tags\" on our website. Tags tell Google Analytics and other measurement tools what to track."
+          },
+          "microsoftClarity": {
+            "title": "Microsoft Clarity",
+            "content": "Microsoft Clarity is a user behavior analytics tool that helps us understand how users interact with our website. It uses cookies to collect data about user sessions, including mouse movements, clicks, and scrolls."
+          }
+        }
+      },
+      "advertising": {
+        "title": "Advertising Cookies",
+        "content": "These cookies are used to make advertising messages more relevant to you. They perform functions like preventing the same ad from continuously reappearing, ensuring that ads are properly displayed, and in some cases selecting advertisements that are based on your interests.",
+        "servicesIntro": "We use the following advertising services:",
+        "services": {
+          "googleAds": {
+            "title": "Google Ads",
+            "content": "Google Ads is an online advertising platform developed by Google, where advertisers pay to display brief advertisements, service offerings, product listings, and video content within the Google ad network to web users."
+          },
+          "metaAds": {
+            "title": "Meta Ads",
+            "content": "Meta Ads (Facebook Advertising) is an online advertising platform that allows advertisers to show ads on Facebook, Instagram, and other Meta platforms."
+          }
+        }
+      }
+    },
+    "controlCookies": {
+      "title": "How Can You Control Cookies?",
+      "rights": "You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by clicking on the appropriate opt-out links provided in the cookie table.",
+      "browser": "You can set or amend your web browser controls to accept or refuse cookies. If you choose to reject cookies, you may still use our website though your access to some functionality and areas of our website may be restricted. As the means by which you can refuse cookies through your web browser controls vary from browser-to-browser, you should visit your browser's help menu for more information.",
+      "advertising": "In addition, most advertising networks offer you a way to opt out of targeted advertising. If you would like to find out more information, please visit {{link1}} or {{link2}}."
+    },
+    "changes": {
+      "title": "Changes to This Cookie Policy",
+      "content": "We may update this Cookie Policy from time to time in order to reflect, for example, changes to the cookies we use or for other operational, legal or regulatory reasons. Please therefore re-visit this Cookie Policy regularly to stay informed about our use of cookies and related technologies.",
+      "date": "The date at the top of this Cookie Policy indicates when it was last updated."
+    },
+    "declaration": {
+      "title": "Cookie Declaration"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about our use of cookies or other technologies, please email us at:\nEmail: welcome@advisable.gr\nPhone: +30 210 3000 217"
+    }
+  }
+}

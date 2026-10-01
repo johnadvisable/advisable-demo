@@ -1,0 +1,32 @@
+name: Trigger Coolify Deploy
+
+# Optional: use this only if you prefer GitHub-side triggering instead of
+# Coolify's native GitHub App auto-deploy. Requires the repository secret
+# COOLIFY_DEPLOY_WEBHOOK (and optionally COOLIFY_TOKEN).
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Coolify deploy webhook
+        env:
+          COOLIFY_DEPLOY_WEBHOOK: ${{ secrets.COOLIFY_DEPLOY_WEBHOOK }}
+          COOLIFY_TOKEN: ${{ secrets.COOLIFY_TOKEN }}
+        run: |
+          if [ -z "$COOLIFY_DEPLOY_WEBHOOK" ]; then
+            echo "COOLIFY_DEPLOY_WEBHOOK is not set - skipping."
+            exit 0
+          fi
+          if [ -n "$COOLIFY_TOKEN" ]; then
+            curl -sS -f -X GET "$COOLIFY_DEPLOY_WEBHOOK" \
+              -H "Authorization: Bearer $COOLIFY_TOKEN"
+          else
+            curl -sS -f -X GET "$COOLIFY_DEPLOY_WEBHOOK"
+          fi
+          echo "Coolify deploy triggered."

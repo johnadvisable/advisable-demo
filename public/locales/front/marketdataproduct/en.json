@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "backToProducts": "All Products",
+    "title": "SizeTheMarket",
+    "subtitle": "Instant Data Analysis at Your Command",
+    "description": "Get immediate insights into your market. See how many products you have in common with competitors, who has the cheapest prices, and who is the most expensive.",
+    "visitWebsite": "Visit Website"
+  },
+  "features": {
+    "title": "Key Features",
+    "competitiveAnalysis": {
+      "title": "Competitive Analysis",
+      "description": "Immediately identify how your offerings compare to your competitors' across multiple dimensions."
+    },
+    "priceTracking": {
+      "title": "Price Tracking",
+      "description": "Track price fluctuations over time with alerts for significant changes in competitor pricing."
+    },
+    "marketIntelligence": {
+      "title": "Market Intelligence",
+      "description": "Comprehensive reports on market trends, product popularity, and emerging opportunities."
+    }
+  },
+  "useCases": {
+    "title": "Use Cases",
+    "retailOptimization": {
+      "title": "Retail Price Optimization",
+      "description": "A major electronics retailer was able to optimize their pricing strategy by tracking competitors' price changes in real-time, leading to a 12% increase in profit margins.",
+      "result": "Result: 12% increase in profit margins"
+    },
+    "productAnalysis": {
+      "title": "Product Range Analysis",
+      "description": "An online marketplace identified gaps in their product offerings by comparing their catalog with competitors, resulting in 200+ new product additions and 15% revenue growth.",
+      "result": "Result: 15% revenue growth"
+    }
+  },
+  "cta": {
+    "title": "Ready to Get Ahead of Your Competition?",
+    "description": "Start making data-driven decisions today with MarkeData's powerful market intelligence tools.",
+    "button": "Get Started Today"
+  }
+}

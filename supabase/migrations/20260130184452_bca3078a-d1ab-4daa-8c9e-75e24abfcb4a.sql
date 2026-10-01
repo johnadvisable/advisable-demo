@@ -1,0 +1,1 @@
+UPDATE clients SET logo = '/images/investments/pixaera-logo.png' WHERE id = '34f3debd-53d3-4977-ad98-9980aba91255';

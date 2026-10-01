@@ -1,0 +1,16 @@
+{
+  "title": "Perspectives",
+  "subtitle": "Perspectives d'experts, analyse sectorielle et leadership intellectuel pour aider votre entreprise à rester en avance sur la courbe.",
+  "searchPlaceholder": "Rechercher des perspectives...",
+  "error": "Erreur",
+  "errorDescription": "Échec du chargement des perspectives. Veuillez réessayer plus tard.",
+  "noInsightsFound": "Aucune perspective trouvée",
+  "noInsightsDescription": "Essayez d'ajuster votre terme de recherche.",
+  "readMore": "En savoir plus",
+  "tabs": {
+    "all": "Tout",
+    "insights": "Perspectives",
+    "news": "Actualités",
+    "media": "Media"
+  }
+}

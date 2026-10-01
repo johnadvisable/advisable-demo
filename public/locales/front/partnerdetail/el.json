@@ -1,0 +1,16 @@
+{
+  "notFound": {
+    "title": "Ο Συνεργάτης Δεν Βρέθηκε",
+    "message": "Ο συνεργάτης που αναζητάτε δεν υπάρχει ή έχει αφαιρεθεί.",
+    "backButton": "Επιστροφή στους Συνεργάτες"
+  },
+  "navigation": {
+    "backToPartners": "Επιστροφή στους Partners & Integrations"
+  },
+  "sections": {
+    "aboutPartnership": "Σχετικά με τη Συνεργασία",
+    "useCase": "Use Case",
+    "benefits": "Benefits"
+  },
+  "viewAllPartners": "Δείτε Όλους τους Συνεργάτες"
+}

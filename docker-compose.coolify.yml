@@ -1,0 +1,180 @@
+version: '3.8'
+
+services:
+  # Main App - Nginx with React SPA
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    environment:
+      - IMGPROXY_URL=http://imgproxy:8080
+    depends_on:
+      - imgproxy
+      - prerender1
+      - prerender2
+      - prerender3
+      - redis
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 2G
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  # imgproxy - On-the-fly image resizing & WebP conversion
+  imgproxy:
+    image: darthsim/imgproxy:latest
+    ports:
+      - "8082:8080"
+    environment:
+      - IMGPROXY_BIND=:8080
+      - IMGPROXY_LOCAL_FILESYSTEM_ROOT=/images
+      - IMGPROXY_ENABLE_WEBP_DETECTION=true
+      - IMGPROXY_ENFORCE_WEBP=true
+      - IMGPROXY_QUALITY=80
+      - IMGPROXY_MAX_SRC_RESOLUTION=50
+      - IMGPROXY_MAX_ANIMATION_FRAMES=100
+      - IMGPROXY_ENABLE_AVIF_DETECTION=true
+      - IMGPROXY_USE_ETAG=true
+      - IMGPROXY_CACHE_CONTROL_PASSTHROUGH=false
+      - IMGPROXY_SET_CANONICAL_HEADER=true
+      - IMGPROXY_ALLOWED_SOURCES=local://,https://difvvdmelbtjxxvpjuvw.supabase.co/
+    volumes:
+      - ./public:/images:ro
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 2G
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  # Redis - Caching for Prerender
+  redis:
+    image: redis:7-alpine
+    command: redis-server --maxmemory 512mb --maxmemory-policy allkeys-lru
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 512M
+    restart: unless-stopped
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Prerender Instance 1
+  prerender1:
+    image: tvanro/prerender-alpine:6.6.1
+    ports:
+      - "3001:3000"
+    environment:
+      - MEMORY_CACHE=0
+      - CACHE_MAXSIZE=1000
+      - CACHE_TTL=86400
+      - REDIS_URL=redis://redis:6379/0
+      - PAGE_DONE_CHECK_INTERVAL=500
+      - PAGE_LOAD_TIMEOUT=30000
+      - WAIT_AFTER_LAST_REQUEST=500
+      - FOLLOW_REDIRECTS=true
+    depends_on:
+      redis:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1G
+    restart: unless-stopped
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # Prerender Instance 2
+  prerender2:
+    image: tvanro/prerender-alpine:6.6.1
+    ports:
+      - "3002:3000"
+    environment:
+      - MEMORY_CACHE=0
+      - CACHE_MAXSIZE=1000
+      - CACHE_TTL=86400
+      - REDIS_URL=redis://redis:6379/0
+      - PAGE_DONE_CHECK_INTERVAL=500
+      - PAGE_LOAD_TIMEOUT=30000
+      - WAIT_AFTER_LAST_REQUEST=500
+      - FOLLOW_REDIRECTS=true
+    depends_on:
+      redis:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1G
+    restart: unless-stopped
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # Prerender Instance 3
+  prerender3:
+    image: tvanro/prerender-alpine:6.6.1
+    ports:
+      - "3003:3000"
+    environment:
+      - MEMORY_CACHE=0
+      - CACHE_MAXSIZE=1000
+      - CACHE_TTL=86400
+      - REDIS_URL=redis://redis:6379/0
+      - PAGE_DONE_CHECK_INTERVAL=500
+      - PAGE_LOAD_TIMEOUT=30000
+      - WAIT_AFTER_LAST_REQUEST=500
+      - FOLLOW_REDIRECTS=true
+    depends_on:
+      redis:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1G
+    restart: unless-stopped
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  redis-data:

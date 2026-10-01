@@ -1,0 +1,1 @@
+UPDATE public.team_members SET slug='panagiotis-kallaras' WHERE id='41ec84d2-4fec-4d74-bd66-5f6260b23f51';

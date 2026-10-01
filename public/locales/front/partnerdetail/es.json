@@ -1,0 +1,16 @@
+{
+  "notFound": {
+    "title": "Socio no encontrado",
+    "message": "El socio que buscas no existe o ha sido eliminado.",
+    "backButton": "Volver a Socios"
+  },
+  "navigation": {
+    "backToPartners": "Volver a Socios e Integraciones"
+  },
+  "sections": {
+    "aboutPartnership": "Acerca de esta asociación",
+    "useCase": "Caso de uso",
+    "benefits": "Beneficios"
+  },
+  "viewAllPartners": "Ver todos los socios"
+}

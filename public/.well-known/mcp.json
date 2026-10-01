@@ -1,0 +1,32 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/mcp.json",
+  "name": "advisable",
+  "title": "Advisable",
+  "description": "Tools for the Advisable website: services, products, clients, insights, Academy seminars, navigation and form prefill.",
+  "documentation": "https://www.advisable.com/llms.txt",
+  "webmcp": {
+    "available": true,
+    "api": "document.modelContext",
+    "description": "Every page registers in-page WebMCP tools. Call document.modelContext.getTools() after page load."
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://difvvdmelbtjxxvpjuvw.supabase.co/functions/v1/mcp",
+      "authentication": "oauth2",
+      "description": "Remote MCP server for authenticated content management (publishing insights, uploading images)."
+    }
+  ],
+  "tools": [
+    { "name": "get_page_context", "description": "Current page, path and language." },
+    { "name": "list_services", "description": "Advisable services with slug, title and URL." },
+    { "name": "list_products", "description": "Advisable products." },
+    { "name": "list_clients", "description": "Clients and case studies." },
+    { "name": "search_insights", "description": "Search insights and news by keyword." },
+    { "name": "get_article", "description": "Full text of an insight or news article." },
+    { "name": "list_seminars", "description": "Upcoming Advisable Academy seminars." },
+    { "name": "navigate_to", "description": "Navigate to a page of the website." },
+    { "name": "prepare_contact_request", "description": "Prefill the contact form for human submission." },
+    { "name": "prepare_seminar_interest", "description": "Prefill Academy interest details for human submission." }
+  ]
+}

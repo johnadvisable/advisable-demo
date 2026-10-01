@@ -1,0 +1,31 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": false,
+    "noImplicitReturns": false,
+    "noUncheckedIndexedAccess": false,
+    "allowUnusedLabels": true,
+    "allowUnreachableCode": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "**/*.test.*",
+    "**/*.spec.*"
+  ]
+}

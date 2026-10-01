@@ -1,0 +1,12 @@
+{
+  "notFound": {
+    "title": "Servizio Non Trovato",
+    "message": "Il servizio che stai cercando non esiste in questa categoria.",
+    "goHome": "Torna alla Home"
+  },
+  "cta": {
+    "title": "Pronto a iniziare?",
+    "description": "Discutiamo di come possiamo aiutarti con {{serviceTitle}}.",
+    "button": "Contattaci"
+  }
+}

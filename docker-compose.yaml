@@ -1,0 +1,98 @@
+version: '3.8'
+
+services:
+  # Main App - Nginx with React SPA
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - VITE_SUPABASE_URL=https://difvvdmelbtjxxvpjuvw.supabase.co
+        - VITE_SUPABASE_PUBLISHABLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRpZnZ2ZG1lbGJ0anh4dnBqdXZ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY3MTExODksImV4cCI6MjA1MjI4NzE4OX0.2suJO5cCjTPCsffgJO3j9f5nWCRpWgb0FrrSweNHHB8
+        - VITE_SUPABASE_PROJECT_ID=difvvdmelbtjxxvpjuvw
+    expose:
+      - "80"
+    environment:
+      - IMGPROXY_URL=http://imgproxy:8080
+    depends_on:
+      - imgproxy
+      - prerender1
+    volumes:
+      - image-cache:/var/cache/nginx/images
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 2G
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    labels:
+      - "traefik.enable=true"
+      # Main domains
+      - "traefik.http.routers.app.rule=Host(`advisable.com`) || Host(`www.advisable.com`) || Host(`advisable.gr`) || Host(`www.advisable.gr`) || Host(`advisable.es`) || Host(`www.advisable.es`) || Host(`advisable.fr`) || Host(`www.advisable.fr`) || Host(`advisable.it`) || Host(`www.advisable.it`) || Host(`advisable.de`) || Host(`www.advisable.de`)"
+      - "traefik.http.routers.app.entrypoints=https"
+      - "traefik.http.routers.app.tls=true"
+      - "traefik.http.routers.app.tls.certresolver=letsencrypt"
+      - "traefik.http.services.app.loadbalancer.server.port=80"
+
+  # imgproxy - On-the-fly image resizing & WebP conversion
+  imgproxy:
+    image: darthsim/imgproxy:latest
+    expose:
+      - "8080"
+    environment:
+      - IMGPROXY_BIND=:8080
+      - IMGPROXY_LOCAL_FILESYSTEM_ROOT=/images
+      - IMGPROXY_ENABLE_WEBP_DETECTION=true
+      - IMGPROXY_ENFORCE_WEBP=true
+      - IMGPROXY_QUALITY=80
+      - IMGPROXY_MAX_SRC_RESOLUTION=50
+      - IMGPROXY_MAX_ANIMATION_FRAMES=100
+      - IMGPROXY_ENABLE_AVIF_DETECTION=true
+      - IMGPROXY_USE_ETAG=true
+      - IMGPROXY_CACHE_CONTROL_PASSTHROUGH=false
+      - IMGPROXY_SET_CANONICAL_HEADER=true
+      - IMGPROXY_ALLOWED_SOURCES=local://,https://difvvdmelbtjxxvpjuvw.supabase.co/
+    volumes:
+      - ./public:/images:ro
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1G
+    restart: unless-stopped
+
+  # Prerender - SEO snapshots with memory cache
+  prerender1:
+    image: tvanro/prerender-alpine:6.6.1
+    expose:
+      - "3000"
+    environment:
+      - MEMORY_CACHE=1
+      - CACHE_TTL=1
+      - PAGE_DONE_CHECK_INTERVAL=500
+      - PAGE_LOAD_TIMEOUT=30000
+      - WAIT_AFTER_LAST_REQUEST=500
+      - FOLLOW_REDIRECTS=true
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+        reservations:
+          memory: 4G
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  image-cache:

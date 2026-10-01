@@ -1,0 +1,501 @@
+{
+  "_note": "English fallback — pending translation",
+  "seo": {
+    "title": "Academy Athens: Build Your Site & AI Agents | Advisable",
+    "description": "Two in-person masterclasses in Athens, 24 & 25 September 2026. Day 1 is training with a live demo, day 2 is a hands-on workshop where you build your own case study with 1:1 guidance. Taught in Greek. Held at the Advisable offices in Κολωνός, Αθήνα.",
+    "ogTitle": "Academy Athens: Build Your Site & AI Agents | Advisable",
+    "ogDescription": "In-person masterclasses in Athens, 24 & 25 September 2026. Day 2 is a hands-on workshop with your own case study. Limited seats. Taught in Greek. Held at the Advisable offices in Κολωνός, Αθήνα."
+  },
+  "common": {
+    "dates": "24 & 25 September 2026",
+    "currency": "€"
+  },
+  "hero": {
+    "badge": "Exclusive",
+    "title": "Become a Legend in 2 Days",
+    "subtitle": "Two intensive masterclasses on 24 & 25 September 2026. Build your own website or prototype, and put AI agents to work for your business.",
+    "facts": {
+      "dates": "24 & 25 September 2026",
+      "morning": "Morning track {{hours}}",
+      "afternoon": "Afternoon track {{hours}}",
+      "location": "Ηρούς 4, Κολωνός, Αθήνα",
+      "language": "Language of instruction: Greek. For teams, we can run a dedicated session in English — ask us.",
+      "seats": "{{seats}} seats per track",
+      "workshop": "Day 2: workshop on your own case"
+    },
+    "ctaRegister": "Reserve your seat",
+    "ctaAgenda": "See the agenda",
+    "locationNote": "In person, in a small group"
+  },
+  "dayFlow": {
+    "title": "How the day is split",
+    "lunch": "Lunch break",
+    "lunchSub": "Networking",
+    "note": "The two tracks do not overlap. Book the morning only, the afternoon only, or both with the bundle."
+  },
+  "courses": {
+    "title": "The two tracks",
+    "labels": {
+      "price": "FINAL PRICE",
+      "seats": "{{seats}} seats available",
+      "cta": "Reserve your seat"
+    },
+    "morning": {
+      "badge": "Morning track",
+      "title": "Build Your Online Presentation",
+      "subtitle": "Build your own website, yourself",
+      "description": "A practical walkthrough of how anyone can build their own website with Lovable, or any prototype for an application.",
+      "teacher": "Πάνος Καλλάρας",
+      "format": [
+        "Day 1: Training + live demo",
+        "Day 2: 1:1 workshop on your own case"
+      ],
+      "bullets": [
+        "From idea to a live site in two days",
+        "Lovable for websites and application prototypes",
+        "Hands-on, on your own laptop"
+      ]
+    },
+    "afternoon": {
+      "badge": "Afternoon track",
+      "title": "AI Business Expand with Agents",
+      "subtitle": "Introducción a Claude: Cowork, Skills y MCP connectors",
+      "description": "Programa totalmente introductorio sobre Claude para el trabajo diario de la empresa. Empezamos desde lo básico, trabajamos con Claude Cowork, creamos nuestros primeros Claude Skills y conectamos Claude con nuestras herramientas mediante MCP connectors.",
+      "teacher": "Βασίλης Καλλάρας",
+      "format": [
+        "Day 1: Training + live demo",
+        "Day 2: 1:1 workshop on your own case"
+      ],
+      "bullets": [
+        "Del primer prompt al uso diario de Claude",
+        "Claude Cowork: trabajar con Claude en documentos, email e informes",
+        "Claude Skills: instrucciones reutilizables para tareas repetitivas",
+        "Claude MCP connectors: Drive, Gmail, Calendar y sus propios datos",
+        "No se requiere experiencia previa"
+      ]
+    }
+  },
+  "agenda": {
+    "title": "Full agenda",
+    "intro": "Day 1: you learn and watch it happen live. Day 2: workshop — we work one to one with every participant and you build your own case study.",
+    "tabMorning": "Morning track",
+    "tabAfternoon": "Afternoon track",
+    "formatTraining": "Training + live demo",
+    "formatWorkshop": "1:1 workshop",
+    "morning": {
+      "days": [
+        {
+          "title": "Day 1 (24/9) — From idea to your first live site",
+          "workshop": false,
+          "slots": [
+            {
+              "time": "10:00-10:15",
+              "text": "Welcome, setup, what each participant will build"
+            },
+            {
+              "time": "10:15-11:15",
+              "text": "How an AI builder thinks: prompting, page structure, sitemap. We define your own project"
+            },
+            {
+              "time": "11:15-11:30",
+              "text": "Coffee break",
+              "break": true
+            },
+            {
+              "time": "11:30-12:30",
+              "text": "Building the first site in Lovable: hero, sections, navigation"
+            },
+            {
+              "time": "12:30-12:45",
+              "text": "Break",
+              "break": true
+            },
+            {
+              "time": "12:45-13:40",
+              "text": "Design system, colours, typography, images, responsive on mobile"
+            },
+            {
+              "time": "13:40-14:00",
+              "text": "Publish to a live URL and Q&A"
+            }
+          ]
+        },
+        {
+          "title": "Day 2 (25/9) — From a site to a working product",
+          "workshop": true,
+          "slots": [
+            {
+              "time": "10:00-10:15",
+              "text": "Recap of day 1"
+            },
+            {
+              "time": "10:15-11:15",
+              "text": "Forms, data storage and a database without code"
+            },
+            {
+              "time": "11:15-11:30",
+              "text": "Coffee break",
+              "break": true
+            },
+            {
+              "time": "11:30-12:30",
+              "text": "App prototype: login, dashboard, managing sign-ups"
+            },
+            {
+              "time": "12:30-12:45",
+              "text": "Break",
+              "break": true
+            },
+            {
+              "time": "12:45-13:35",
+              "text": "Custom domain, basic SEO, analytics, speed"
+            },
+            {
+              "time": "13:35-14:00",
+              "text": "Participants present their projects and next steps"
+            }
+          ]
+        }
+      ]
+    },
+    "afternoon": {
+      "days": [
+        {
+          "title": "Día 1 (24/9) — Introducción a Claude y a Claude Cowork",
+          "workshop": false,
+          "slots": [
+            {
+              "time": "15:00-15:15",
+              "text": "Bienvenida: qué es Claude, qué puede hacer y dónde encaja en su día"
+            },
+            {
+              "time": "15:15-16:15",
+              "text": "Primeros pasos: chats, projects, archivos y prompts que funcionan"
+            },
+            {
+              "time": "16:15-16:30",
+              "text": "Pausa para el café",
+              "break": true
+            },
+            {
+              "time": "16:30-17:30",
+              "text": "Claude Cowork en la práctica: documentos, email, notas, informes"
+            },
+            {
+              "time": "17:30-17:45",
+              "text": "Pausa",
+              "break": true
+            },
+            {
+              "time": "17:45-18:40",
+              "text": "Claude Skills: convertir una tarea repetitiva en un skill reutilizable"
+            },
+            {
+              "time": "18:40-19:00",
+              "text": "Q&A"
+            }
+          ]
+        },
+        {
+          "title": "Día 2 (25/9) — Claude Skills y MCP connectors sobre su propio caso",
+          "workshop": true,
+          "slots": [
+            {
+              "time": "15:00-15:15",
+              "text": "Repaso del día 1"
+            },
+            {
+              "time": "15:15-16:15",
+              "text": "Claude MCP connectors: conectar Drive, Gmail, Calendar y sus propios datos"
+            },
+            {
+              "time": "16:15-16:30",
+              "text": "Pausa para el café",
+              "break": true
+            },
+            {
+              "time": "16:30-17:30",
+              "text": "Workshop: su primer Claude Skill para una tarea real de la empresa"
+            },
+            {
+              "time": "17:30-17:45",
+              "text": "Pausa",
+              "break": true
+            },
+            {
+              "time": "17:45-18:35",
+              "text": "Seguridad, permisos, coste y cuándo debe intervenir una persona"
+            },
+            {
+              "time": "18:35-19:00",
+              "text": "Los participantes presentan su caso y un playbook sencillo para el equipo"
+            }
+          ]
+        }
+      ]
+    },
+    "breaksNote": "Two 15-minute breaks in each 4-hour session."
+  },
+  "audience": {
+    "title": "Who it's for",
+    "items": [
+      "Business owners",
+      "Founders",
+      "Marketers",
+      "Freelancers",
+      "Managers who want to produce things themselves"
+    ],
+    "note": "No coding knowledge required.",
+    "workshopTitle": "How the workshop works",
+    "workshopItems": [
+      "You come with a real case: the site you want to build or the process you want to automate.",
+      "We work one to one with every participant on their own case, not on a showcase example.",
+      "At the end of the day each participant presents their case study to the group."
+    ],
+    "workshopNote": "Seats are limited precisely so we have time to sit down with each person individually."
+  },
+  "needs": {
+    "title": "What you need",
+    "items": [
+      "Your own laptop (Windows or macOS) and its charger. It is mandatory for day 2, which is a workshop, and useful on day 1 too. We do not provide computers on site.",
+      "An email account"
+    ],
+    "note": "Tool subscriptions (Lovable, Claude) are not included in the price. We will send instructions before the seminar on what to activate: free tiers are enough to get started.",
+    "wifi": "WiFi: provided by Advisable — you don't need your own connection."
+  },
+  "outcomes": {
+    "title": "What you walk away with",
+    "groups": [
+      {
+        "title": "Morning track",
+        "items": [
+          "A complete case study of your own, built inside the workshop, not theory",
+          "A live website of your own",
+          "A working prototype",
+          "Your design system",
+          "A prompting guide"
+        ]
+      },
+      {
+        "title": "Afternoon track",
+        "items": [
+          "A complete case study of your own, built inside the workshop, not theory",
+          "At least one working agent for a real process",
+          "Ready-made workflow templates",
+          "A security and permissions checklist"
+        ]
+      },
+      {
+        "title": "For both",
+        "items": [
+          "A certificate of attendance",
+          "All seminar material",
+          "Access to a private support group for 30 days afterwards"
+        ]
+      }
+    ]
+  },
+  "instructors": {
+    "title": "Your instructors",
+    "items": [
+      {
+        "name": "Πάνος Καλλάρας",
+        "role": "Co-founder & CEO, Advisable",
+        "bio": "He has been building and shipping digital products and websites for businesses for two decades. In the seminar he shows you step by step, on your own project, how to go from idea to a live result."
+      },
+      {
+        "name": "Βασίλης Καλλάρας",
+        "role": "Co-founder, Advisable",
+        "bio": "He works daily with AI agents, MCP and cloud automations inside real business processes. He shares practical solutions that make it into production, not theory."
+      }
+    ],
+    "credibility": [
+      "250+ companies",
+      "€200M+ digital revenue tracked",
+      "Google Premier Partner",
+      "Member of Elevate Greece",
+      "45 Advisablers",
+      "Offices in Athens & Patras"
+    ]
+  },
+  "bundle": {
+    "badge": "Bundle",
+    "title": "Become a Legend in 2 Days",
+    "description": "Both tracks together, Build Your Online Presentation and AI Business Expand with Agents, for {{price}} €.",
+    "note": "Both tracks, 10:00-19:00 with a lunch break at {{lunch}}.",
+    "cta": "Get the bundle"
+  },
+  "register": {
+    "title": "Reserve your seat",
+    "subtitle": "Fill in your details and we will contact you within 1 business day with the payment information. {{seats}} seats per track.",
+    "options": {
+      "morning": "Morning track — Build Your Online Presentation ({{hours}})",
+      "afternoon": "Afternoon track — AI Business Expand with Agents ({{hours}})",
+      "bundle": "Bundle — both tracks"
+    },
+    "form": {
+      "name": "Full name *",
+      "email": "Email *",
+      "phone": "Phone *",
+      "company": "Company",
+      "courseLegend": "Choose your track *",
+      "invoice": "I need an invoice",
+      "vat": "VAT number *",
+      "legalName": "Company name",
+      "activity": "Business activity",
+      "case": "Your case",
+      "casePlaceholder": "Tell us in 2-3 lines what you want to build or which process you want to automate, so we can prepare it before the workshop.",
+      "caseHelp": "Optional, but it helps a lot in making the most of day 2.",
+      "message": "Message",
+      "consent": "I agree to the processing of my data according to the",
+      "privacyLink": "privacy policy",
+      "submit": "Reserve your seat",
+      "submitting": "Sending...",
+      "invoiceHelp": "Fill in your company details so we can issue an invoice."
+    },
+    "errors": {
+      "name": "Please enter your full name",
+      "email": "Please enter your email",
+      "emailInvalid": "Invalid email address",
+      "phone": "Please enter your phone number",
+      "vat": "Please enter a VAT number",
+      "consent": "Your consent is required",
+      "fix": "Please check the fields with errors",
+      "captcha": "Please complete the security verification",
+      "submit": "Something went wrong. Please try again or email us."
+    },
+    "summary": {
+      "label": "SUMMARY",
+      "total": "Total",
+      "seats": "{{seats}} seats per track"
+    },
+    "success": "Your booking has been received!"
+  },
+  "waitlist": {
+    "title": "Can't make 24 & 25 September?",
+    "subtitle": "Join the list and we will let you know first about the next edition.",
+    "email": "Email",
+    "emailPlaceholder": "you@company.com",
+    "interest": "I'm interested in",
+    "optionMorning": "Morning track",
+    "optionAfternoon": "Afternoon track",
+    "optionBundle": "Both (bundle)",
+    "cta": "Join the waitlist",
+    "invalidEmail": "Please enter a valid email",
+    "success": "You're on the list. We'll let you know first about the next session.",
+    "done": "You're on the list. We'll let you know first about the next session.",
+    "error": "Something went wrong. Please try again.",
+    "name": "Full name",
+    "namePlaceholder": "Your name (optional)",
+    "consentPrefix": "I agree to the",
+    "consentLink": "Privacy Policy",
+    "consentSuffix": "and to being contacted about the next session.",
+    "consentRequired": "Please accept the Privacy Policy.",
+    "captcha": "Please complete the security check."
+  },
+  "corporate": {
+    "title": "For teams and companies",
+    "description": "In-house training for your team, with a programme adapted to your own processes, per-team pricing and the option to implement it together with Advisable.",
+    "cta": "Request a quote for your team",
+    "items": [
+      "Formación en sus propias oficinas y en su horario",
+      "Programa adaptado a los procesos reales de su equipo",
+      "Precio por equipo, sin límite de plazas por sesión",
+      "Posibilidad de implementarlo después junto a Advisable"
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "note": "Seats per track are limited so we can work one to one with each participant.",
+    "items": [
+      {
+        "q": "Do I need programming knowledge?",
+        "a": "No. The seminars are designed for people without a technical background."
+      },
+      {
+        "q": "What language is it taught in?",
+        "a": "Language of instruction: Greek. For teams, we can run a dedicated session in English — ask us."
+      },
+      {
+        "q": "Is it in person or online?",
+        "a": "In person at the Advisable head offices, Ηρούς 4, Κολωνός, opposite the Kapnergostasio, with limited seats."
+      },
+      {
+        "q": "Can I book only one track?",
+        "a": "Yes, the morning and afternoon tracks are independent and do not overlap."
+      },
+      {
+        "q": "Will we work on my own project?",
+        "a": "Yes. Day 2 is a workshop and we work one to one with every participant on their own case, which they present at the end."
+      },
+      {
+        "q": "Do I need a laptop?",
+        "a": "Yes, your own laptop and charger. It is essential for day 2, which is a workshop. We do not provide computers on site."
+      },
+      {
+        "q": "What does the price include?",
+        "a": "The price is final and includes attendance on both days, the seminar material, the certificate of attendance and the post-seminar support. It does not include the subscriptions of the tools you will use."
+      },
+      {
+        "q": "How do I pay?",
+        "a": "After your booking we send you bank transfer or online payment details. Your seat is confirmed with the deposit."
+      },
+      {
+        "q": "Is there a cancellation policy?",
+        "a": "Free cancellation up to 10 days before, with a full refund. After that, your seat can be moved to a future edition or transferred to someone else."
+      },
+      {
+        "q": "Will there be a video if I miss a day?",
+        "a": "The seminar is hands-on and day 2 is a workshop, so it is not recorded. You do receive all the material, the notes and your own case study."
+      },
+      {
+        "q": "Do I get a certificate?",
+        "a": "Yes, a certificate of attendance."
+      },
+      {
+        "q": "Can it be subsidised?",
+        "a": "Ask us about subsidised training through the Greek public employment service (ΔΥΠΑ/ΛΑΕΚ) and we will tell you whether your programme is covered."
+      },
+      {
+        "q": "What should I bring?",
+        "a": "Your laptop, its charger and your ideas."
+      },
+      {
+        "q": "Is WiFi available?",
+        "a": "Yes, Advisable provides fast WiFi to all participants. You'll get the connection details when you arrive."
+      }
+    ]
+  },
+  "sticky": {
+    "from": "From",
+    "cta": "Reserve your seat"
+  },
+  "venue": {
+    "title": "Where it takes place",
+    "language": "Language of instruction: Greek",
+    "mapsCta": "Directions on the map",
+    "note": "We will email you detailed access and parking instructions together with your confirmation email."
+  },
+  "lessons": {
+    "title": "The lessons · 24-25 September",
+    "intro": "Every lesson of both tracks, one by one.",
+    "seeAgenda": "See the full agenda"
+  },
+  "nextSessions": {
+    "title": "Next Sessions",
+    "intro": "Las próximas fechas de Advisable Academy, abiertas a inscripción.",
+    "status": "Inscripciones abiertas",
+    "cta": "Reserva tu plaza",
+    "ctaAgenda": "Ver las lecciones",
+    "session": {
+      "title": "24 y 25 de septiembre de 2026 — Atenas",
+      "description": "Dos sesiones de cuatro horas, una cada día. Un programa totalmente introductorio: no se requiere experiencia previa con herramientas de IA.",
+      "facts": [
+        "Dos sesiones de cuatro horas (día 1 y día 2)",
+        "Oficinas centrales de Advisable, Ηρούς 4, Κολωνός, Αθήνα",
+        "Nivel introductorio, en grupo reducido",
+        "Idioma de impartición: griego"
+      ]
+    }
+  }
+}

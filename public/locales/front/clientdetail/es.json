@@ -1,0 +1,27 @@
+{
+  "loading": "Cargando...",
+  "errors": {
+    "notFound": "Cliente no encontrado"
+  },
+  "navigation": {
+    "backToClients": "Volver a todos los clientes"
+  },
+  "client": {
+    "usingCategory": "Utiliza {{category}}"
+  },
+  "caseStudy": {
+    "challenge": "El Desafío",
+    "solution": "Nuestra Solución",
+    "results": "Los Resultados"
+  },
+  "project": {
+    "title": "Detalles del Proyecto",
+    "labels": {
+      "timeline": "CRONOGRAMA",
+      "teamSize": "TAMAÑO DEL EQUIPO",
+      "product": "PRODUCTO",
+      "website": "SITIO WEB"
+    },
+    "visitWebsite": "Visitar sitio web"
+  }
+}

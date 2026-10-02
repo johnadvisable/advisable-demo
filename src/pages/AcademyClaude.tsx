@@ -694,18 +694,32 @@ export default function AcademyClaude() {
                 <SectionHeading eyebrow="Οι εκπαιδευτές σου" title="Άνθρωποι που δουλεύουν με AI κάθε μέρα" />
                 <ul className="mt-10 grid gap-4 sm:grid-cols-2">
                   {INSTRUCTORS.map((p) => (
-                    <li key={p.name} className="flex gap-4 rounded-2xl border border-border/60 bg-card/40 p-5">
-                      <div className="h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-secondary">
-                        {p.image ? (
-                          <img src={p.image} alt={p.name} loading="lazy" className="h-full w-full object-cover" />
-                        ) : (
-                          <div className="flex h-full w-full items-center justify-center text-xl font-semibold text-muted-foreground">{p.name.charAt(0)}</div>
-                        )}
+                    <li
+                      key={p.name}
+                      className="relative flex gap-5 overflow-hidden rounded-2xl border border-primary/25 bg-white p-6 shadow-[0_20px_50px_-24px_hsl(var(--primary)/0.5)] transition-transform duration-300 motion-safe:hover:-translate-y-1"
+                    >
+                      {/* Light teal/sky tint echoing the hero palette */}
+                      <div
+                        className="pointer-events-none absolute inset-0"
+                        style={{
+                          backgroundImage:
+                            'radial-gradient(ellipse 70% 90% at 100% 0%, hsl(var(--primary) / 0.18), transparent 70%), radial-gradient(ellipse 50% 70% at 0% 100%, hsl(205 90% 60% / 0.12), transparent 70%)',
+                        }}
+                        aria-hidden="true"
+                      />
+                      <div className="relative h-20 w-20 shrink-0 rounded-2xl bg-gradient-to-br from-primary to-sky-500 p-[2px]">
+                        <div className="h-full w-full overflow-hidden rounded-[14px] bg-secondary">
+                          {p.image ? (
+                            <img src={p.image} alt={p.name} loading="lazy" className="h-full w-full object-cover" />
+                          ) : (
+                            <div className="flex h-full w-full items-center justify-center text-2xl font-semibold text-muted-foreground">{p.name.charAt(0)}</div>
+                          )}
+                        </div>
                       </div>
-                      <div className="min-w-0">
-                        <p className="font-semibold">{p.name}</p>
-                        <p className="text-sm text-primary-strong">{p.role}</p>
-                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.bio}</p>
+                      <div className="relative min-w-0">
+                        <p className="text-lg font-semibold">{p.name}</p>
+                        <p className="text-sm font-medium text-primary-strong">{p.role}</p>
+                        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.bio}</p>
                       </div>
                     </li>
                   ))}

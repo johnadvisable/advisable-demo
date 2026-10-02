@@ -11,9 +11,8 @@ import {
   removeLanguageFromPath
 } from '@/utils/multilanguageUtils';
 
-// The repo only ships the two seminar pages
+// The repo only ships the seminar page
 const AcademyClaude = React.lazy(() => import('@/pages/AcademyClaude'));
-const AcademyClaudeV2 = React.lazy(() => import('@/pages/AcademyClaudeV2'));
 
 // Every other URL (old site pages, nav links, invalid language prefixes) lands on the seminar
 const SEMINAR_PATH = '/academy/seminar/claude';
@@ -100,13 +99,8 @@ const LanguageRouter: React.FC<LanguageRouterProps> = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/academy/claude" element={<AcademyClaude />} />
-        <Route path="/academy/claude-v2" element={<AcademyClaudeV2 />} />
-        {/* Static segment outranks :slug, so this wins over the original seminar route */}
-        <Route path="/academy/seminar/claude-v2" element={<AcademyClaudeV2 />} />
         <Route path="/academy/seminar/:slug" element={<AcademyClaude />} />
         <Route path="/:lang/academy/claude" element={<ValidatedLanguageRoute><AcademyClaude /></ValidatedLanguageRoute>} />
-        <Route path="/:lang/academy/claude-v2" element={<ValidatedLanguageRoute><AcademyClaudeV2 /></ValidatedLanguageRoute>} />
-        <Route path="/:lang/academy/seminar/claude-v2" element={<ValidatedLanguageRoute><AcademyClaudeV2 /></ValidatedLanguageRoute>} />
         <Route path="/:lang/academy/seminar/:slug" element={<ValidatedLanguageRoute><AcademyClaude /></ValidatedLanguageRoute>} />
 
         {/* Catch-all route */}

@@ -10,6 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
@@ -17,9 +18,8 @@ import { useLanguage } from '@/context/LanguageContext';
 import { buildNavigationUrl, getDomainForLanguage, isLocalDevelopment } from '@/utils/multilanguageUtils';
 import {
   Calendar, MapPin, Users, Clock, Check, CheckCircle, Ticket,
-  Sparkles, Bot, Plug, FileText, ShieldCheck, GraduationCap, Monitor, PlayCircle,
+  Sparkles, Bot, Plug, FileText, ShieldCheck, GraduationCap, Monitor, PlayCircle, MessageSquare, Mail, FileSpreadsheet, X, ArrowRight,
 } from 'lucide-react';
-import academyHero from '@/assets/academy-hero.jpg';
 import SeminarWaitlist from '@/components/academy/SeminarWaitlist';
 import { trackBookingClick, trackAcademyEvent, initScrollDepthTracking } from '@/lib/academyTracking';
 
@@ -156,95 +156,109 @@ const FAQ = [
   { q: 'Μπορώ να ακυρώσω;', a: 'Δωρεάν ακύρωση έως 10 ημέρες πριν, με πλήρη επιστροφή χρημάτων. Μετά από αυτό η θέση σου μπορεί να μεταφερθεί σε επόμενο τμήμα ή σε άλλο άτομο.' },
 ];
 
-/* ======================= Booking (Eventora) ======================= */
-function BookingCard() {
+/* ============================ V2 DATA ============================ */
+const STATS = [
+  ['8 ώρες', 'live εκπαίδευση σε δύο πρωινά'],
+  ['4', 'πρακτικές ενότητες'],
+  ['3 μήνες', 'πρόσβαση στη βιντεοσκόπηση'],
+  ['0', 'τεχνικές γνώσεις απαιτούνται'],
+];
+
+const BEFORE_AFTER = [
+  ['Μια προσφορά θέλει ώρες γραψίματος', 'Προσφορά έτοιμη σε δέκα λεπτά'],
+  ['Η εβδομαδιαία αναφορά στήνεται με το χέρι', 'Αναφορά με ένα κλικ'],
+  ['Εξηγείς ξανά templates και ύφος σε κάθε συνομιλία', 'Ένας βοηθός που ήδη ξέρει τους κανόνες της εταιρείας σου'],
+  ['Αντιγράφεις δεδομένα από εργαλείο σε εργαλείο', 'Το AI δουλεύει απευθείας μέσα στα εργαλεία σου'],
+];
+
+const TAKEAWAYS = [
+  [Bot, 'Ένα δικό σου Claude Skill', 'Για μια πραγματική, επαναλαμβανόμενη εργασία σου'],
+  [Plug, 'Ένας MCP connector', 'Στημένος πάνω στα εργαλεία που ήδη χρησιμοποιείς'],
+  [FileText, 'Οδηγός prompting', 'Έτοιμος να τον μοιραστείς με την ομάδα σου'],
+  [GraduationCap, 'Βεβαίωση παρακολούθησης', 'Από την Advisable Academy'],
+  [PlayCircle, '3 μήνες on-demand video', 'Η βιντεοσκόπηση όλου του σεμιναρίου'],
+];
+
+const AUDIENCE = ['Επιχειρηματίες', 'Managers', 'Marketers', 'Πωλητές', 'Ελεύθεροι επαγγελματίες'];
+
+const REQUIREMENTS = [
+  'Έναν λογαριασμό email',
+  'Έναν δωρεάν λογαριασμό Claude, στέλνουμε οδηγίες πριν το σεμινάριο',
+];
+
+function getDaysLeft() {
+  return Math.max(0, Math.ceil((new Date(CONFIG.START_DATE).getTime() - Date.now()) / 86400000));
+}
+
+function SectionHeading({ eyebrow, title, intro }: { eyebrow: string; title: string; intro?: string }) {
   return (
-    <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
-      <Card className="border-border/60 bg-card/50 p-6 lg:p-8">
-        <h3 className="text-2xl font-bold">Η κράτηση γίνεται μέσω Eventora</h3>
-        <p className="mt-3 text-muted-foreground">
-          Ολοκλήρωσε την κράτησή σου με ασφάλεια στη σελίδα του event.
-        </p>
-
-        <div className="mt-6 grid gap-3 sm:grid-cols-2">
-          {[
-            { icon: Monitor, title: 'Online, live', price: CONFIG.PRICE_ONLINE, note: 'Οι ίδιες ζωντανές συνεδρίες μέσω διαδικτύου' },
-          ].map((opt) => (
-            <div key={opt.title} className="rounded-xl border border-border/60 p-4">
-              <opt.icon className="h-5 w-5 text-primary" aria-hidden="true" />
-              <span className="mt-3 block font-semibold">{opt.title}</span>
-              <span className="mt-1 block text-xs text-muted-foreground">{opt.note}</span>
-              <span className="mt-3 block text-2xl font-black">{opt.price} €</span>
-              <span className="mt-2 block text-xs text-primary">Με βεβαίωση παρακολούθησης</span>
-              <span className="mt-1 flex items-center gap-1.5 text-xs text-primary">
-                <PlayCircle className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
-                3 μήνες πρόσβαση στο on-demand video
-              </span>
-            </div>
-          ))}
-        </div>
-
-        <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
-          {[
-            { icon: Check, text: `${CONFIG.DATES}, ${CONFIG.SESSION_HOURS}` },
-            { icon: Check, text: 'Βεβαίωση παρακολούθησης' },
-            { icon: PlayCircle, text: '3 μήνες πρόσβαση στο on-demand video lesson (βιντεοσκόπηση σεμιναρίου)' },
-            { icon: Check, text: 'Υλικό και υποστήριξη μετά το σεμινάριο' },
-          ].map((item) => (
-            <li key={item.text} className="flex items-start gap-2">
-              <item.icon className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-              <span>{item.text}</span>
-            </li>
-          ))}
-        </ul>
-      </Card>
-
-      <div className="lg:sticky lg:top-8 lg:self-start">
-        <Card className="border-primary/40 bg-gradient-to-br from-primary/10 via-card/60 to-background p-6">
-          <p className="text-xs font-semibold tracking-[0.2em] text-primary">ΣΥΝΟΨΗ</p>
-          <p className="mt-4 text-sm text-muted-foreground">
-            AI for Business - και τις δύο ημέρες online (live)
-          </p>
-          <div className="mt-4 flex items-end justify-between border-t border-border/60 pt-4">
-            <span className="text-sm text-muted-foreground">Τιμή από</span>
-            <span className="text-4xl font-black">{CONFIG.PRICE_ONLINE} €</span>
-          </div>
-          <ul className="mt-4 space-y-1 text-xs text-muted-foreground">
-            <li>{CONFIG.DATES}</li>
-            <li>{CONFIG.VENUE_ADDRESS}</li>
-          </ul>
-
-          <Button asChild size="lg" className="mt-6 w-full">
-            <a
-              href={CONFIG.BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => trackBookingClick({ source: 'summary_card', mode: 'any', value: CONFIG.PRICE_ONLINE })}
-            >
-              <Ticket className="mr-2 h-4 w-4" />Κάνε κράτηση τώρα
-            </a>
-          </Button>
-          <p className="mt-3 text-center text-xs text-muted-foreground">Ασφαλής πληρωμή μέσω Eventora</p>
-          <p className="mt-1 text-center text-xs text-muted-foreground">Δωρεάν ακύρωση έως 10 ημέρες πριν</p>
-          <ul className="mt-4 space-y-1.5 border-t border-border/60 pt-4 text-xs text-muted-foreground">
-            {[
-              'Δεν χρειάζονται τεχνικές γνώσεις',
-              'Παρακολούθηση online',
-              'Η τιμή είναι τελική και για τις δύο ημέρες',
-              '250+ εταιρείες μας εμπιστεύονται',
-            ].map((t) => (
-              <li key={t} className="flex items-start gap-2">
-                <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary" aria-hidden="true" />
-                <span>{t}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
-      </div>
-    </div>
+    <header className="max-w-2xl">
+      <p className="text-sm font-semibold tracking-wide text-primary-strong">{eyebrow}</p>
+      <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight lg:text-4xl">{title}</h2>
+      {intro && <p className="mt-4 text-base leading-relaxed text-muted-foreground">{intro}</p>}
+    </header>
   );
 }
 
+/* ======================= Booking (Eventora) ======================= */
+function BookingPanel({ source }: { source: string }) {
+  const daysLeft = getDaysLeft();
+  return (
+    <div className="rounded-2xl border border-primary/30 bg-card/70 p-6 shadow-[0_24px_64px_-24px_hsl(var(--primary)/0.45)] backdrop-blur">
+      <div className="flex items-center justify-between gap-3">
+        <p className="font-semibold">AI for Business</p>
+        <span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary-strong">Live online</span>
+      </div>
+
+      <div className="mt-5 flex items-baseline gap-2">
+        <span className="text-4xl font-black tracking-tight">{CONFIG.PRICE_ONLINE} €</span>
+        <span className="text-sm text-muted-foreground">τελική τιμή</span>
+      </div>
+      <p className="mt-1 text-xs text-muted-foreground">Και για τις δύο ημέρες.</p>
+
+      <dl className="mt-5 space-y-3 border-t border-border/60 pt-5 text-sm">
+        {[
+          [Calendar, 'Ημερομηνίες', CONFIG.DATES],
+          [Clock, 'Ώρες', CONFIG.SESSION_HOURS],
+          [Monitor, 'Τρόπος', 'Online, ζωντανά'],
+          [GraduationCap, 'Γλώσσα', 'Ελληνικά'],
+        ].map(([Icon, label, value]: any) => (
+          // dt/dd must be direct children of the group div, so the icon lives inside dt
+          <div key={label} className="relative pl-7">
+            <dt className="text-xs text-muted-foreground">
+              <Icon className="absolute left-0 top-0.5 h-4 w-4 text-primary-strong" aria-hidden="true" />
+              {label}
+            </dt>
+            <dd className="font-medium">{value}</dd>
+          </div>
+        ))}
+      </dl>
+
+      <Button asChild size="lg" className="group mt-6 w-full text-primary-ink">
+        <a
+          href={CONFIG.BOOKING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => trackBookingClick({ source, mode: 'online', value: CONFIG.PRICE_ONLINE })}
+        >
+          Κάνε κράτηση τώρα
+          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+        </a>
+      </Button>
+
+      <ul className="mt-4 space-y-2 text-xs text-muted-foreground">
+        <li className="flex items-center gap-2"><ShieldCheck className="h-3.5 w-3.5 shrink-0 text-primary-strong" aria-hidden="true" />Ασφαλής πληρωμή μέσω Eventora</li>
+        <li className="flex items-center gap-2"><Check className="h-3.5 w-3.5 shrink-0 text-primary-strong" aria-hidden="true" />Δωρεάν ακύρωση έως 10 ημέρες πριν</li>
+      </ul>
+
+      {daysLeft > 0 && (
+        <p className="mt-5 rounded-lg bg-primary/10 px-3 py-2 text-center text-xs font-medium text-primary-strong">
+          Απομένουν {daysLeft} ημέρες μέχρι την έναρξη
+        </p>
+      )}
+    </div>
+  );
+}
 
 /* ============================ PAGE ============================ */
 export default function AcademyClaude() {
@@ -366,282 +380,375 @@ export default function AcademyClaude() {
         <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
       </Helmet>
 
-
       <main className="pb-24 md:pb-0">
         {/* Hero */}
-        <section className="relative isolate overflow-hidden border-b border-border/50 bg-black">
-          <img src={academyHero} alt="Αίθουσα σεμιναρίων Advisable Academy στην Αθήνα" className="absolute inset-0 h-full w-full object-cover opacity-60" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/40" aria-hidden="true" />
-          <div className="container relative mx-auto px-4 pb-20 pt-20 lg:pb-28 lg:pt-28">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] text-white backdrop-blur">
-              <GraduationCap className="h-3.5 w-3.5" aria-hidden="true" />
-              ADVISABLE ACADEMY
-            </span>
-            <h1 className="mt-5 max-w-3xl text-4xl font-black leading-tight tracking-tight text-white lg:text-6xl">
-              AI for Business
-            </h1>
-            <p className="mt-5 max-w-2xl text-lg text-white/80">
-              Διήμερο, πλήρως εισαγωγικό σεμινάριο για τη χρήση του ChatGPT και του Claude στην καθημερινή σου δουλειά: Cowork, Skills και MCP connectors.
-              Δεν χρειάζονται τεχνικές γνώσεις.
-            </p>
+        <section className="relative isolate overflow-hidden border-b border-border/50 bg-[hsl(195_45%_4%)]">
+          {/* Ambient glow: teal, ocean blue and emerald, drifting slowly */}
+          <div
+            className="absolute -inset-[15%] motion-safe:animate-drift"
+            style={{
+              backgroundImage: [
+                'radial-gradient(ellipse 45% 55% at 72% 42%, hsl(var(--primary) / 0.85), transparent 70%)',
+                'radial-gradient(ellipse 40% 50% at 92% 85%, hsl(212 90% 55% / 0.7), transparent 70%)',
+                'radial-gradient(ellipse 32% 38% at 55% 8%, hsl(155 75% 45% / 0.5), transparent 70%)',
+              ].join(', '),
+            }}
+            aria-hidden="true"
+          />
+          {/* Spreadsheet grid, fading out toward the copy */}
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)',
+              backgroundSize: '56px 56px',
+              maskImage: 'radial-gradient(ellipse 50% 70% at 75% 50%, black, transparent 75%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 50% 70% at 75% 50%, black, transparent 75%)',
+            }}
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(195_45%_4%)] via-[hsl(195_45%_4%/0.55)] to-transparent" aria-hidden="true" />
+          {/* Work getting done: a proposal drafting itself, a report filling in, an email going out */}
+          <div
+            className="absolute right-[4%] top-1/2 hidden aspect-[4/3] w-[42%] max-w-[640px] -translate-y-1/2 lg:block"
+            aria-hidden="true"
+          >
+            {/* Weekly report, back right */}
+            <div className="absolute right-0 top-[4%] w-[46%] rotate-3 rounded-2xl border border-white/15 bg-white/[0.06] p-5 shadow-2xl backdrop-blur-md">
+              <div className="flex items-center gap-2 text-xs font-medium text-white/80">
+                <FileSpreadsheet className="h-4 w-4 text-primary" />
+                Εβδομαδιαία αναφορά
+              </div>
+              <div className="mt-5 flex h-28 items-end gap-2.5">
+                {[45, 70, 55, 85, 65, 95].map((h, i) => (
+                  <span
+                    key={i}
+                    className="flex-1 origin-bottom rounded-t-md bg-gradient-to-t from-primary/50 to-primary motion-safe:animate-grow-bar"
+                    style={{ height: `${h}%`, animationDelay: `${0.4 + i * 0.15}s` }}
+                  />
+                ))}
+              </div>
+              <div className="mt-3 h-px bg-white/15" />
+              <p className="mt-2 text-[11px] text-white/50">Ενημερώθηκε αυτόματα</p>
+            </div>
 
-            <ul className="mt-8 grid max-w-3xl gap-3 sm:grid-cols-2">
-              {[
-                [Calendar, CONFIG.DATES],
-                [Clock, `Δύο τετράωρες live συνεδρίες, ${CONFIG.SESSION_HOURS} | Online`],
-              ].map(([Icon, text]: any) => (
-                <li key={text} className="flex items-start gap-2 text-sm text-white/80">
-                  <Icon className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-                  <span>{text}</span>
-                </li>
-              ))}
-            </ul>
+            {/* Proposal, main card */}
+            <div className="absolute left-[2%] top-[14%] w-[52%] -rotate-2 rounded-2xl border border-white/20 bg-white/[0.09] p-6 shadow-2xl backdrop-blur-md">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-xs font-medium text-white/85">
+                  <FileText className="h-4 w-4 text-primary" />
+                  Προσφορά_Πελάτη.docx
+                </div>
+                <span className="flex items-center gap-1 rounded-full bg-primary/15 px-2 py-0.5 text-[11px] font-medium text-primary">
+                  <Clock className="h-3 w-3" />
+                  10 λεπτά
+                </span>
+              </div>
+              <div className="mt-5 h-3 w-2/3 origin-left rounded bg-white/70 motion-safe:animate-type-line" />
+              <div className="mt-4 space-y-2.5">
+                {['w-full', 'w-11/12', 'w-full', 'w-4/5', 'w-full', 'w-3/5'].map((w, i) => (
+                  <div
+                    key={i}
+                    className={`h-2 ${w} origin-left rounded bg-white/25 motion-safe:animate-type-line`}
+                    style={{ animationDelay: `${0.5 + i * 0.35}s` }}
+                  />
+                ))}
+              </div>
+              <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4">
+                <div className="h-2 w-1/4 rounded bg-white/20" />
+                <div className="h-6 w-20 rounded-md bg-primary/80" />
+              </div>
+            </div>
 
-            {/* Two clear options, decided here and not on Eventora */}
-            <div className="mt-9 grid max-w-sm gap-3">
-              <div className="rounded-2xl border border-white/25 bg-white/10 p-4 backdrop-blur">
-                <p className="text-3xl font-black text-white">
-                  {CONFIG.PRICE_ONLINE} € <span className="text-base font-semibold text-white/80">| Online, live</span>
-                </p>
-                <p className="mt-1 text-xs text-white/70">Τελική τιμή για το διήμερο. Δωρεάν ακύρωση έως 10 ημέρες πριν.</p>
-                <Button asChild className="mt-3 w-full">
+            {/* Client email, front bottom */}
+            <div className="absolute bottom-[4%] right-[10%] w-[48%] rotate-1 rounded-2xl border border-white/20 bg-black/60 p-5 shadow-2xl backdrop-blur-md">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-xs font-medium text-white/85">
+                  <Mail className="h-4 w-4 text-primary" />
+                  Προς: πελάτης
+                </div>
+                <span className="flex items-center gap-1 rounded-full bg-primary px-2 py-0.5 text-[11px] font-semibold text-primary-ink motion-safe:animate-pop-in">
+                  <Check className="h-3 w-3" />
+                  Στάλθηκε
+                </span>
+              </div>
+              <div className="mt-4 space-y-2">
+                <div className="h-2 w-full rounded bg-white/25" />
+                <div className="h-2 w-3/4 rounded bg-white/25" />
+              </div>
+            </div>
+          </div>
+          <div className="container relative mx-auto px-4 pb-16 pt-20 lg:pb-24 lg:pt-28">
+            <div className="max-w-2xl">
+              <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold tracking-[0.18em] text-primary">
+                <span className="relative flex h-2 w-2" aria-hidden="true">
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75 motion-safe:animate-ping" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                </span>
+                ADVISABLE ACADEMY · LIVE ONLINE
+              </span>
+
+              <h1 className="mt-6 text-5xl font-black leading-[1.05] tracking-tight text-white lg:text-7xl">
+                AI for Business
+                <span className="mt-2 block bg-gradient-to-r from-primary to-sky-400 bg-clip-text pb-1 text-3xl font-bold text-transparent lg:text-5xl">
+                  με ChatGPT και Claude
+                </span>
+              </h1>
+
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75">
+                Διήμερο, πλήρως εισαγωγικό σεμινάριο για την καθημερινή σου δουλειά: Cowork, Skills και MCP connectors. Δεν χρειάζονται τεχνικές γνώσεις.
+              </p>
+
+              <ul className="mt-7 flex flex-wrap gap-2">
+                {[
+                  [Calendar, CONFIG.DATES],
+                  [Clock, CONFIG.SESSION_HOURS],
+                  [Monitor, 'Online, ζωντανά'],
+                ].map(([Icon, text]: any) => (
+                  <li key={text} className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-sm text-white/85">
+                    <Icon className="h-4 w-4 text-primary" aria-hidden="true" />
+                    {text}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <Button asChild size="lg" className="group h-12 px-6 text-base text-primary-ink">
                   <a
                     href={CONFIG.BOOKING_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackBookingClick({ source: 'hero_online', mode: 'online', value: CONFIG.PRICE_ONLINE })}
                   >
-                    Κράτησε online θέση
+                    Κράτησε θέση · {CONFIG.PRICE_ONLINE} €
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
                   </a>
                 </Button>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="lg"
+                  className="h-12 px-6 text-base text-white hover:bg-white/10 hover:text-white"
+                  onClick={() => { trackAcademyEvent('view_agenda_click', { seminar: 'ai-for-business' }); scrollToId('agenda'); }}
+                >
+                  Δες το πρόγραμμα
+                </Button>
               </div>
+              <p className="mt-4 text-sm text-white/60">Τελική τιμή για το διήμερο · Δωρεάν ακύρωση έως 10 ημέρες πριν</p>
             </div>
-
-            <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-xs text-white/80">
-              {[
-                '250+ εταιρείες μας εμπιστεύονται',
-                'Google Premier Partner',
-                'Βεβαίωση παρακολούθησης',
-                '3 μήνες on-demand video',
-                'Δωρεάν ακύρωση έως 10 ημέρες πριν',
-              ].map((t) => (
-                <li key={t} className="flex items-center gap-1.5">
-                  <CheckCircle className="h-3.5 w-3.5 shrink-0 text-primary" aria-hidden="true" />
-                  {t}
-                </li>
-              ))}
-            </ul>
-
-            <div className="mt-5 flex flex-wrap items-center gap-4">
-              <button
-                type="button"
-                onClick={() => { trackAcademyEvent('view_agenda_click', { seminar: 'ai-for-business' }); scrollToId('agenda'); }}
-                className="text-sm font-semibold text-white underline underline-offset-4 hover:text-primary"
-              >
-                Δες το πρόγραμμα
-              </button>
-              {daysLeft > 0 && (
-                <span className="text-xs text-white/70">Απομένουν {daysLeft} ημέρες, οι θέσεις με φυσική παρουσία είναι μέχρι {CONFIG.SEATS}.</span>
-              )}
-            </div>
-            <p className="mt-4 text-xs text-white/70">
-              Γλώσσα διδασκαλίας: ελληνικά. Τελικές τιμές, ένα ενιαίο σεμινάριο και για τις δύο ημέρες.
-            </p>
           </div>
         </section>
 
-        {/* Intro */}
-        <section className="border-b border-border/50">
-          <div className="container mx-auto px-4 py-14 lg:py-20">
-            <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Δύο πρωινά που αλλάζουν τον τρόπο που δουλεύεις</h2>
-            <p className="mt-4 max-w-3xl text-muted-foreground">
-              Φαντάσου να ετοιμάζεις μια προσφορά σε δέκα λεπτά, να βγάζεις την εβδομαδιαία αναφορά με ένα κλικ και να έχεις στο πλευρό σου έναν βοηθό που γνωρίζει ήδη τα templates, τους κανόνες και το ύφος της εταιρείας σου. Ετσι δουλεύουν σήμερα οι ομάδες που αξιοποιούν σωστά το Claude και το ChatGPT. Σε δύο πρωινά σού δείχνουμε πώς, από το πρώτο prompt έως τη σύνδεση του AI με τα εργαλεία που χρησιμοποιείς.
-            </p>
-            <p className="mt-4 max-w-3xl text-muted-foreground">
-              Ολα όσα θα δεις τα εφαρμόζουμε καθημερινά στην Advisable, σε πραγματικά projects για περισσότερες από 250 εταιρείες.
-            </p>
-          </div>
+        {/* Stats band */}
+        <section aria-label="Με μια ματιά" className="border-b border-border/50 bg-card/30">
+          <dl className="container mx-auto grid grid-cols-2 gap-y-8 px-4 py-10 lg:grid-cols-4">
+            {STATS.map(([value, label]) => (
+              <div key={label} className="px-2 text-center lg:border-l lg:border-border/50 lg:first:border-l-0">
+                <dt className="sr-only">{label}</dt>
+                <dd className="text-3xl font-black tracking-tight lg:text-4xl">{value}</dd>
+                <dd className="mt-1 text-sm text-muted-foreground">{label}</dd>
+              </div>
+            ))}
+          </dl>
         </section>
 
-        {/* What you learn */}
-        <section className="border-b border-border/50">
-          <div className="container mx-auto px-4 py-14 lg:py-20">
-            <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Τι θα μάθεις</h2>
-            <p className="mt-3 max-w-2xl text-muted-foreground">
-              Τέσσερις ενότητες, από την αρχή και με εξάσκηση πάνω στη δική σου δουλειά. Το Claude Code δεν αποτελεί μέρος του σεμιναρίου.
-            </p>
-            <div className="mt-9 grid gap-5 md:grid-cols-2">
-              {MODULES.map(({ icon: Icon, title: mt, text }) => (
-                <Card key={mt} className="border-border/60 bg-card/40 p-6 transition-colors hover:border-primary/40">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                    <Icon className="h-5 w-5" aria-hidden="true" />
+        {/* Body: content column + sticky booking rail on desktop */}
+        <div className="container mx-auto px-4">
+          <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-14 xl:gap-20">
+            <div className="min-w-0 divide-y divide-border/50">
+
+              {/* Before / after */}
+              <section className="py-16 lg:py-24">
+                <SectionHeading
+                  eyebrow="Γιατί να έρθεις"
+                  title="Δύο πρωινά που αλλάζουν τον τρόπο που δουλεύεις"
+                  intro="Όλα όσα θα δεις τα εφαρμόζουμε καθημερινά στην Advisable, σε πραγματικά projects για περισσότερες από 250 εταιρείες."
+                />
+                <div className="mt-10 overflow-hidden rounded-2xl border border-border/60">
+                  <div className="hidden grid-cols-2 border-b border-border/60 bg-card/40 text-xs font-semibold sm:grid">
+                    <p className="px-6 py-3 text-muted-foreground">Σήμερα</p>
+                    <p className="border-l border-border/60 px-6 py-3 text-primary-strong">Μετά το σεμινάριο</p>
                   </div>
-                  <h3 className="mt-4 text-xl font-semibold">{mt}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{text}</p>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-
-        {/* Agenda */}
-        <section id="agenda" className="scroll-mt-6 border-b border-border/50 bg-card/20">
-          <div className="container mx-auto px-4 py-14 lg:py-20">
-            <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Το πρόγραμμα</h2>
-            <p className="mt-3 max-w-2xl text-muted-foreground">
-              Δύο τετράωρες συνεδρίες, {CONFIG.SESSION_HOURS}, με δύο σύντομα διαλείμματα κάθε μέρα.
-            </p>
-            <div className="mt-9 grid gap-6 lg:grid-cols-2">
-              {AGENDA.map((day) => (
-                <Card key={day.title} className="border-border/60 bg-card/50 p-6 lg:p-8">
-                  <h3 className="text-lg font-semibold leading-snug">{day.title}</h3>
-                  <ul className="mt-5 space-y-3">
-                    {day.slots.map(([time, text, isBreak]: any) => (
-                      <li key={time} className={`flex gap-4 text-sm ${isBreak ? 'text-muted-foreground/70' : ''}`}>
-                        <span className="w-24 shrink-0 font-mono text-xs text-primary">{time}</span>
-                        <span>{text}</span>
+                  <ul className="divide-y divide-border/60">
+                    {BEFORE_AFTER.map(([before, after]) => (
+                      <li key={before} className="grid sm:grid-cols-2">
+                        <p className="flex items-start gap-3 px-6 pb-2 pt-5 text-sm text-muted-foreground sm:py-5">
+                          <X className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground/50" aria-hidden="true" />
+                          <span><span className="sr-only">Σήμερα: </span>{before}</span>
+                        </p>
+                        <p className="flex items-start gap-3 px-6 pb-5 pt-2 text-sm font-medium sm:border-l sm:border-border/60 sm:bg-primary/[0.04] sm:py-5">
+                          <CheckCircle className="mt-0.5 h-4 w-4 shrink-0 text-primary-strong" aria-hidden="true" />
+                          <span><span className="sr-only">Μετά: </span>{after}</span>
+                        </p>
                       </li>
                     ))}
                   </ul>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+                </div>
+              </section>
 
-        {/* Audience / needs / outcomes */}
-        <section className="border-b border-border/50">
-          <div className="container mx-auto px-4 py-14 lg:py-20">
-            <div className="grid gap-6 lg:grid-cols-3">
-              <Card className="border-border/60 bg-card/40 p-6">
-                <h3 className="text-xl font-semibold">Σε ποιους απευθύνεται</h3>
-                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  {['Επιχειρηματίες', 'Managers', 'Marketers', 'Πωλητές', 'Ελεύθεροι επαγγελματίες'].map((i) => (
-                    <li key={i} className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />{i}</li>
-                  ))}
-                </ul>
-                <p className="mt-4 text-xs text-muted-foreground">Είναι κατάλληλο για κάθε επίπεδο γνώσεων, αρκεί η διάθεση να δουλέψεις πιο αποτελεσματικά.</p>
-              </Card>
-
-              <Card className="border-border/60 bg-card/40 p-6">
-                <h3 className="text-xl font-semibold">Τι χρειάζεσαι</h3>
-                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  {[
-                    'Εναν λογαριασμό email',
-                    'Εναν δωρεάν λογαριασμό Claude, στέλνουμε οδηγίες πριν το σεμινάριο',
-                  ].map((i) => (
-                    <li key={i} className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />{i}</li>
-                  ))}
-                </ul>
-                <p className="mt-4 text-xs text-muted-foreground">Το WiFi παρέχεται από την Advisable. Οι συνδρομές των εργαλείων δεν περιλαμβάνονται στην τιμή.</p>
-              </Card>
-
-              <Card className="border-primary/40 bg-gradient-to-br from-primary/10 via-card/50 to-background p-6">
-                <h3 className="text-xl font-semibold">Τι παίρνεις μαζί σου</h3>
-                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  {[
-                    'Ενα δικό σου Claude Skill για μια πραγματική εργασία',
-                    'Ενας MCP connector στημένος στα εργαλεία σου',
-                    'Ενας οδηγός prompting για την ομάδα σου',
-                    'Βεβαίωση παρακολούθησης',
-                    'Πρόσβαση στη βιντεοσκόπηση του σεμιναρίου για 3 μήνες',
-                  ].map((i) => (
-                    <li key={i} className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />{i}</li>
-                  ))}
-                </ul>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Instructors */}
-        <section className="border-b border-border/50 bg-card/20">
-          <div className="container mx-auto px-4 py-14 lg:py-20">
-            <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Οι εκπαιδευτές σου</h2>
-            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {INSTRUCTORS.map((p) => (
-                <Card key={p.name} className="border-border/60 bg-card/50 p-6">
-                  <div className="h-20 w-20 overflow-hidden rounded-full border border-border/60 bg-secondary">
-                    {p.image ? (
-                      <img src={p.image} alt={p.name} loading="lazy" className="h-full w-full object-cover" />
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center text-xl font-semibold text-muted-foreground">
-                        {p.name.charAt(0)}
+              {/* Curriculum */}
+              <section id="curriculum" className="scroll-mt-6 py-16 lg:py-24">
+                <SectionHeading
+                  eyebrow="Τι θα μάθεις"
+                  title="Τέσσερις ενότητες, από το πρώτο prompt έως τη σύνδεση με τα εργαλεία σου"
+                  intro="Με εξάσκηση πάνω στη δική σου δουλειά. Το Claude Code δεν αποτελεί μέρος του σεμιναρίου."
+                />
+                <ol className="mt-10 grid gap-4 sm:grid-cols-2">
+                  {MODULES.map(({ icon: Icon, title: mt, text }, i) => (
+                    <li key={mt} className="rounded-2xl border border-border/60 bg-card/40 p-6 transition-colors hover:border-primary/50 hover:bg-card/60">
+                      <div className="flex items-center justify-between">
+                        <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary-strong ring-1 ring-primary/20">
+                          <Icon className="h-5 w-5" aria-hidden="true" />
+                        </span>
+                        <span className="font-mono text-sm text-muted-foreground" aria-hidden="true">0{i + 1}</span>
                       </div>
-                    )}
+                      <h3 className="mt-5 text-lg font-semibold">{mt}</h3>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{text}</p>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+
+              {/* Agenda */}
+              <section id="agenda" className="scroll-mt-6 py-16 lg:py-24">
+                <SectionHeading
+                  eyebrow="Το πρόγραμμα"
+                  title="Δύο τετράωρες live συνεδρίες"
+                  intro="Με δύο σύντομα διαλείμματα κάθε μέρα."
+                />
+                <Tabs defaultValue="day-0" className="mt-10">
+                  <TabsList className="grid h-auto w-full grid-cols-2 rounded-xl bg-card/60 p-1 sm:inline-grid sm:w-auto">
+                    {AGENDA.map((day, i) => (
+                      <TabsTrigger
+                        key={day.title}
+                        value={`day-${i}`}
+                        className="rounded-lg px-6 py-2.5 text-sm data-[state=active]:bg-primary data-[state=active]:text-primary-ink"
+                      >
+                        Ημέρα {i + 1}
+                      </TabsTrigger>
+                    ))}
+                  </TabsList>
+                  {AGENDA.map((day, i) => (
+                    <TabsContent key={day.title} value={`day-${i}`} className="mt-8">
+                      <h3 className="text-lg font-semibold">{day.title.split(' - ')[1] ?? day.title}</h3>
+                      <ol className="mt-6 border-l border-border/60 pl-6">
+                        {day.slots.map(([time, text, isBreak]: any) => (
+                          <li key={time} className="relative pb-6 last:pb-0">
+                            <span
+                              className={`absolute -left-[30px] top-1 h-2.5 w-2.5 rounded-full ring-4 ring-background ${isBreak ? 'bg-muted-foreground/40' : 'bg-primary'}`}
+                              aria-hidden="true"
+                            />
+                            <p className="font-mono text-xs text-primary-strong">{time}</p>
+                            <p className={`mt-1 text-sm leading-relaxed ${isBreak ? 'text-muted-foreground' : ''}`}>{text}</p>
+                          </li>
+                        ))}
+                      </ol>
+                    </TabsContent>
+                  ))}
+                </Tabs>
+              </section>
+
+              {/* Takeaways */}
+              <section className="py-16 lg:py-24">
+                <SectionHeading eyebrow="Τι παίρνεις μαζί σου" title="Φεύγεις με εργαλεία που ήδη δουλεύουν" />
+                <ul className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                  {TAKEAWAYS.map(([Icon, t, sub]: any) => (
+                    <li key={t} className="rounded-2xl border border-border/60 bg-gradient-to-b from-card/60 to-card/20 p-5">
+                      <Icon className="h-5 w-5 text-primary-strong" aria-hidden="true" />
+                      <p className="mt-4 font-semibold">{t}</p>
+                      <p className="mt-1 text-sm text-muted-foreground">{sub}</p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              {/* Audience + requirements */}
+              <section className="py-16 lg:py-24">
+                <div className="grid gap-12 md:grid-cols-2">
+                  <div>
+                    <SectionHeading eyebrow="Σε ποιους απευθύνεται" title="Για όσους θέλουν να δουλεύουν πιο έξυπνα" />
+                    <ul className="mt-6 flex flex-wrap gap-2">
+                      {AUDIENCE.map((a) => (
+                        <li key={a} className="rounded-full border border-border/60 bg-card/40 px-3.5 py-1.5 text-sm">{a}</li>
+                      ))}
+                    </ul>
+                    <p className="mt-4 text-sm text-muted-foreground">Κατάλληλο για κάθε επίπεδο γνώσεων.</p>
                   </div>
-                  <p className="mt-4 text-lg font-semibold">{p.name}</p>
-                  <p className="text-sm text-primary">{p.role}</p>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.bio}</p>
-                </Card>
-              ))}
+                  <div>
+                    <SectionHeading eyebrow="Τι χρειάζεσαι" title="Σχεδόν τίποτα" />
+                    <ul className="mt-6 space-y-3 text-sm">
+                      {REQUIREMENTS.map((r) => (
+                        <li key={r} className="flex items-start gap-3">
+                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary-strong" aria-hidden="true" />
+                          {r}
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-4 text-sm text-muted-foreground">Οι συνδρομές των εργαλείων δεν περιλαμβάνονται στην τιμή.</p>
+                  </div>
+                </div>
+              </section>
+
+              {/* Instructors */}
+              <section className="py-16 lg:py-24">
+                <SectionHeading eyebrow="Οι εκπαιδευτές σου" title="Άνθρωποι που δουλεύουν με AI κάθε μέρα" />
+                <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+                  {INSTRUCTORS.map((p) => (
+                    <li key={p.name} className="flex gap-4 rounded-2xl border border-border/60 bg-card/40 p-5">
+                      <div className="h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-secondary">
+                        {p.image ? (
+                          <img src={p.image} alt={p.name} loading="lazy" className="h-full w-full object-cover" />
+                        ) : (
+                          <div className="flex h-full w-full items-center justify-center text-xl font-semibold text-muted-foreground">{p.name.charAt(0)}</div>
+                        )}
+                      </div>
+                      <div className="min-w-0">
+                        <p className="font-semibold">{p.name}</p>
+                        <p className="text-sm text-primary-strong">{p.role}</p>
+                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.bio}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </section>
             </div>
+
+            <aside className="hidden py-16 lg:block lg:py-24" aria-label="Κράτηση">
+              <div className="sticky top-8">
+                <BookingPanel source="sidebar" />
+              </div>
+            </aside>
           </div>
-        </section>
-
-        {/* Venue (hidden while the seminar runs online only) */}
-        <section className="hidden border-b border-border/50">
-          <div className="container mx-auto px-4 py-14 lg:py-20">
-            <div className="grid gap-6 lg:grid-cols-2">
-
-
-              <Card className="border-border/60 bg-card/50 p-6 lg:p-8">
-                <h2 className="text-2xl font-bold tracking-tight">Πού γίνεται</h2>
-                <p className="mt-4 text-sm text-muted-foreground">{CONFIG.VENUE_NAME}</p>
-                <p className="text-lg font-semibold">{CONFIG.VENUE_ADDRESS}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{CONFIG.VENUE_LANDMARK}</p>
-                <p className="mt-4 flex items-start gap-2 text-sm text-muted-foreground">
-                  <Monitor className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-                  Και online, με live stream. Μπορείς να παρακολουθήσεις είτε με φυσική παρουσία στα γραφεία μας είτε online live.
-                </p>
-                <p className="mt-4 flex items-start gap-2 text-sm text-muted-foreground">
-                  <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-                  Θα σου στείλουμε αναλυτικές οδηγίες πρόσβασης, ή τον σύνδεσμο σύνδεσης για το online live, με email μαζί με την επιβεβαίωση.
-                </p>
-                <Button asChild variant="outline" className="mt-6">
-                  <a href={CONFIG.MAPS_URL} target="_blank" rel="noopener noreferrer">Οδηγίες στον χάρτη</a>
-                </Button>
-              </Card>
-            </div>
-          </div>
-        </section>
+        </div>
 
         {/* Proof, right before the booking section */}
         <SocialPostsSlider />
         <TrustedBySection currentLanguage={currentLanguage} />
 
-        {/* Register */}
-        <section id="register" className="scroll-mt-6 border-b border-border/50">
-          <div className="container mx-auto px-4 py-14 lg:py-20">
-            <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Κράτησε τη θέση σου</h2>
-            <p className="mt-3 max-w-2xl text-muted-foreground">
-              Η κράτηση και η πληρωμή γίνονται μέσω Eventora.
-              {daysLeft > 0 && ` Απομένουν ${daysLeft} ημέρες μέχρι την έναρξη.`}
-            </p>
-            <div className="mt-9">
-              <BookingCard />
+        {/* Register + FAQ, objections answered at the point of decision */}
+        <section id="register" className="scroll-mt-6 border-y border-border/50 bg-card/20">
+          <div className="container mx-auto px-4 py-16 lg:py-24">
+            <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-16">
+              <div>
+                <SectionHeading eyebrow="Συχνές ερωτήσεις" title="Ό,τι χρειάζεται να ξέρεις πριν κλείσεις θέση" />
+                <Accordion
+                  type="single"
+                  collapsible
+                  className="mt-8"
+                  onValueChange={(v) => v && trackAcademyEvent('faq_open', { seminar: 'ai-for-business', faq: v })}
+                >
+                  {FAQ.map((f, i) => (
+                    <AccordionItem key={f.q} value={`faq-${i}`}>
+                      <AccordionTrigger className="text-left">{f.q}</AccordionTrigger>
+                      <AccordionContent className="leading-relaxed text-muted-foreground">{f.a}</AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+              <div className="order-first lg:order-none lg:sticky lg:top-8 lg:self-start">
+                <BookingPanel source="register" />
+              </div>
             </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="border-b border-border/50 bg-card/20">
-          <div className="container mx-auto px-4 py-14 lg:py-20">
-            <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Συχνές ερωτήσεις</h2>
-            <Accordion
-              type="single"
-              collapsible
-              className="mt-8 max-w-3xl"
-              onValueChange={(v) => v && trackAcademyEvent('faq_open', { seminar: 'ai-for-business', faq: v })}
-            >
-              {FAQ.map((f, i) => (
-                <AccordionItem key={f.q} value={`faq-${i}`}>
-                  <AccordionTrigger className="text-left">{f.q}</AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
           </div>
         </section>
 
@@ -650,17 +757,22 @@ export default function AcademyClaude() {
 
         {/* Corporate */}
         <section>
-          <div className="container mx-auto px-4 py-14 lg:py-20">
-            <Card className="border-primary/40 bg-gradient-to-br from-primary/10 via-card/50 to-background p-8 lg:p-10">
-              <h2 className="text-2xl font-bold tracking-tight lg:text-3xl">Το προτιμάς μέσα στην ίδια σου την εταιρεία;</h2>
-              <p className="mt-3 max-w-2xl text-muted-foreground">
-                Τρέχουμε το ίδιο πρόγραμμα στον δικό σας χώρο, προσαρμοσμένο στις διαδικασίες και τα εργαλεία σας, με τιμολόγηση ανά ομάδα και δυνατότητα υλοποίησης
-                μαζί με την Advisable.
-              </p>
-              <Button asChild size="lg" className="mt-6">
-                <Link to={buildNavigationUrl('/contact', currentLanguage)}>Ζήτησε προσφορά για την ομάδα σου</Link>
+          <div className="container mx-auto px-4 py-16 lg:py-24">
+            <div className="rounded-3xl border border-primary/30 bg-gradient-to-br from-primary/15 via-card/60 to-background p-8 lg:flex lg:items-center lg:justify-between lg:gap-10 lg:p-12">
+              <div className="max-w-2xl">
+                <p className="text-sm font-semibold tracking-wide text-primary-strong">Για ομάδες</p>
+                <h2 className="mt-3 text-2xl font-bold tracking-tight lg:text-3xl">Το προτιμάς μέσα στην ίδια σου την εταιρεία;</h2>
+                <p className="mt-3 text-muted-foreground">
+                  Τρέχουμε το ίδιο πρόγραμμα στον δικό σας χώρο, προσαρμοσμένο στις διαδικασίες και τα εργαλεία σας, με τιμολόγηση ανά ομάδα και δυνατότητα υλοποίησης μαζί με την Advisable.
+                </p>
+              </div>
+              <Button asChild size="lg" variant="outline" className="group mt-6 h-auto w-full shrink-0 whitespace-normal py-3 text-center sm:w-auto lg:mt-0">
+                <Link to={buildNavigationUrl('/contact', currentLanguage)}>
+                  Ζήτησε προσφορά για την ομάδα σου
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                </Link>
               </Button>
-            </Card>
+            </div>
           </div>
         </section>
 
@@ -675,7 +787,7 @@ export default function AcademyClaude() {
               <p className="text-sm font-black leading-tight">{CONFIG.PRICE_ONLINE} €</p>
               <p className="text-[10px] leading-tight text-muted-foreground">Δωρεάν ακύρωση έως 10 ημέρες πριν</p>
             </div>
-            <Button asChild size="lg" className="ml-auto shrink-0">
+            <Button asChild size="lg" className="ml-auto shrink-0 text-primary-ink">
               <a
                 href={CONFIG.BOOKING_URL}
                 target="_blank"
@@ -688,8 +800,6 @@ export default function AcademyClaude() {
           </div>
         </div>
       )}
-
-
     </div>
   );
 }

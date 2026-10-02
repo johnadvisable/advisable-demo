@@ -2,8 +2,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import TrustedBySection from '@/components/services/TrustedBySection';
 import SocialPostsSlider from '@/components/academy/SocialPostsSlider';
 import { Card } from '@/components/ui/card';
@@ -85,7 +83,7 @@ function getPageUrl(language?: string): string {
 function scrollToId(id: string) {
   const el = document.getElementById(id);
   if (!el) return;
-  window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 96, behavior: 'smooth' });
+  window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 24, behavior: 'smooth' });
 }
 
 /* ============================ DATA ============================ */
@@ -201,7 +199,7 @@ function BookingCard() {
         </ul>
       </Card>
 
-      <div className="lg:sticky lg:top-28 lg:self-start">
+      <div className="lg:sticky lg:top-8 lg:self-start">
         <Card className="border-primary/40 bg-gradient-to-br from-primary/10 via-card/60 to-background p-6">
           <p className="text-xs font-semibold tracking-[0.2em] text-primary">ΣΥΝΟΨΗ</p>
           <p className="mt-4 text-sm text-muted-foreground">
@@ -368,14 +366,13 @@ export default function AcademyClaude() {
         <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
       </Helmet>
 
-      <Header />
 
       <main className="pb-24 md:pb-0">
         {/* Hero */}
         <section className="relative isolate overflow-hidden border-b border-border/50 bg-black">
           <img src={academyHero} alt="Αίθουσα σεμιναρίων Advisable Academy στην Αθήνα" className="absolute inset-0 h-full w-full object-cover opacity-60" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/40" aria-hidden="true" />
-          <div className="container relative mx-auto px-4 pb-20 pt-32 lg:pb-28 lg:pt-40">
+          <div className="container relative mx-auto px-4 pb-20 pt-20 lg:pb-28 lg:pt-28">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] text-white backdrop-blur">
               <GraduationCap className="h-3.5 w-3.5" aria-hidden="true" />
               ADVISABLE ACADEMY
@@ -489,7 +486,7 @@ export default function AcademyClaude() {
 
 
         {/* Agenda */}
-        <section id="agenda" className="scroll-mt-28 border-b border-border/50 bg-card/20">
+        <section id="agenda" className="scroll-mt-6 border-b border-border/50 bg-card/20">
           <div className="container mx-auto px-4 py-14 lg:py-20">
             <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Το πρόγραμμα</h2>
             <p className="mt-3 max-w-2xl text-muted-foreground">
@@ -615,7 +612,7 @@ export default function AcademyClaude() {
         <TrustedBySection currentLanguage={currentLanguage} />
 
         {/* Register */}
-        <section id="register" className="scroll-mt-28 border-b border-border/50">
+        <section id="register" className="scroll-mt-6 border-b border-border/50">
           <div className="container mx-auto px-4 py-14 lg:py-20">
             <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Κράτησε τη θέση σου</h2>
             <p className="mt-3 max-w-2xl text-muted-foreground">
@@ -693,7 +690,6 @@ export default function AcademyClaude() {
       )}
 
 
-      <Footer />
     </div>
   );
 }

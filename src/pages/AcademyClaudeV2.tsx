@@ -2,8 +2,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import TrustedBySection from '@/components/services/TrustedBySection';
 import SocialPostsSlider from '@/components/academy/SocialPostsSlider';
 import { Card } from '@/components/ui/card';
@@ -85,7 +83,7 @@ function getPageUrl(language?: string): string {
 function scrollToId(id: string) {
   const el = document.getElementById(id);
   if (!el) return;
-  window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 96, behavior: 'smooth' });
+  window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 24, behavior: 'smooth' });
 }
 
 /* ============================ DATA ============================ */
@@ -384,8 +382,6 @@ export default function AcademyClaudeV2() {
         <script type="application/ld+json">{JSON.stringify(faqLd)}</script>
       </Helmet>
 
-      <Header />
-
       <main className="pb-24 md:pb-0">
         {/* Hero */}
         <section className="relative isolate overflow-hidden border-b border-border/50 bg-[hsl(195_45%_4%)]">
@@ -484,7 +480,7 @@ export default function AcademyClaudeV2() {
               </div>
             </div>
           </div>
-          <div className="container relative mx-auto px-4 pb-16 pt-32 lg:pb-24 lg:pt-40">
+          <div className="container relative mx-auto px-4 pb-16 pt-20 lg:pb-24 lg:pt-28">
             <div className="max-w-2xl">
               <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold tracking-[0.18em] text-primary">
                 <span className="relative flex h-2 w-2" aria-hidden="true">
@@ -593,7 +589,7 @@ export default function AcademyClaudeV2() {
               </section>
 
               {/* Curriculum */}
-              <section id="curriculum" className="scroll-mt-28 py-16 lg:py-24">
+              <section id="curriculum" className="scroll-mt-6 py-16 lg:py-24">
                 <SectionHeading
                   eyebrow="Τι θα μάθεις"
                   title="Τέσσερις ενότητες, από το πρώτο prompt έως τη σύνδεση με τα εργαλεία σου"
@@ -616,7 +612,7 @@ export default function AcademyClaudeV2() {
               </section>
 
               {/* Agenda */}
-              <section id="agenda" className="scroll-mt-28 py-16 lg:py-24">
+              <section id="agenda" className="scroll-mt-6 py-16 lg:py-24">
                 <SectionHeading
                   eyebrow="Το πρόγραμμα"
                   title="Δύο τετράωρες live συνεδρίες"
@@ -720,7 +716,7 @@ export default function AcademyClaudeV2() {
             </div>
 
             <aside className="hidden py-16 lg:block lg:py-24" aria-label="Κράτηση">
-              <div className="sticky top-28">
+              <div className="sticky top-8">
                 <BookingPanel source="sidebar" />
               </div>
             </aside>
@@ -732,7 +728,7 @@ export default function AcademyClaudeV2() {
         <TrustedBySection currentLanguage={currentLanguage} />
 
         {/* Register + FAQ, objections answered at the point of decision */}
-        <section id="register" className="scroll-mt-28 border-y border-border/50 bg-card/20">
+        <section id="register" className="scroll-mt-6 border-y border-border/50 bg-card/20">
           <div className="container mx-auto px-4 py-16 lg:py-24">
             <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-16">
               <div>
@@ -751,7 +747,7 @@ export default function AcademyClaudeV2() {
                   ))}
                 </Accordion>
               </div>
-              <div className="order-first lg:order-none lg:sticky lg:top-28 lg:self-start">
+              <div className="order-first lg:order-none lg:sticky lg:top-8 lg:self-start">
                 <BookingPanel source="register" />
               </div>
             </div>
@@ -806,9 +802,6 @@ export default function AcademyClaudeV2() {
           </div>
         </div>
       )}
-
-
-      <Footer />
     </div>
   );
 }

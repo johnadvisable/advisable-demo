@@ -50,6 +50,7 @@ const AcademyAccount = React.lazy(() => import('@/pages/academy/video/Account'))
 const AcademyAdmin = React.lazy(() => import('@/pages/academy/video/AcademyAdmin'));
 const ResetPassword = React.lazy(() => import('@/pages/academy/video/ResetPassword'));
 const AcademyClaude = React.lazy(() => import('@/pages/AcademyClaude'));
+const AcademyClaudeV2 = React.lazy(() => import('@/pages/AcademyClaudeV2'));
 const AcademySeminarThankYou = React.lazy(() => import('@/pages/AcademySeminarThankYou'));
 const AcademyBusinessTraining = React.lazy(() => import('@/pages/AcademyBusinessTraining'));
 
@@ -304,6 +305,7 @@ const LanguageRouter: React.FC<LanguageRouterProps> = () => {
         <Route path="/:lang/academy/ai-training-for-business" element={<ValidatedLanguageRoute><AcademyBusinessTraining /></ValidatedLanguageRoute>} />
 
         <Route path="/academy/claude" element={<AcademyClaude />} />
+        <Route path="/academy/claude-v2" element={<AcademyClaudeV2 />} />
         <Route path="/academy/seminar/thank-you" element={<AcademySeminarThankYou />} />
         <Route path="/:lang/academy/seminar/thank-you" element={<ValidatedLanguageRoute><AcademySeminarThankYou /></ValidatedLanguageRoute>} />
         <Route path="/academy/seminar/:slug" element={<AcademyClaude />} />

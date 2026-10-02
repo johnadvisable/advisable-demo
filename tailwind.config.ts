@@ -24,7 +24,11 @@ export default {
         foreground: 'hsl(var(--foreground))',
         primary: {
           DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
+          foreground: 'hsl(var(--primary-foreground))',
+          // AA-safe variants: strong = teal text on light backgrounds (5.3:1 on white),
+          // ink = dark text on teal fills (~9:1), both used by AcademyClaudeV2
+          strong: 'hsl(171 70% 28%)',
+          ink: 'hsl(195 45% 6%)'
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
@@ -107,6 +111,26 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         },
+        'drift': {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+          '50%': { transform: 'translate(-4%, 3%) scale(1.08)' },
+        },
+        'type-line': {
+          '0%': { transform: 'scaleX(0)', opacity: '1' },
+          '12%': { transform: 'scaleX(1)', opacity: '1' },
+          '88%': { transform: 'scaleX(1)', opacity: '1' },
+          '100%': { transform: 'scaleX(1)', opacity: '0' },
+        },
+        'grow-bar': {
+          '0%': { transform: 'scaleY(0.1)' },
+          '20%, 88%': { transform: 'scaleY(1)' },
+          '100%': { transform: 'scaleY(0.1)' },
+        },
+        'pop-in': {
+          '0%, 55%': { transform: 'scale(0.8)', opacity: '0' },
+          '62%, 92%': { transform: 'scale(1)', opacity: '1' },
+          '100%': { transform: 'scale(0.8)', opacity: '0' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -117,6 +141,11 @@ export default {
         'float': 'float 4s ease-in-out infinite',
         'pulse-light': 'pulse-light 3s ease-in-out infinite',
         'marquee': 'marquee 30s linear infinite',
+        'drift': 'drift 20s ease-in-out infinite',
+        // One shared 8s cycle so the hero scene drafts, reports and sends in sync
+        'type-line': 'type-line 8s ease-out infinite both',
+        'grow-bar': 'grow-bar 8s ease-out infinite both',
+        'pop-in': 'pop-in 8s ease-out infinite both',
       },
       fontFamily: {
         sans: [
